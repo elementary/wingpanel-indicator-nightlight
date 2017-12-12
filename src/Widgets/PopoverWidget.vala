@@ -30,8 +30,8 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
     construct {
         orientation = Gtk.Orientation.VERTICAL;
 
-        toggle_switch = new Wingpanel.Widgets.Switch (_("Warm Display"));
-        toggle_switch.get_style_context ().add_class ("h4");
+        toggle_switch = new Wingpanel.Widgets.Switch (_("Night Light"));
+        toggle_switch.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
         settings.bind ("night-light-enabled", toggle_switch.get_switch (), "active", GLib.SettingsBindFlags.DEFAULT);
 
