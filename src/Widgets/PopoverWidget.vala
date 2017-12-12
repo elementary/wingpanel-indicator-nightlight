@@ -19,22 +19,26 @@
 
 public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
     public unowned Nightlight.Indicator indicator { get; construct set; }
+    public unowned Settings settings { get; construct set; }
 
-    public PopoverWidget (Nightlight.Indicator indicator) {
-        Object (indicator: indicator);
+    private Wingpanel.Widgets.Switch toggle_switch;
+
+    public PopoverWidget (Nightlight.Indicator indicator, Settings settings) {
+        Object (indicator: indicator, settings: settings);
     }
 
     construct {
         orientation = Gtk.Orientation.VERTICAL;
-        var settings = new GLib.Settings ("org.gnome.settings-daemon.plugins.color");
 
-        var toggle_switch = new Wingpanel.Widgets.Switch (_("Warm Display"));
+        toggle_switch = new Wingpanel.Widgets.Switch (_("Warm Display"));
         toggle_switch.get_style_context ().add_class ("h4");
 
         settings.bind ("night-light-enabled", toggle_switch.get_switch (), "active", GLib.SettingsBindFlags.DEFAULT);
 
         var settings_button = new Wingpanel.Widgets.Button (_("Night Light Settings…"));
         settings_button.clicked.connect (show_settings);
+
+        indicator.nightlight_state_changed.connect (set_state);
 
         add (toggle_switch);
         add (new Wingpanel.Widgets.Separator ());
