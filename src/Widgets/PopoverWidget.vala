@@ -62,7 +62,7 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         add (settings_button);
 
         settings.bind ("night-light-enabled", toggle_switch.get_switch (), "active", GLib.SettingsBindFlags.DEFAULT);
-        toggle_switch.bind_property ("active", scale_grid, "sensitive", GLib.BindingFlags.DEFAULT);
+        toggle_switch.get_switch ().bind_property ("active", scale_grid, "sensitive", GLib.BindingFlags.DEFAULT);
 
         temp_scale.value_changed.connect (() => {
             settings.set_uint ("night-light-temperature", (uint) temp_scale.get_value ());
