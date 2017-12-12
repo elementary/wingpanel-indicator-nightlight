@@ -40,7 +40,8 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         toggle_switch = new Wingpanel.Widgets.Switch (_("Night Light"));
         toggle_switch.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
-        var image = new Gtk.Image.from_icon_name ("night-light-symbolic", Gtk.IconSize.DIALOG);
+        var image = new Gtk.Image ();
+        image.icon_name = "night-light-symbolic";
         image.pixel_size = 48;
 
         temp_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 3500, 6000, 10);
@@ -68,12 +69,22 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         add (new Wingpanel.Widgets.Separator ());
         add (settings_button);
 
+        var toggle_switch_switch = toggle_switch.get_switch ();
+
         settings.bind ("night-light-enabled", toggle_switch.get_switch (), "active", GLib.SettingsBindFlags.DEFAULT);
         settings.bind ("night-light-temperature", this, "temperature", GLib.SettingsBindFlags.GET);
-        toggle_switch.get_switch ().bind_property ("active", scale_grid, "sensitive", GLib.BindingFlags.DEFAULT);
+        toggle_switch_switch.bind_property ("active", scale_grid, "sensitive", GLib.BindingFlags.DEFAULT);
 
         temp_scale.value_changed.connect (() => {
             settings.set_uint ("night-light-temperature", (uint) temp_scale.get_value ());
+        });
+
+        toggle_switch_switch.notify["active"].connect (() => {
+            if (toggle_switch_switch.active) {
+                image.icon_name = "night-light-symbolic";
+            } else {
+                image.icon_name = "night-light-disabled-symbolic";
+            }
         });
     }
 
