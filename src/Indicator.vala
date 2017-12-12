@@ -18,42 +18,54 @@
  */
 
 public class Nightlight.Indicator : Wingpanel.Indicator {
-    private const string ICON_NAME = "night-light-symbolic";
+    private const string ENABLED_ICON_NAME = "night-light-symbolic";
+    private const string DISABLED_ICON_NAME = "night-light-disabled-symbolic";
 
     private Wingpanel.Widgets.OverlayIcon? indicator_icon = null;
-    private Nightlight.Widgets.PopoverWidget? main_grid = null;
+    private Nightlight.Widgets.PopoverWidget? popover_widget = null;
+
+    private Settings settings;
+
+    public bool nightlight_state {
+        set {
+            indicator_icon.set_main_icon_name (value ? ENABLED_ICON_NAME : DISABLED_ICON_NAME);
+        }
+    }
 
     public Indicator (Wingpanel.IndicatorManager.ServerType server_type) {
         Object (code_name: "wingpanel-indicator-nightlight",
                 display_name: _("Nightlight"),
                 description: _("The Nightlight indicator"));
+
+        settings = new GLib.Settings ("org.gnome.settings-daemon.plugins.color");
     }
 
     public override Gtk.Widget get_display_widget () {
         if (indicator_icon == null) {
-            indicator_icon = new Wingpanel.Widgets.OverlayIcon (ICON_NAME);
+            indicator_icon = new Wingpanel.Widgets.OverlayIcon (ENABLED_ICON_NAME);
             indicator_icon.button_press_event.connect ((e) => {
                 if (e.button == Gdk.BUTTON_MIDDLE) {
-                    // TODO: Toggle nightlight
-                    close ();
+                    settings.set_boolean ("night-light-enabled", !settings.get_boolean ("night-light-enabled"));
                     return Gdk.EVENT_STOP;
                 }
 
                 return Gdk.EVENT_PROPAGATE;
             });
+
+            settings.bind ("night-light-enabled", this, "nightlight-state", GLib.SettingsBindFlags.GET);
         }
 
         return indicator_icon;
     }
 
     public override Gtk.Widget? get_widget () {
-        if (main_grid == null) {
-            main_grid = new Nightlight.Widgets.PopoverWidget (this);
+        if (popover_widget == null) {
+            popover_widget = new Nightlight.Widgets.PopoverWidget (this, settings);
         }
 
         visible = true;
 
-        return main_grid;
+        return popover_widget;
     }
 
     public override void opened () {}
