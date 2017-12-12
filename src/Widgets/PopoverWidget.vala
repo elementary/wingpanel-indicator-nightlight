@@ -38,8 +38,6 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         var settings_button = new Wingpanel.Widgets.Button (_("Night Light Settings…"));
         settings_button.clicked.connect (show_settings);
 
-        indicator.nightlight_state_changed.connect (set_state);
-
         add (toggle_switch);
         add (new Wingpanel.Widgets.Separator ());
         add (settings_button);
