@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2017 elementary LLC. (http://launchpad.net/wingpanel)
+ * Copyright (c) 2017 elementary LLC. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -18,10 +18,10 @@
  */
 
 public class Nightlight.Indicator : Wingpanel.Indicator {
-    private const string ICON_NAME = "system-shutdown-symbolic";
+    private const string ICON_NAME = "night-light-symbolic";
 
     private Wingpanel.Widgets.OverlayIcon? indicator_icon = null;
-    private Gtk.Grid? main_grid = null;
+    private Nightlight.Widgets.PopoverWidget? main_grid = null;
 
     public Indicator (Wingpanel.IndicatorManager.ServerType server_type) {
         Object (code_name: "wingpanel-indicator-nightlight",
@@ -48,11 +48,7 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
 
     public override Gtk.Widget? get_widget () {
         if (main_grid == null) {
-            main_grid = new Gtk.Grid ();
-            main_grid.set_orientation (Gtk.Orientation.VERTICAL);
-
-
-            main_grid.margin_top = 6;
+            main_grid = new Nightlight.Widgets.PopoverWidget (this);
         }
 
         visible = true;
@@ -60,9 +56,7 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
         return main_grid;
     }
 
-    public override void opened () {
-
-    }
+    public override void opened () {}
 
     public override void closed () {}
 }
@@ -70,10 +64,17 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
 public Wingpanel.Indicator? get_indicator (Module module, Wingpanel.IndicatorManager.ServerType server_type) {
     debug ("Activating Nightlight Indicator");
 
-    Wingpanel.Indicator? indicator = null;
-    if (server_type == Wingpanel.IndicatorManager.ServerType.SESSION) {
-        indicator = new Nightlight.Indicator (server_type);
+    if (server_type != Wingpanel.IndicatorManager.ServerType.SESSION) {
+        debug ("Wingpanel is not in session, not loading nightlight");
+        return null;
     }
 
+    var interface_settings_schema = SettingsSchemaSource.get_default ().lookup ("org.gnome.settings-daemon.plugins.color", false);
+    if (interface_settings_schema == null || !interface_settings_schema.has_key ("night-light-enabled")) {
+        debug ("No night-light schema found");
+        return null;
+    }
+
+    var indicator = new Nightlight.Indicator (server_type);
     return indicator;
 }
