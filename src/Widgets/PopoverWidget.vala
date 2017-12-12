@@ -33,14 +33,40 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         toggle_switch = new Wingpanel.Widgets.Switch (_("Warm Display"));
         toggle_switch.get_style_context ().add_class ("h4");
 
-        settings.bind ("night-light-enabled", toggle_switch.get_switch (), "active", GLib.SettingsBindFlags.DEFAULT);
+        var image = new Gtk.Image.from_icon_name ("night-light-symbolic", Gtk.IconSize.DIALOG);
+        image.pixel_size = 48;
+
+        var temp_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 3500, 6000, 10);
+        temp_scale.draw_value = false;
+        temp_scale.has_origin = false;
+        temp_scale.hexpand = true;
+        temp_scale.inverted = true;
+        temp_scale.width_request = 200;
+        temp_scale.get_style_context ().add_class ("warmth");
+        temp_scale.set_value (settings.get_uint ("night-light-temperature"));
+
+        var scale_grid = new Gtk.Grid ();
+        scale_grid.column_spacing = 6;
+        scale_grid.margin_start = 6;
+        scale_grid.margin_end = 12;
+        scale_grid.add (image);
+        scale_grid.add (temp_scale);
 
         var settings_button = new Wingpanel.Widgets.Button (_("Night Light Settings…"));
         settings_button.clicked.connect (show_settings);
 
         add (toggle_switch);
         add (new Wingpanel.Widgets.Separator ());
+        add (scale_grid);
+        add (new Wingpanel.Widgets.Separator ());
         add (settings_button);
+
+        settings.bind ("night-light-enabled", toggle_switch.get_switch (), "active", GLib.SettingsBindFlags.DEFAULT);
+        toggle_switch.bind_property ("active", scale_grid, "sensitive", GLib.BindingFlags.DEFAULT);
+
+        temp_scale.value_changed.connect (() => {
+            settings.set_uint ("night-light-temperature", (uint) temp_scale.get_value ());
+        });
     }
 
     private void show_settings () {
