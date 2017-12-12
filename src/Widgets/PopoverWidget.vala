@@ -22,6 +22,13 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
     public unowned Settings settings { get; construct set; }
 
     private Wingpanel.Widgets.Switch toggle_switch;
+    private Gtk.Scale temp_scale;
+
+    public int temperature {
+        set {
+            temp_scale.set_value (value);
+        }
+    }
 
     public PopoverWidget (Nightlight.Indicator indicator, Settings settings) {
         Object (indicator: indicator, settings: settings);
@@ -36,7 +43,7 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         var image = new Gtk.Image.from_icon_name ("night-light-symbolic", Gtk.IconSize.DIALOG);
         image.pixel_size = 48;
 
-        var temp_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 3500, 6000, 10);
+        temp_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 3500, 6000, 10);
         temp_scale.draw_value = false;
         temp_scale.has_origin = false;
         temp_scale.hexpand = true;
@@ -62,6 +69,7 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         add (settings_button);
 
         settings.bind ("night-light-enabled", toggle_switch.get_switch (), "active", GLib.SettingsBindFlags.DEFAULT);
+        settings.bind ("night-light-temperature", this, "temperature", GLib.SettingsBindFlags.GET);
         toggle_switch.get_switch ().bind_property ("active", scale_grid, "sensitive", GLib.BindingFlags.DEFAULT);
 
         temp_scale.value_changed.connect (() => {
