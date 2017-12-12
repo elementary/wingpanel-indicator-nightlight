@@ -33,7 +33,7 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
 
         settings.bind ("night-light-enabled", toggle_switch.get_switch (), "active", GLib.SettingsBindFlags.DEFAULT);
 
-        var settings_button = new Wingpanel.Widgets.Button (_("Night light settings…"));
+        var settings_button = new Wingpanel.Widgets.Button (_("Night Light Settings…"));
         settings_button.clicked.connect (show_settings);
 
         add (toggle_switch);
@@ -43,7 +43,7 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
 
     private void show_settings () {
         try {
-            AppInfo.launch_default_for_uri ("settings://display", null);
+            AppInfo.launch_default_for_uri ("settings://display/night-light", null);
         } catch (Error e) {
             warning ("Failed to open display settings: %s", e.message);
         }
