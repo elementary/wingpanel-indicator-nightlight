@@ -45,6 +45,7 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         image.pixel_size = 48;
 
         temp_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 3500, 6000, 10);
+        temp_scale.add_mark (4500, Gtk.PositionType.BOTTOM, null);
         temp_scale.draw_value = false;
         temp_scale.has_origin = false;
         temp_scale.hexpand = true;
