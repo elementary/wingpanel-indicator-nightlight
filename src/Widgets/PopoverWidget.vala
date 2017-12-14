@@ -64,7 +64,6 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         temp_scale.inverted = true;
         temp_scale.width_request = 200;
         temp_scale.get_style_context ().add_class ("warmth");
-        temp_scale.set_value (settings.get_uint ("night-light-temperature"));
 
         scale_grid = new Gtk.Grid ();
         scale_grid.column_spacing = 6;
