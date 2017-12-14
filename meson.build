@@ -18,3 +18,5 @@ shared_module(
     install: true,
     install_dir : get_option('libdir') + '/wingpanel'
 )
+
+subdir('po')
