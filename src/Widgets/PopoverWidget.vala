@@ -82,8 +82,6 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         add (new Wingpanel.Widgets.Separator ());
         add (settings_button);
 
-        var toggle_switch_switch = toggle_switch.get_switch ();
-
         settings.bind ("night-light-enabled", toggle_switch.get_switch (), "active", GLib.SettingsBindFlags.DEFAULT);
         settings.bind ("night-light-enabled", this, "active", GLib.SettingsBindFlags.GET);
         settings.bind ("night-light-temperature", this, "temperature", GLib.SettingsBindFlags.GET);
