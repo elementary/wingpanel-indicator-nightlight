@@ -38,19 +38,20 @@ public class NightLight.Widgets.Switch : Wingpanel.Widgets.Container {
         button_label = new Gtk.Label (caption);
         button_label.halign = Gtk.Align.START;
         button_label.margin_start = 6;
-        button_label.margin_end = 10;
+        button_label.margin_end = 6;
         button_label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
         var small_label = new Gtk.Label ("<small>%s</small>".printf (Markup.escape_text (secondary)));
         small_label.use_markup = true;
         small_label.halign = Gtk.Align.START;
         small_label.margin_start = 6;
-        small_label.margin_end = 10;
+        small_label.margin_end = 6;
 
         button_switch = new Gtk.Switch ();
         button_switch.active = active;
         button_switch.halign = Gtk.Align.END;
         button_switch.hexpand = true;
+        button_switch.margin = 3;
         button_switch.margin_end = 6;
         button_switch.valign = Gtk.Align.CENTER;
 
