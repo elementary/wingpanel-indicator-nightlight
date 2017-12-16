@@ -25,13 +25,13 @@ public interface NightLight.ColorInterface : Object {
 public class NightLight.Manager : Object {
     public signal void snooze_changed (bool value);
 
-    private NightLight.ColorInterface adapter;
+    private NightLight.ColorInterface interface;
 
     public bool snoozed {
         get {
-            return adapter.disabled_until_tomorrow;
+            return interface.disabled_until_tomorrow;
         } set {
-            adapter.disabled_until_tomorrow = value;
+            interface.disabled_until_tomorrow = value;
             snooze_changed (value);
         }
     }
@@ -49,7 +49,15 @@ public class NightLight.Manager : Object {
 
     construct {
         try {
-            adapter = Bus.get_proxy_sync (BusType.SESSION, "org.gnome.SettingsDaemon.Color", "/org/gnome/SettingsDaemon/Color", DBusProxyFlags.NONE);
+            interface = Bus.get_proxy_sync (BusType.SESSION, "org.gnome.SettingsDaemon.Color", "/org/gnome/SettingsDaemon/Color", DBusProxyFlags.NONE);
+
+            (interface as DBusProxy).g_properties_changed.connect ((changed, invalid) => {
+                var snooze = changed.lookup_value("DisabledUntilTomorrow", new VariantType("b"));
+
+                if (snooze != null) {
+                    snoozed = snooze.get_boolean ();
+                }
+            });
         } catch (Error e) {
             warning ("Could not connect to color settings: %s", e.message);
         }
