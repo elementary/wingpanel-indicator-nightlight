@@ -1,5 +1,7 @@
 # Wingpanel Nightlight Indicator
 
+![Screenshot](data/screenshot.png?raw=true)
+
 ## Building and Installation
 
 Run `meson` to configure the build environment and then `ninja` to build
