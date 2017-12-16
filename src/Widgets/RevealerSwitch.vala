@@ -26,24 +26,32 @@ public class NightLight.Widgets.Switch : Wingpanel.Widgets.Container {
 
     public bool active {
         get {
-            return button_switch.get_active ();
+            return button_switch.active;
         } set {
-            button_switch.set_active (value);
+            button_switch.active = value;
             subtitle_revealer.reveal_child = value;
             switched ();
         }
     }
 
     public Switch (string caption, string secondary, bool active = false) {
-        button_label = create_label_for_caption (caption);
+        button_label = new Gtk.Label (caption);
+        button_label.halign = Gtk.Align.START;
+        button_label.margin_start = 6;
+        button_label.margin_end = 10;
         button_label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
-        button_label.valign = Gtk.Align.END;
 
-        var small_label = create_label_for_caption (secondary, true);
-        small_label.valign = Gtk.Align.START;
-        small_label.sensitive = false;
+        var small_label = new Gtk.Label ("<small>%s</small>".printf (Markup.escape_text (secondary)));
+        small_label.use_markup = true;
+        small_label.halign = Gtk.Align.START;
+        small_label.margin_start = 6;
+        small_label.margin_end = 10;
 
-        button_switch = create_switch (active);
+        button_switch = new Gtk.Switch ();
+        button_switch.active = active;
+        button_switch.halign = Gtk.Align.END;
+        button_switch.hexpand = true;
+        button_switch.margin_end = 6;
         button_switch.valign = Gtk.Align.CENTER;
 
         subtitle_revealer = new Gtk.Revealer ();
@@ -55,7 +63,7 @@ public class NightLight.Widgets.Switch : Wingpanel.Widgets.Container {
 
         clicked.connect (() => {
             active = true;
-            toggle_switch ();
+            button_switch.activate ();
         });
 
         button_switch.bind_property ("active", this, "active", GLib.BindingFlags.DEFAULT);
@@ -63,36 +71,5 @@ public class NightLight.Widgets.Switch : Wingpanel.Widgets.Container {
 
     public Gtk.Switch get_switch () {
         return button_switch;
-    }
-
-    public void toggle_switch () {
-        button_switch.activate ();
-    }
-
-    private Gtk.Label create_label_for_caption (string caption, bool small = false) {
-        Gtk.Label label_widget;
-
-        if (small) {
-            label_widget = new Gtk.Label ("<small>%s</small>".printf (Markup.escape_text (caption)));
-        } else {
-            label_widget = new Gtk.Label (Markup.escape_text (caption));
-        }
-
-        label_widget.use_markup = true;
-        label_widget.halign = Gtk.Align.START;
-        label_widget.margin_start = 6;
-        label_widget.margin_end = 10;
-
-        return label_widget;
-    }
-
-    private Gtk.Switch create_switch (bool active) {
-        var switch_widget = new Gtk.Switch ();
-        switch_widget.active = active;
-        switch_widget.halign = Gtk.Align.END;
-        switch_widget.margin_end = 6;
-        switch_widget.hexpand = true;
-
-        return switch_widget;
     }
 }
