@@ -24,26 +24,44 @@ public class NightLight.Widgets.Switch : Wingpanel.Widgets.Container {
     private Gtk.Switch button_switch;
     private Gtk.Revealer subtitle_revealer;
 
+    private const string SWITCH_CSS = """
+        .compact-switch-labels label {
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+    """;
+
     public bool active {
         get {
-            return button_switch.get_active ();
+            return button_switch.active;
         } set {
-            button_switch.set_active (value);
+            button_switch.active = value;
             subtitle_revealer.reveal_child = value;
             switched ();
         }
     }
 
     public Switch (string caption, string secondary, bool active = false) {
-        button_label = create_label_for_caption (caption);
-        button_label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
+        button_label = new Gtk.Label (caption);
+        button_label.halign = Gtk.Align.START;
         button_label.valign = Gtk.Align.END;
+        button_label.margin_start = 6;
+        button_label.margin_end = 6;
+        button_label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
-        var small_label = create_label_for_caption (secondary, true);
-        small_label.valign = Gtk.Align.START;
-        small_label.sensitive = false;
+        var small_label = new Gtk.Label ("<small>%s</small>".printf (Markup.escape_text (secondary)));
+        small_label.use_markup = true;
+        small_label.halign = Gtk.Align.START;
+        small_label.margin_start = 6;
+        small_label.margin_end = 6;
+        small_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
-        button_switch = create_switch (active);
+        button_switch = new Gtk.Switch ();
+        button_switch.active = active;
+        button_switch.halign = Gtk.Align.END;
+        button_switch.hexpand = true;
+        button_switch.margin = 3;
+        button_switch.margin_end = 6;
         button_switch.valign = Gtk.Align.CENTER;
 
         subtitle_revealer = new Gtk.Revealer ();
@@ -52,10 +70,19 @@ public class NightLight.Widgets.Switch : Wingpanel.Widgets.Container {
         content_widget.attach (button_label, 0, 0, 1, 1);
         content_widget.attach (subtitle_revealer, 0, 1, 1, 1);
         content_widget.attach (button_switch, 1, 0, 1, 2);
+        content_widget.get_style_context ().add_class ("compact-switch-labels");
+
+        var provider = new Gtk.CssProvider ();
+        try {
+            provider.load_from_data (SWITCH_CSS, SWITCH_CSS.length);
+            Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+        } catch (Error e) {
+            critical (e.message);
+        }
 
         clicked.connect (() => {
             active = true;
-            toggle_switch ();
+            button_switch.activate ();
         });
 
         button_switch.bind_property ("active", this, "active", GLib.BindingFlags.DEFAULT);
@@ -63,36 +90,5 @@ public class NightLight.Widgets.Switch : Wingpanel.Widgets.Container {
 
     public Gtk.Switch get_switch () {
         return button_switch;
-    }
-
-    public void toggle_switch () {
-        button_switch.activate ();
-    }
-
-    private Gtk.Label create_label_for_caption (string caption, bool small = false) {
-        Gtk.Label label_widget;
-
-        if (small) {
-            label_widget = new Gtk.Label ("<small>%s</small>".printf (Markup.escape_text (caption)));
-        } else {
-            label_widget = new Gtk.Label (Markup.escape_text (caption));
-        }
-
-        label_widget.use_markup = true;
-        label_widget.halign = Gtk.Align.START;
-        label_widget.margin_start = 6;
-        label_widget.margin_end = 10;
-
-        return label_widget;
-    }
-
-    private Gtk.Switch create_switch (bool active) {
-        var switch_widget = new Gtk.Switch ();
-        switch_widget.active = active;
-        switch_widget.halign = Gtk.Align.END;
-        switch_widget.margin_end = 6;
-        switch_widget.hexpand = true;
-
-        return switch_widget;
     }
 }
