@@ -7,7 +7,9 @@ add_global_arguments('-DGETTEXT_PACKAGE="' + meson.project_name() + '-indicator"
 shared_module(
     meson.project_name(),
     'src/Indicator.vala',
+    'src/Services/ColorInterface.vala',
     'src/Widgets/PopoverWidget.vala',
+    'src/widgets/RevealerSwitch.vala',
     dependencies: [
         dependency('glib-2.0'),
         dependency('gobject-2.0'),

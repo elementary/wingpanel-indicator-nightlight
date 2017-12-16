@@ -21,19 +21,20 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
     public unowned Nightlight.Indicator indicator { get; construct set; }
     public unowned Settings settings { get; construct set; }
 
-    private Wingpanel.Widgets.Switch toggle_switch;
+    private NightLight.Widgets.Switch toggle_switch;
     private Gtk.Grid scale_grid;
     private Gtk.Image image;
     private Gtk.Scale temp_scale;
 
-    public bool active {
+    public bool snoozed {
         set {
-            scale_grid.sensitive = value;
+            scale_grid.sensitive = !value;
+            toggle_switch.active = value;
 
             if (value) {
-                image.icon_name = "night-light-symbolic";
-            } else {
                 image.icon_name = "night-light-disabled-symbolic";
+            } else {
+                image.icon_name = "night-light-symbolic";
             }
          }
     }
@@ -51,8 +52,7 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
     construct {
         orientation = Gtk.Orientation.VERTICAL;
 
-        toggle_switch = new Wingpanel.Widgets.Switch (_("Night Light"));
-        toggle_switch.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
+        toggle_switch = new NightLight.Widgets.Switch (_("Snooze Night Light"), _("Disabled until tomorrow"));
 
         image = new Gtk.Image ();
         image.pixel_size = 48;
@@ -81,8 +81,10 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         add (new Wingpanel.Widgets.Separator ());
         add (settings_button);
 
-        settings.bind ("night-light-enabled", toggle_switch.get_switch (), "active", GLib.SettingsBindFlags.DEFAULT);
-        settings.bind ("night-light-enabled", this, "active", GLib.SettingsBindFlags.GET);
+        snoozed = NightLight.Manager.get_instance ().snoozed;
+
+        toggle_switch.get_switch ().bind_property ("active", NightLight.Manager.get_instance (), "snoozed", GLib.BindingFlags.DEFAULT);
+        toggle_switch.get_switch ().bind_property ("active", this, "active", GLib.BindingFlags.DEFAULT);
         settings.bind ("night-light-temperature", this, "temperature", GLib.SettingsBindFlags.GET);
 
         temp_scale.value_changed.connect (() => {
