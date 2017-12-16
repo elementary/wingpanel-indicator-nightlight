@@ -45,14 +45,20 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
             indicator_icon = new Wingpanel.Widgets.OverlayIcon (ENABLED_ICON_NAME);
             indicator_icon.button_press_event.connect ((e) => {
                 if (e.button == Gdk.BUTTON_MIDDLE) {
-                    settings.set_boolean ("night-light-enabled", !settings.get_boolean ("night-light-enabled"));
+                    NightLight.Manager.get_instance ().toggle_snooze ();
                     return Gdk.EVENT_STOP;
                 }
 
                 return Gdk.EVENT_PROPAGATE;
             });
 
-            settings.bind ("night-light-enabled", this, "nightlight-state", GLib.SettingsBindFlags.GET);
+            NightLight.Manager.get_instance ().snooze_changed.connect ((value) => {
+                nightlight_state = !value;
+                popover_widget.snoozed = value;
+            });
+
+            nightlight_state = !NightLight.Manager.get_instance ().snoozed;
+            settings.bind ("night-light-enabled", this, "visible", GLib.SettingsBindFlags.GET);
         }
 
         return indicator_icon;
