@@ -24,6 +24,13 @@ public class NightLight.Widgets.Switch : Wingpanel.Widgets.Container {
     private Gtk.Switch button_switch;
     private Gtk.Revealer subtitle_revealer;
 
+    private const string SWITCH_CSS = """
+        .compact-switch-labels label {
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+    """;
+
     public bool active {
         get {
             return button_switch.active;
@@ -37,6 +44,7 @@ public class NightLight.Widgets.Switch : Wingpanel.Widgets.Container {
     public Switch (string caption, string secondary, bool active = false) {
         button_label = new Gtk.Label (caption);
         button_label.halign = Gtk.Align.START;
+        button_label.valign = Gtk.Align.END;
         button_label.margin_start = 6;
         button_label.margin_end = 6;
         button_label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
@@ -62,6 +70,15 @@ public class NightLight.Widgets.Switch : Wingpanel.Widgets.Container {
         content_widget.attach (button_label, 0, 0, 1, 1);
         content_widget.attach (subtitle_revealer, 0, 1, 1, 1);
         content_widget.attach (button_switch, 1, 0, 1, 2);
+        content_widget.get_style_context ().add_class ("compact-switch-labels");
+
+        var provider = new Gtk.CssProvider ();
+        try {
+            provider.load_from_data (SWITCH_CSS, SWITCH_CSS.length);
+            Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+        } catch (Error e) {
+            critical (e.message);
+        }
 
         clicked.connect (() => {
             active = true;
