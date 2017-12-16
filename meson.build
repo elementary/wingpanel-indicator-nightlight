@@ -9,7 +9,7 @@ shared_module(
     'src/Indicator.vala',
     'src/Services/ColorInterface.vala',
     'src/Widgets/PopoverWidget.vala',
-    'src/widgets/RevealerSwitch.vala',
+    'src/Widgets/RevealerSwitch.vala',
     dependencies: [
         dependency('glib-2.0'),
         dependency('gobject-2.0'),

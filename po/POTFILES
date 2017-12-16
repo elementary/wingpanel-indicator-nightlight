@@ -1,4 +1,4 @@
 src/Indicator.vala
 src/Services/ColorInterface.vala
 src/Widgets/PopoverWidget.vala
-src/widgets/RevealerSwitch.vala
+src/Widgets/RevealerSwitch.vala
