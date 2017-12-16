@@ -65,6 +65,7 @@ public class NightLight.Widgets.Switch : Wingpanel.Widgets.Container {
         button_switch.valign = Gtk.Align.CENTER;
 
         subtitle_revealer = new Gtk.Revealer ();
+        subtitle_revealer.valign = Gtk.Align.CENTER;
         subtitle_revealer.add (small_label);
 
         content_widget.attach (button_label, 0, 0, 1, 1);
