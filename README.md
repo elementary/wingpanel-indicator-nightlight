@@ -1,5 +1,7 @@
 # Wingpanel Nightlight Indicator
 
+![Screenshot](data/screenshot.png?raw=true)
+
 ## Building and Installation
 
 It's recommended to create a clean build environment
