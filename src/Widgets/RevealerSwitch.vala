@@ -46,6 +46,7 @@ public class NightLight.Widgets.Switch : Wingpanel.Widgets.Container {
         small_label.halign = Gtk.Align.START;
         small_label.margin_start = 6;
         small_label.margin_end = 6;
+        small_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
         button_switch = new Gtk.Switch ();
         button_switch.active = active;
