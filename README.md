@@ -1,4 +1,5 @@
 # Wingpanel Nightlight Indicator
+[![l10n](https://l10n.elementary.io/widgets/wingpanel/indicator-nightlight/svg-badge.svg)](https://l10n.elementary.io/projects/wingpanel/indicator-nightlight)
 
 ## Building and Installation
 
