@@ -2,25 +2,34 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-16 15:23-0800\n"
+"PO-Revision-Date: 2017-12-17 03:59+0000\n"
+"Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
+"Language-Team: Chinese (Traditional) "
+"<https://weblate.elementary.io/projects/wingpanel/indicator-"
+"nightlight/zh_TW/>\n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.18\n"
 
 #: ../src/Indicator.vala:37
 msgid "Nightlight"
-msgstr ""
+msgstr "夜光"
 
 #: ../src/Indicator.vala:38
 msgid "The Nightlight indicator"
-msgstr ""
+msgstr "夜光指示器"
 
 #: ../src/Widgets/PopoverWidget.vala:55
 msgid "Snooze Night Light"
-msgstr ""
+msgstr "睡眠夜光"
 
 #: ../src/Widgets/PopoverWidget.vala:55
 msgid "Disabled until tomorrow"
-msgstr ""
+msgstr "到明天停用"
 
 #: ../src/Widgets/PopoverWidget.vala:75
 msgid "Night Light Settings…"
-msgstr ""
+msgstr "夜光設定值…"
