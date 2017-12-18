@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-18 15:39-0800\n"
-"PO-Revision-Date: 2017-12-19 00:07+0000\n"
+"PO-Revision-Date: 2018-03-06 18:52+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
-"Language-Team: Korean <https://weblate.elementary.io/projects/wingpanel/"
-"indicator-nightlight/ko/>\n"
+"Language-Team: Korean <https://weblate.elementary.io/projects/wingpanel"
+"/indicator-nightlight/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,9 +22,8 @@ msgid "The Nightlight indicator"
 msgstr "나이트라잇 인디케이터"
 
 #: src/Widgets/PopoverWidget.vala:32
-#, fuzzy
 msgid "Disabled until sunrise"
-msgstr "내일까지 사용 안 함"
+msgstr "해 뜰 때까지 사용 안 함"
 
 #: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
 msgid "Disabled until tomorrow"
