@@ -2,25 +2,33 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-16 15:23-0800\n"
+"PO-Revision-Date: 2017-12-17 19:06+0000\n"
+"Last-Translator: Вагиф Кязым <vaqif134@gmail.com>\n"
+"Language-Team: Azerbaijani <https://weblate.elementary.io/projects/wingpanel"
+"/indicator-nightlight/az/>\n"
+"Language: az\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 
 #: ../src/Indicator.vala:37
 msgid "Nightlight"
-msgstr ""
+msgstr "Gecə işığı"
 
 #: ../src/Indicator.vala:38
 msgid "The Nightlight indicator"
-msgstr ""
+msgstr "Gecə işığı indikatoru"
 
 #: ../src/Widgets/PopoverWidget.vala:55
 msgid "Snooze Night Light"
-msgstr ""
+msgstr "Gecə işığını söndür"
 
 #: ../src/Widgets/PopoverWidget.vala:55
 msgid "Disabled until tomorrow"
-msgstr ""
+msgstr "Sabaha qədər söndürüldü"
 
 #: ../src/Widgets/PopoverWidget.vala:75
 msgid "Night Light Settings…"
-msgstr ""
+msgstr "Gecə işığı ayarları…"
