@@ -4,6 +4,8 @@ i18n = import('i18n')
 
 add_global_arguments('-DGETTEXT_PACKAGE="' + meson.project_name() + '-indicator"', language:'c')
 
+wingpanel_dep = dependency('wingpanel-2.0')
+
 shared_module(
     meson.project_name(),
     'src/Indicator.vala',
@@ -15,10 +17,10 @@ shared_module(
         dependency('gobject-2.0'),
         dependency('granite'),
         dependency('gtk+-3.0'),
-        dependency('wingpanel-2.0')
+        wingpanel_dep
     ],
     install: true,
-    install_dir : get_option('libdir') + '/wingpanel'
+    install_dir : wingpanel_dep.get_pkgconfig_variable('indicatorsdir')
 )
 
 subdir('po')
