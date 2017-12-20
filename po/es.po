@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-18 15:39-0800\n"
-"PO-Revision-Date: 2017-12-20 18:20+0000\n"
-"Last-Translator: alainm23 <alain23@protonmail.com>\n"
-"Language-Team: Spanish <https://weblate.elementary.io/projects/wingpanel/"
-"indicator-nightlight/es/>\n"
+"PO-Revision-Date: 2018-02-19 03:43+0000\n"
+"Last-Translator: Alain M. <alain23@protonmail.com>\n"
+"Language-Team: Spanish <https://weblate.elementary.io/projects/wingpanel"
+"/indicator-nightlight/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,9 +22,8 @@ msgid "The Nightlight indicator"
 msgstr "Indicador Nightlight"
 
 #: src/Widgets/PopoverWidget.vala:32
-#, fuzzy
 msgid "Disabled until sunrise"
-msgstr "Desactivado hasta mañana"
+msgstr "Deshabilitado hasta el amanecer"
 
 #: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
 msgid "Disabled until tomorrow"
