@@ -57,8 +57,10 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
                 popover_widget.snoozed = value;
             });
 
+            var timer = NightLight.Timer.get_instance ();
+            timer.bind_property ("status", this, "visible", GLib.BindingFlags.SYNC_CREATE);
+
             nightlight_state = !NightLight.Manager.get_instance ().snoozed;
-            settings.bind ("night-light-enabled", this, "visible", GLib.SettingsBindFlags.GET);
         }
 
         return indicator_icon;
@@ -68,8 +70,6 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
         if (popover_widget == null) {
             popover_widget = new Nightlight.Widgets.PopoverWidget (this, settings);
         }
-
-        visible = true;
 
         return popover_widget;
     }
