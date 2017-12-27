@@ -87,7 +87,7 @@ public Wingpanel.Indicator? get_indicator (Module module, Wingpanel.IndicatorMan
         return null;
     }
 
-    var interface_settings_schema = SettingsSchemaSource.get_default ().lookup ("org.gnome.settings-daemon.plugins.color", false);
+    var interface_settings_schema = SettingsSchemaSource.get_default ().lookup ("org.gnome.settings-daemon.plugins.color", true);
     if (interface_settings_schema == null || !interface_settings_schema.has_key ("night-light-enabled")) {
         debug ("No night-light schema found");
         return null;
