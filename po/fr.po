@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-16 15:23-0800\n"
-"PO-Revision-Date: 2017-12-29 21:20+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2017-12-29 21:21+0000\n"
+"Last-Translator: Thibaut <t.caenen@gmail.com>\n"
 "Language-Team: French <https://weblate.elementary.io/projects/wingpanel"
 "/indicator-nightlight/fr/>\n"
 "Language: fr\n"
@@ -19,16 +19,16 @@ msgstr "Mode nuit"
 
 #: ../src/Indicator.vala:38
 msgid "The Nightlight indicator"
-msgstr ""
+msgstr "L'indicateur du mode nuit"
 
 #: ../src/Widgets/PopoverWidget.vala:55
 msgid "Snooze Night Light"
-msgstr ""
+msgstr "Mettre en sommeil le mode nuit"
 
 #: ../src/Widgets/PopoverWidget.vala:55
 msgid "Disabled until tomorrow"
-msgstr ""
+msgstr "Désactivé jusqu'à demain"
 
 #: ../src/Widgets/PopoverWidget.vala:75
 msgid "Night Light Settings…"
-msgstr ""
+msgstr "Paramètres du mode nuit..."
