@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-16 15:23-0800\n"
-"PO-Revision-Date: 2017-12-30 12:56+0000\n"
+"PO-Revision-Date: 2017-12-31 00:22+0000\n"
 "Last-Translator: Jörg Arnold <j0ar@posteo.de>\n"
 "Language-Team: German <https://weblate.elementary.io/projects/wingpanel"
 "/indicator-nightlight/de/>\n"
@@ -15,15 +15,15 @@ msgstr ""
 
 #: ../src/Indicator.vala:37
 msgid "Nightlight"
-msgstr "Nachtlicht"
+msgstr "Nightlight"
 
 #: ../src/Indicator.vala:38
 msgid "The Nightlight indicator"
-msgstr "Nachtlicht-Anzeige"
+msgstr "Der Nightlight-Indikator"
 
 #: ../src/Widgets/PopoverWidget.vala:55
 msgid "Snooze Night Light"
-msgstr "Nachtlicht schlummern"
+msgstr "Nightlight schlummern"
 
 #: ../src/Widgets/PopoverWidget.vala:55
 msgid "Disabled until tomorrow"
@@ -31,4 +31,4 @@ msgstr "Bis morgen deaktiviert"
 
 #: ../src/Widgets/PopoverWidget.vala:75
 msgid "Night Light Settings…"
-msgstr "Nachlicht-Einstellungen…"
+msgstr "Nightlight-Einstellungen…"
