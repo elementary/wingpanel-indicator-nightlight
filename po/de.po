@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-18 15:39-0800\n"
-"PO-Revision-Date: 2017-12-31 00:22+0000\n"
+"PO-Revision-Date: 2018-03-27 21:35+0000\n"
 "Last-Translator: Jörg Arnold <j0ar@posteo.de>\n"
-"Language-Team: German <https://weblate.elementary.io/projects/wingpanel/"
-"indicator-nightlight/de/>\n"
+"Language-Team: German <https://weblate.elementary.io/projects/wingpanel"
+"/indicator-nightlight/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,7 +22,6 @@ msgid "The Nightlight indicator"
 msgstr "Der Nightlight-Indikator"
 
 #: src/Widgets/PopoverWidget.vala:32
-#, fuzzy
 msgid "Disabled until sunrise"
 msgstr "Bis morgen deaktiviert"
 
