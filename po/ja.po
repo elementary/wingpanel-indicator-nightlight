@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-18 15:39-0800\n"
-"PO-Revision-Date: 2018-01-03 09:16+0000\n"
+"PO-Revision-Date: 2018-02-19 05:25+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
-"Language-Team: Japanese <https://weblate.elementary.io/projects/wingpanel/"
-"indicator-nightlight/ja/>\n"
+"Language-Team: Japanese <https://weblate.elementary.io/projects/wingpanel"
+"/indicator-nightlight/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,9 +22,8 @@ msgid "The Nightlight indicator"
 msgstr "ナイトライトインジケーター"
 
 #: src/Widgets/PopoverWidget.vala:32
-#, fuzzy
 msgid "Disabled until sunrise"
-msgstr "明日まで無効にする"
+msgstr "日の出まで無効にする"
 
 #: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
 msgid "Disabled until tomorrow"
