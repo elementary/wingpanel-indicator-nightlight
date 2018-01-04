@@ -18,17 +18,19 @@
  */
 
 public class Nightlight.Indicator : Wingpanel.Indicator {
-    private const string ENABLED_ICON_NAME = "night-light-symbolic";
-    private const string DISABLED_ICON_NAME = "night-light-disabled-symbolic";
-
-    private Wingpanel.Widgets.OverlayIcon? indicator_icon = null;
+    private Gtk.Spinner? indicator_icon = null;
+    private Gtk.StyleContext style_context;
     private Nightlight.Widgets.PopoverWidget? popover_widget = null;
 
     private Settings settings;
 
     public bool nightlight_state {
         set {
-            indicator_icon.set_main_icon_name (value ? ENABLED_ICON_NAME : DISABLED_ICON_NAME);
+            if (value) {
+                style_context.remove_class ("disabled");
+            } else {
+                style_context.add_class ("disabled");
+            }
         }
     }
 
@@ -42,7 +44,15 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
 
     public override Gtk.Widget get_display_widget () {
         if (indicator_icon == null) {
-            indicator_icon = new Wingpanel.Widgets.OverlayIcon (ENABLED_ICON_NAME);
+            indicator_icon = new Gtk.Spinner ();
+
+            var provider = new Gtk.CssProvider ();
+            provider.load_from_resource ("io/elementary/wingpanel/nightlight/indicator.css");
+
+            style_context = indicator_icon.get_style_context ();
+            style_context.add_class ("night-light-icon");
+            style_context.add_provider (provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+
             indicator_icon.button_press_event.connect ((e) => {
                 if (e.button == Gdk.BUTTON_MIDDLE) {
                     NightLight.Manager.get_instance ().toggle_snooze ();
