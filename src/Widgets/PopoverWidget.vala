@@ -72,7 +72,8 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         scale_grid.add (image);
         scale_grid.add (temp_scale);
 
-        var settings_button = new Wingpanel.Widgets.Button (_("Night Light Settings…"));
+        var settings_button = new Gtk.ModelButton ();
+        settings_button.text = _("Night Light Settings…");
         settings_button.clicked.connect (show_settings);
 
         add (toggle_switch);
