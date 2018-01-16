@@ -23,6 +23,8 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
     private Nightlight.Widgets.PopoverWidget? popover_widget = null;
 
     private Settings settings;
+    private NightLight.Manager nightlight_manager;
+
 
     public bool nightlight_state {
         set {
@@ -40,6 +42,7 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
                 description: _("The Nightlight indicator"));
 
         settings = new GLib.Settings ("org.gnome.settings-daemon.plugins.color");
+        nightlight_manager = NightLight.Manager.get_instance ();
     }
 
     public override Gtk.Widget get_display_widget () {
@@ -62,13 +65,7 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
                 return Gdk.EVENT_PROPAGATE;
             });
 
-            NightLight.Manager.get_instance ().snooze_changed.connect ((value) => {
-                nightlight_state = !value;
-                popover_widget.snoozed = value;
-            });
-
-            nightlight_state = !NightLight.Manager.get_instance ().snoozed;
-            settings.bind ("night-light-enabled", this, "visible", GLib.SettingsBindFlags.GET);
+            nightlight_state = !nightlight_manager.snoozed;
         }
 
         return indicator_icon;
@@ -77,9 +74,18 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
     public override Gtk.Widget? get_widget () {
         if (popover_widget == null) {
             popover_widget = new Nightlight.Widgets.PopoverWidget (this, settings);
-        }
 
-        visible = true;
+            nightlight_manager.snooze_changed.connect ((value) => {
+                nightlight_state = !value;
+                popover_widget.snoozed = value;
+            });
+
+            nightlight_manager.active_changed.connect ((value) => {
+                visible = value;
+            });
+
+            visible = nightlight_manager.active;
+        }
 
         return popover_widget;
     }
