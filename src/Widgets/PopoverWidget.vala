@@ -85,7 +85,6 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         snoozed = NightLight.Manager.get_instance ().snoozed;
 
         toggle_switch.get_switch ().bind_property ("active", NightLight.Manager.get_instance (), "snoozed", GLib.BindingFlags.DEFAULT);
-        toggle_switch.get_switch ().bind_property ("active", this, "active", GLib.BindingFlags.DEFAULT);
         settings.bind ("night-light-temperature", this, "temperature", GLib.SettingsBindFlags.GET);
 
         temp_scale.value_changed.connect (() => {

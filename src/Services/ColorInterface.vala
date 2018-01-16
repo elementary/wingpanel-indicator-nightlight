@@ -20,10 +20,12 @@
 [DBus (name="org.gnome.SettingsDaemon.Color")]
 public interface NightLight.ColorInterface : Object {
     public abstract bool disabled_until_tomorrow { get; set; }
+    public abstract bool night_light_active { get; }
 }
 
 public class NightLight.Manager : Object {
     public signal void snooze_changed (bool value);
+    public signal void active_changed (bool value);
 
     private NightLight.ColorInterface interface;
 
@@ -33,6 +35,12 @@ public class NightLight.Manager : Object {
         } set {
             interface.disabled_until_tomorrow = value;
             snooze_changed (value);
+        }
+    }
+
+    public bool active {
+        get {
+            return interface.night_light_active;
         }
     }
 
@@ -56,6 +64,12 @@ public class NightLight.Manager : Object {
 
                 if (snooze != null) {
                     snoozed = snooze.get_boolean ();
+                }
+
+                var _active = changed.lookup_value ("NightLightActive", new VariantType ("b"));
+
+                if (_active != null) {
+                    active_changed (_active.get_boolean ());
                 }
             });
         } catch (Error e) {
