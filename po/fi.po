@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-18 15:39-0800\n"
-"PO-Revision-Date: 2018-01-17 08:34+0000\n"
+"PO-Revision-Date: 2018-02-24 07:49+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
-"Language-Team: Finnish <https://weblate.elementary.io/projects/wingpanel/"
-"indicator-nightlight/fi/>\n"
+"Language-Team: Finnish <https://weblate.elementary.io/projects/wingpanel"
+"/indicator-nightlight/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,9 +22,8 @@ msgid "The Nightlight indicator"
 msgstr "Yövaloilmaisin"
 
 #: src/Widgets/PopoverWidget.vala:32
-#, fuzzy
 msgid "Disabled until sunrise"
-msgstr "Poistettu käytöstä huomiseen asti"
+msgstr "Poistettu käytöstä auringonnousuun asti"
 
 #: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
 msgid "Disabled until tomorrow"
