@@ -21,6 +21,7 @@ public class NightLight.Widgets.Switch : Wingpanel.Widgets.Container {
     public new signal void switched ();
 
     private Gtk.Label button_label;
+    private Gtk.Label small_label;
     private Gtk.Switch button_switch;
     private Gtk.Revealer subtitle_revealer;
 
@@ -41,15 +42,21 @@ public class NightLight.Widgets.Switch : Wingpanel.Widgets.Container {
         }
     }
 
-    public Switch (string caption, string secondary, bool active = false) {
-        button_label = new Gtk.Label (caption);
+    public string secondary_label {
+        set {
+            small_label.label = "<small>%s</small>".printf (Markup.escape_text (value));
+        }
+    }
+
+    public Switch (string primary_label, string secondary_label, bool active = false) {
+        button_label = new Gtk.Label (primary_label);
         button_label.halign = Gtk.Align.START;
         button_label.valign = Gtk.Align.END;
         button_label.margin_start = 6;
         button_label.margin_end = 6;
         button_label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
-        var small_label = new Gtk.Label ("<small>%s</small>".printf (Markup.escape_text (secondary)));
+        small_label = new Gtk.Label ("<small>%s</small>".printf (Markup.escape_text (secondary_label)));
         small_label.use_markup = true;
         small_label.halign = Gtk.Align.START;
         small_label.margin_start = 6;
