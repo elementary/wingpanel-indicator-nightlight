@@ -26,6 +26,16 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
     private Gtk.Image image;
     private Gtk.Scale temp_scale;
 
+    public bool automatic_schedule {
+        set {
+            if (value) {
+                toggle_switch.secondary_label = _("Disabled until sunrise");
+            } else {
+                toggle_switch.secondary_label = _("Disabled until tomorrow");
+            }
+        }
+    }
+
     public bool snoozed {
         set {
             scale_grid.sensitive = !value;
@@ -33,12 +43,6 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
 
             if (value) {
                 image.icon_name = "night-light-disabled-symbolic";
-
-                if (settings.get_boolean ("night-light-schedule-automatic")) {
-                    toggle_switch.secondary_label = _("Disabled until sunrise");
-                } else {
-                    toggle_switch.secondary_label = _("Disabled until tomorrow");
-                }
             } else {
                 image.icon_name = "night-light-symbolic";
             }
@@ -92,6 +96,7 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
 
         toggle_switch.get_switch ().bind_property ("active", NightLight.Manager.get_instance (), "snoozed", GLib.BindingFlags.DEFAULT);
         settings.bind ("night-light-temperature", this, "temperature", GLib.SettingsBindFlags.GET);
+        settings.bind ("night-light-schedule-automatic", this, "automatic_schedule", GLib.SettingsBindFlags.GET);
 
         temp_scale.value_changed.connect (() => {
             settings.set_uint ("night-light-temperature", (uint) temp_scale.get_value ());
