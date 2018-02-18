@@ -33,6 +33,12 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
 
             if (value) {
                 image.icon_name = "night-light-disabled-symbolic";
+
+                if (settings.get_boolean ("night-light-schedule-automatic")) {
+                    toggle_switch.secondary_label = _("Disabled until sunrise");
+                } else {
+                    toggle_switch.secondary_label = _("Disabled until tomorrow");
+                }
             } else {
                 image.icon_name = "night-light-symbolic";
             }
