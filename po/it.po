@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-18 15:39-0800\n"
-"PO-Revision-Date: 2018-02-19 00:07+0000\n"
+"PO-Revision-Date: 2018-03-09 10:31+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
-"Language-Team: Italian <https://weblate.elementary.io/projects/wingpanel/"
-"indicator-nightlight/it/>\n"
+"Language-Team: Italian <https://weblate.elementary.io/projects/wingpanel"
+"/indicator-nightlight/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,9 +22,8 @@ msgid "The Nightlight indicator"
 msgstr "L'indicatore di Luce Notturna"
 
 #: src/Widgets/PopoverWidget.vala:32
-#, fuzzy
 msgid "Disabled until sunrise"
-msgstr "Disabilitato fino a domani"
+msgstr "Disabilitato fino all'alba"
 
 #: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
 msgid "Disabled until tomorrow"
