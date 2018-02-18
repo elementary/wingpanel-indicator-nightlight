@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-16 15:23-0800\n"
+"POT-Creation-Date: 2018-02-18 15:39-0800\n"
 "PO-Revision-Date: 2017-12-20 10:59+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://weblate.elementary.io/projects/wingpanel"
-"/indicator-nightlight/he/>\n"
+"Language-Team: Hebrew <https://weblate.elementary.io/projects/wingpanel/"
+"indicator-nightlight/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,22 +13,27 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.18\n"
 
-#: ../src/Indicator.vala:37
+#: src/Indicator.vala:41
 msgid "Nightlight"
 msgstr "תאורת לילה"
 
-#: ../src/Indicator.vala:38
+#: src/Indicator.vala:42
 msgid "The Nightlight indicator"
 msgstr "מחוון תאורת הלילה"
 
-#: ../src/Widgets/PopoverWidget.vala:55
-msgid "Snooze Night Light"
-msgstr "השהיית תאורת לילה"
+#: src/Widgets/PopoverWidget.vala:32
+#, fuzzy
+msgid "Disabled until sunrise"
+msgstr "השבתה עד מחר"
 
-#: ../src/Widgets/PopoverWidget.vala:55
+#: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
 msgid "Disabled until tomorrow"
 msgstr "השבתה עד מחר"
 
-#: ../src/Widgets/PopoverWidget.vala:75
+#: src/Widgets/PopoverWidget.vala:65
+msgid "Snooze Night Light"
+msgstr "השהיית תאורת לילה"
+
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
 msgstr "הגדרות תאורת לילה…"
