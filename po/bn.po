@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-16 15:23-0800\n"
+"POT-Creation-Date: 2018-02-18 15:39-0800\n"
 "PO-Revision-Date: 2017-12-25 13:15+0000\n"
 "Last-Translator: Subhadeep Jasu <subhajasu@gmail.com>\n"
-"Language-Team: Bengali <https://weblate.elementary.io/projects/wingpanel"
-"/indicator-nightlight/bn/>\n"
+"Language-Team: Bengali <https://weblate.elementary.io/projects/wingpanel/"
+"indicator-nightlight/bn/>\n"
 "Language: bn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,22 +13,27 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.18\n"
 
-#: ../src/Indicator.vala:37
+#: src/Indicator.vala:41
 msgid "Nightlight"
 msgstr "নাইটলাইট"
 
-#: ../src/Indicator.vala:38
+#: src/Indicator.vala:42
 msgid "The Nightlight indicator"
 msgstr "নাইটলাইট ইনডিকেটর"
 
-#: ../src/Widgets/PopoverWidget.vala:55
-msgid "Snooze Night Light"
-msgstr "নাইটলাইট সাময়িক নিদ্রিত করুন"
+#: src/Widgets/PopoverWidget.vala:32
+#, fuzzy
+msgid "Disabled until sunrise"
+msgstr "আগামীকাল পর্যন্ত থামানো আছে"
 
-#: ../src/Widgets/PopoverWidget.vala:55
+#: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
 msgid "Disabled until tomorrow"
 msgstr "আগামীকাল পর্যন্ত থামানো আছে"
 
-#: ../src/Widgets/PopoverWidget.vala:75
+#: src/Widgets/PopoverWidget.vala:65
+msgid "Snooze Night Light"
+msgstr "নাইটলাইট সাময়িক নিদ্রিত করুন"
+
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
 msgstr "নাইটলাইট সেটিংস…"

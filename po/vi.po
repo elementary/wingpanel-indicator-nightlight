@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-16 15:23-0800\n"
+"POT-Creation-Date: 2018-02-18 15:39-0800\n"
 "PO-Revision-Date: 2017-12-28 00:01+0000\n"
 "Last-Translator: Hải Hồ <hochihai1997@gmail.com>\n"
-"Language-Team: Vietnamese <https://weblate.elementary.io/projects/wingpanel"
-"/indicator-nightlight/vi/>\n"
+"Language-Team: Vietnamese <https://weblate.elementary.io/projects/wingpanel/"
+"indicator-nightlight/vi/>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,23 +13,28 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.18\n"
 
-#: ../src/Indicator.vala:37
+#: src/Indicator.vala:41
 #, fuzzy
 msgid "Nightlight"
 msgstr "Ánh sáng ban đêm"
 
-#: ../src/Indicator.vala:38
+#: src/Indicator.vala:42
 msgid "The Nightlight indicator"
 msgstr "Chỉ thị ánh sáng ban đêm"
 
-#: ../src/Widgets/PopoverWidget.vala:55
-msgid "Snooze Night Light"
-msgstr ""
+#: src/Widgets/PopoverWidget.vala:32
+#, fuzzy
+msgid "Disabled until sunrise"
+msgstr "Vô hiệu hóa cho đến ngày mai"
 
-#: ../src/Widgets/PopoverWidget.vala:55
+#: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
 msgid "Disabled until tomorrow"
 msgstr "Vô hiệu hóa cho đến ngày mai"
 
-#: ../src/Widgets/PopoverWidget.vala:75
+#: src/Widgets/PopoverWidget.vala:65
+msgid "Snooze Night Light"
+msgstr ""
+
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
 msgstr "Cài đặt ánh sáng ban đêm…"

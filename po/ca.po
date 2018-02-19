@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-16 15:23-0800\n"
+"POT-Creation-Date: 2018-02-18 15:39-0800\n"
 "PO-Revision-Date: 2017-12-18 10:48+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://weblate.elementary.io/projects/wingpanel"
-"/indicator-nightlight/ca/>\n"
+"Language-Team: Catalan <https://weblate.elementary.io/projects/wingpanel/"
+"indicator-nightlight/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,22 +13,27 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.18\n"
 
-#: ../src/Indicator.vala:37
+#: src/Indicator.vala:41
 msgid "Nightlight"
 msgstr "Llum de nit"
 
-#: ../src/Indicator.vala:38
+#: src/Indicator.vala:42
 msgid "The Nightlight indicator"
 msgstr "L'indicador de llum de nit"
 
-#: ../src/Widgets/PopoverWidget.vala:55
-msgid "Snooze Night Light"
-msgstr "Ajorna la llum de nit"
+#: src/Widgets/PopoverWidget.vala:32
+#, fuzzy
+msgid "Disabled until sunrise"
+msgstr "Inhabilitada fins demà"
 
-#: ../src/Widgets/PopoverWidget.vala:55
+#: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
 msgid "Disabled until tomorrow"
 msgstr "Inhabilitada fins demà"
 
-#: ../src/Widgets/PopoverWidget.vala:75
+#: src/Widgets/PopoverWidget.vala:65
+msgid "Snooze Night Light"
+msgstr "Ajorna la llum de nit"
+
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
 msgstr "Configuració de la llum de nit…"
