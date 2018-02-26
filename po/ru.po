@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-18 15:39-0800\n"
-"PO-Revision-Date: 2018-02-27 00:05+0000\n"
+"PO-Revision-Date: 2018-03-11 09:35+0000\n"
 "Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
 "Language-Team: Russian <https://weblate.elementary.io/projects/wingpanel"
 "/indicator-nightlight/ru/>\n"
@@ -32,7 +32,7 @@ msgstr "Отключено до завтра"
 
 #: src/Widgets/PopoverWidget.vala:65
 msgid "Snooze Night Light"
-msgstr ""
+msgstr "Приостановить ночной режим"
 
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
