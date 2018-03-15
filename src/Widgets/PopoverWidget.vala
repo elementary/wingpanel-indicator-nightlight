@@ -62,7 +62,7 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
     construct {
         orientation = Gtk.Orientation.VERTICAL;
 
-        toggle_switch = new NightLight.Widgets.Switch (_("Snooze Night Light"), _("Disabled until tomorrow"));
+        toggle_switch = new NightLight.Widgets.Switch (_("Snooze Nightlight"), _("Disabled until tomorrow"));
 
         image = new Gtk.Image ();
         image.pixel_size = 48;
@@ -83,7 +83,7 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         scale_grid.add (temp_scale);
 
         var settings_button = new Gtk.ModelButton ();
-        settings_button.text = _("Night Light Settings…");
+        settings_button.text = _("Nightlight Settings…");
         settings_button.clicked.connect (show_settings);
 
         add (toggle_switch);
