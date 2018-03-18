@@ -21,6 +21,7 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
     public unowned Nightlight.Indicator indicator { get; construct set; }
     public unowned Settings settings { get; construct set; }
 
+    private Nightlight.RateLimiter limiter;
     private NightLight.Widgets.Switch toggle_switch;
     private Gtk.Grid scale_grid;
     private Gtk.Image image;
@@ -62,6 +63,8 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
     construct {
         orientation = Gtk.Orientation.VERTICAL;
 
+        limiter = new Nightlight.RateLimiter ();
+
         toggle_switch = new NightLight.Widgets.Switch (_("Snooze Night Light"), _("Disabled until tomorrow"));
 
         image = new Gtk.Image ();
@@ -99,9 +102,11 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         settings.bind ("night-light-schedule-automatic", this, "automatic_schedule", GLib.SettingsBindFlags.GET);
 
         temp_scale.value_changed.connect (() => {
-            settings.set_uint ("night-light-temperature", (uint) temp_scale.get_value ());
+            var event = new Nightlight.RateLimiter.QueuedEvent (settings, temp_scale.get_value ());
+            limiter.add (event);
         });
     }
+
 
     private void show_settings () {
         try {
