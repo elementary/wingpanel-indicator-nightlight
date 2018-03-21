@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-18 15:39-0800\n"
-"PO-Revision-Date: 2018-03-21 19:54+0000\n"
+"PO-Revision-Date: 2018-03-22 00:07+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://weblate.elementary.io/projects/wingpanel"
 "/indicator-nightlight/sl/>\n"
@@ -24,7 +24,7 @@ msgstr "Indikator za nočno luč"
 
 #: src/Widgets/PopoverWidget.vala:32
 msgid "Disabled until sunrise"
-msgstr "Onemogočeno do jutri"
+msgstr "Onemogočeno do sončnega vzhoda"
 
 #: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
 msgid "Disabled until tomorrow"
