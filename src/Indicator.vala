@@ -22,10 +22,6 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
     private Gtk.StyleContext style_context;
     private Nightlight.Widgets.PopoverWidget? popover_widget = null;
 
-    private Settings settings;
-    private NightLight.Manager nightlight_manager;
-
-
     public bool nightlight_state {
         set {
             if (value) {
@@ -40,9 +36,6 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
         Object (code_name: "wingpanel-indicator-nightlight",
                 display_name: _("Nightlight"),
                 description: _("The Nightlight indicator"));
-
-        settings = new GLib.Settings ("org.gnome.settings-daemon.plugins.color");
-        nightlight_manager = NightLight.Manager.get_instance ();
     }
 
     public override Gtk.Widget get_display_widget () {
@@ -65,16 +58,7 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
                 return Gdk.EVENT_PROPAGATE;
             });
 
-            nightlight_state = !nightlight_manager.snoozed;
-        }
-
-        return indicator_icon;
-    }
-
-    public override Gtk.Widget? get_widget () {
-        if (popover_widget == null) {
-            popover_widget = new Nightlight.Widgets.PopoverWidget (this, settings);
-
+            var nightlight_manager = NightLight.Manager.get_instance ();
             nightlight_manager.snooze_changed.connect ((value) => {
                 nightlight_state = !value;
                 popover_widget.snoozed = value;
@@ -84,7 +68,17 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
                 visible = value;
             });
 
+            nightlight_state = !nightlight_manager.snoozed;
             visible = nightlight_manager.active;
+        }
+
+        return indicator_icon;
+    }
+
+    public override Gtk.Widget? get_widget () {
+        if (popover_widget == null) {
+            var settings = new GLib.Settings ("org.gnome.settings-daemon.plugins.color");
+            popover_widget = new Nightlight.Widgets.PopoverWidget (this, settings);
         }
 
         return popover_widget;
