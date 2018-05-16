@@ -2,30 +2,37 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-18 15:39-0800\n"
+"PO-Revision-Date: 2018-05-17 00:06+0000\n"
+"Last-Translator: Daniel Zvir <zvir.daniel@seznam.cz>\n"
+"Language-Team: Czech <https://weblate.elementary.io/projects/wingpanel"
+"/indicator-nightlight/cs/>\n"
+"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 2.18\n"
 
 #: src/Indicator.vala:41
 msgid "Nightlight"
-msgstr ""
+msgstr "Noční světlo"
 
 #: src/Indicator.vala:42
 msgid "The Nightlight indicator"
-msgstr ""
+msgstr "Indikátor nočního světla"
 
 #: src/Widgets/PopoverWidget.vala:32
 msgid "Disabled until sunrise"
-msgstr ""
+msgstr "Vypnuto do východu slunce"
 
 #: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
 msgid "Disabled until tomorrow"
-msgstr ""
+msgstr "Vypnuto do zítřka"
 
 #: src/Widgets/PopoverWidget.vala:65
 msgid "Snooze Night Light"
-msgstr ""
+msgstr "Odložit noční světlo"
 
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
-msgstr ""
+msgstr "Nastavení nočního světla…"
