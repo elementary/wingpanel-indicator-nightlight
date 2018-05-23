@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-18 15:39-0800\n"
-"PO-Revision-Date: 2018-02-02 19:52+0000\n"
+"PO-Revision-Date: 2018-05-24 00:12+0000\n"
 "Last-Translator: Furkan Ege Öztürk <furkanegeozturk@galatasaray.net>\n"
-"Language-Team: Turkish <https://weblate.elementary.io/projects/wingpanel/"
-"indicator-nightlight/tr/>\n"
+"Language-Team: Turkish <https://weblate.elementary.io/projects/wingpanel"
+"/indicator-nightlight/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,7 +15,7 @@ msgstr ""
 
 #: src/Indicator.vala:41
 msgid "Nightlight"
-msgstr "Gece Işığı (Gece Modu)"
+msgstr "Gece Işığı"
 
 #: src/Indicator.vala:42
 msgid "The Nightlight indicator"
