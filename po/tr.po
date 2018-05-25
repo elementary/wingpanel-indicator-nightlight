@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-18 15:39-0800\n"
-"PO-Revision-Date: 2018-05-25 17:24+0000\n"
+"PO-Revision-Date: 2018-05-27 00:07+0000\n"
 "Last-Translator: İbrahim Ethem Göl <ethem578@gmail.com>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/wingpanel"
 "/indicator-nightlight/tr/>\n"
@@ -27,7 +27,7 @@ msgstr "Gün doğumuna kadar devre dışı bırakıldı"
 
 #: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
 msgid "Disabled until tomorrow"
-msgstr "Yarına kadar iptal edildi"
+msgstr "Yarına kadar devre dışı bırakıldı"
 
 #: src/Widgets/PopoverWidget.vala:65
 msgid "Snooze Night Light"
