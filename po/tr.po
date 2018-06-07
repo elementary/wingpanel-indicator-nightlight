@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-18 15:39-0800\n"
-"PO-Revision-Date: 2018-02-02 19:52+0000\n"
-"Last-Translator: Furkan Ege Öztürk <furkanegeozturk@galatasaray.net>\n"
-"Language-Team: Turkish <https://weblate.elementary.io/projects/wingpanel/"
-"indicator-nightlight/tr/>\n"
+"PO-Revision-Date: 2018-05-27 00:07+0000\n"
+"Last-Translator: İbrahim Ethem Göl <ethem578@gmail.com>\n"
+"Language-Team: Turkish <https://weblate.elementary.io/projects/wingpanel"
+"/indicator-nightlight/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,20 +15,19 @@ msgstr ""
 
 #: src/Indicator.vala:41
 msgid "Nightlight"
-msgstr "Gece Işığı (Gece Modu)"
+msgstr "Gece Işığı"
 
 #: src/Indicator.vala:42
 msgid "The Nightlight indicator"
-msgstr "Gece ışığı göstergesi"
+msgstr "Gece Işığı Göstergesi"
 
 #: src/Widgets/PopoverWidget.vala:32
-#, fuzzy
 msgid "Disabled until sunrise"
-msgstr "Yarına kadar iptal edildi"
+msgstr "Gün doğumuna kadar devre dışı bırakıldı"
 
 #: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
 msgid "Disabled until tomorrow"
-msgstr "Yarına kadar iptal edildi"
+msgstr "Yarına kadar devre dışı bırakıldı"
 
 #: src/Widgets/PopoverWidget.vala:65
 msgid "Snooze Night Light"
