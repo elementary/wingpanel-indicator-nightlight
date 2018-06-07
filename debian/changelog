@@ -1,5 +1,5 @@
-wingpanel-indicator-nightlight (0.1) artful; urgency=medium
+wingpanel-indicator-nightlight (2.0) bionic; urgency=medium
 
-  * Initial release.
+  * Initial Release.
 
- -- Daniel Fore <daniel@Yoga>  Sat, 16 Dec 2017 11:06:14 -0800
+ -- Cody Garver <cody@elementary.io>  Thu, 07 Jun 2018 03:41:24 -0500
