@@ -2,24 +2,32 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-18 15:39-0800\n"
+"PO-Revision-Date: 2018-06-10 00:14+0000\n"
+"Last-Translator: Gamunu Balagalla <gamunu.balagalla@gmail.com>\n"
+"Language-Team: Sinhala <https://weblate.elementary.io/projects/wingpanel"
+"/indicator-nightlight/si/>\n"
+"Language: si\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 
 #: src/Indicator.vala:41
 msgid "Nightlight"
-msgstr ""
+msgstr "රාත්රී ආලෝකය"
 
 #: src/Indicator.vala:42
 msgid "The Nightlight indicator"
-msgstr ""
+msgstr "රාත්‍රී ආලෝක දර්ශකය"
 
 #: src/Widgets/PopoverWidget.vala:32
 msgid "Disabled until sunrise"
-msgstr ""
+msgstr "උදැසනතෙක් අබල කරන්න"
 
 #: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
 msgid "Disabled until tomorrow"
-msgstr ""
+msgstr "හෙටවනතෙක් අබල කරන්න"
 
 #: src/Widgets/PopoverWidget.vala:65
 msgid "Snooze Night Light"
@@ -27,4 +35,4 @@ msgstr ""
 
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
-msgstr ""
+msgstr "රාත්රී ආලෝකය සකස් කිරීම"
