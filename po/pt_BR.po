@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-18 15:39-0800\n"
+"POT-Creation-Date: 2018-06-27 09:49-0700\n"
 "PO-Revision-Date: 2017-12-30 00:14+0000\n"
 "Last-Translator: Fernando da Silva Sousa <wild.nando@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
@@ -13,11 +13,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 2.18\n"
 
-#: src/Indicator.vala:41
+#: src/Indicator.vala:37
 msgid "Nightlight"
 msgstr "Luz noturna"
 
-#: src/Indicator.vala:42
+#: src/Indicator.vala:38
 msgid "The Nightlight indicator"
 msgstr "Indicador de Luz noturna"
 

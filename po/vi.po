@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-18 15:39-0800\n"
+"POT-Creation-Date: 2018-06-27 09:49-0700\n"
 "PO-Revision-Date: 2017-12-28 00:01+0000\n"
 "Last-Translator: Hải Hồ <hochihai1997@gmail.com>\n"
 "Language-Team: Vietnamese <https://weblate.elementary.io/projects/wingpanel/"
@@ -13,12 +13,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.18\n"
 
-#: src/Indicator.vala:41
+#: src/Indicator.vala:37
 #, fuzzy
 msgid "Nightlight"
 msgstr "Ánh sáng ban đêm"
 
-#: src/Indicator.vala:42
+#: src/Indicator.vala:38
 msgid "The Nightlight indicator"
 msgstr "Chỉ thị ánh sáng ban đêm"
 
