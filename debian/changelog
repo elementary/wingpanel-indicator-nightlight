@@ -1,3 +1,9 @@
+wingpanel-indicator-nightlight (2.0.1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <cody@elementary.io>  Tue, 02 Oct 2018 11:26:13 -0500
+
 wingpanel-indicator-nightlight (2.0) bionic; urgency=medium
 
   * Initial Release.
