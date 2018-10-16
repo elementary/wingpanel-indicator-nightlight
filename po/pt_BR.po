@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-18 15:39-0800\n"
-"PO-Revision-Date: 2017-12-30 00:14+0000\n"
-"Last-Translator: Fernando da Silva Sousa <wild.nando@gmail.com>\n"
+"POT-Creation-Date: 2018-10-13 14:35-0700\n"
+"PO-Revision-Date: 2018-08-29 05:35+0000\n"
+"Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
 "wingpanel/indicator-nightlight/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -11,20 +11,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 
-#: src/Indicator.vala:41
+#: src/Indicator.vala:37
 msgid "Nightlight"
 msgstr "Luz noturna"
 
-#: src/Indicator.vala:42
+#: src/Indicator.vala:38
 msgid "The Nightlight indicator"
 msgstr "Indicador de Luz noturna"
 
 #: src/Widgets/PopoverWidget.vala:32
-#, fuzzy
 msgid "Disabled until sunrise"
-msgstr "Desativado até amanhã"
+msgstr "Desativado até o nascer do sol"
 
 #: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
 msgid "Disabled until tomorrow"

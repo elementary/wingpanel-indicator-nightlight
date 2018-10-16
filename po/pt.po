@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-18 15:39-0800\n"
+"POT-Creation-Date: 2018-10-13 14:35-0700\n"
 "PO-Revision-Date: 2018-02-28 10:51+0000\n"
 "Last-Translator: Luís Lima <geral@liqensoft.com>\n"
-"Language-Team: Portuguese <https://weblate.elementary.io/projects/wingpanel"
-"/indicator-nightlight/pt/>\n"
+"Language-Team: Portuguese <https://weblate.elementary.io/projects/wingpanel/"
+"indicator-nightlight/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,11 +13,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.18\n"
 
-#: src/Indicator.vala:41
+#: src/Indicator.vala:37
 msgid "Nightlight"
 msgstr "Modo Noite"
 
-#: src/Indicator.vala:42
+#: src/Indicator.vala:38
 msgid "The Nightlight indicator"
 msgstr "Indicador do Modo Noite"
 

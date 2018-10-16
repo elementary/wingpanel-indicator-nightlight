@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-18 15:39-0800\n"
+"POT-Creation-Date: 2018-10-13 14:35-0700\n"
 "PO-Revision-Date: 2017-12-19 00:07+0000\n"
 "Last-Translator: Igor Bronovskyi <admin@brun.if.ua>\n"
 "Language-Team: Ukrainian <https://weblate.elementary.io/projects/wingpanel/"
@@ -14,11 +14,11 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.18\n"
 
-#: src/Indicator.vala:41
+#: src/Indicator.vala:37
 msgid "Nightlight"
 msgstr "Нічний"
 
-#: src/Indicator.vala:42
+#: src/Indicator.vala:38
 msgid "The Nightlight indicator"
 msgstr "Нічний індикатор"
 

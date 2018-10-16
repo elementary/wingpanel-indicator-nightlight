@@ -1,23 +1,23 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-18 15:39-0800\n"
-"PO-Revision-Date: 2018-02-19 17:54+0000\n"
+"POT-Creation-Date: 2018-10-13 14:35-0700\n"
+"PO-Revision-Date: 2018-10-16 00:09+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://weblate.elementary.io/projects/wingpanel"
-"/indicator-nightlight/ca/>\n"
+"Language-Team: Catalan <https://weblate.elementary.io/projects/wingpanel/"
+"indicator-nightlight/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 
-#: src/Indicator.vala:41
+#: src/Indicator.vala:37
 msgid "Nightlight"
 msgstr "Llum de nit"
 
-#: src/Indicator.vala:42
+#: src/Indicator.vala:38
 msgid "The Nightlight indicator"
 msgstr "L'indicador de llum de nit"
 
@@ -35,4 +35,4 @@ msgstr "Ajorna la llum de nit"
 
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
-msgstr "Configuració de la llum de nit…"
+msgstr "Paràmetres de la llum de nit…"
