@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 14:35-0700\n"
-"PO-Revision-Date: 2018-08-29 05:35+0000\n"
+"PO-Revision-Date: 2018-10-18 00:11+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
 "wingpanel/indicator-nightlight/pt_BR/>\n"
@@ -15,11 +15,11 @@ msgstr ""
 
 #: src/Indicator.vala:37
 msgid "Nightlight"
-msgstr "Luz noturna"
+msgstr "Luz Noturna"
 
 #: src/Indicator.vala:38
 msgid "The Nightlight indicator"
-msgstr "Indicador de Luz noturna"
+msgstr "Indicador de Luz Noturna"
 
 #: src/Widgets/PopoverWidget.vala:32
 msgid "Disabled until sunrise"
