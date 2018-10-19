@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 14:35-0700\n"
-"PO-Revision-Date: 2018-10-19 18:02+0000\n"
-"Last-Translator: Mathias Norräng <matis1s@hotmail.com>\n"
+"PO-Revision-Date: 2018-10-19 18:03+0000\n"
+"Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/wingpanel/"
 "indicator-nightlight/sv/>\n"
 "Language: sv\n"
@@ -31,8 +31,8 @@ msgstr "Inaktiverat fram till i morgon"
 
 #: src/Widgets/PopoverWidget.vala:65
 msgid "Snooze Night Light"
-msgstr "Skjut upp nattljuset"
+msgstr "Snooza nattljus"
 
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
-msgstr ""
+msgstr "Nattljusinställningar"
