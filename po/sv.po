@@ -3,7 +3,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 14:35-0700\n"
 "PO-Revision-Date: 2018-10-19 18:02+0000\n"
-"Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
+"Last-Translator: Mathias Norräng <matis1s@hotmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/wingpanel/"
 "indicator-nightlight/sv/>\n"
 "Language: sv\n"
@@ -19,15 +19,15 @@ msgstr "Nattljus"
 
 #: src/Indicator.vala:38
 msgid "The Nightlight indicator"
-msgstr ""
+msgstr "Nattljusindikatorn"
 
 #: src/Widgets/PopoverWidget.vala:32
 msgid "Disabled until sunrise"
-msgstr ""
+msgstr "Inaktiverat fram till soluppgång"
 
 #: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
 msgid "Disabled until tomorrow"
-msgstr ""
+msgstr "Inaktiverat fram till imorgon"
 
 #: src/Widgets/PopoverWidget.vala:65
 msgid "Snooze Night Light"
