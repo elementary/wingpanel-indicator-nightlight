@@ -2,16 +2,16 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 14:35-0700\n"
-"PO-Revision-Date: 2018-01-05 00:44+0000\n"
-"Last-Translator: colindemian <colindemian@outlook.com>\n"
+"PO-Revision-Date: 2019-01-15 13:42+0000\n"
+"Last-Translator: WANG, Wei <ww460160885@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
-"wingpanel/indicator-nightlight/zh_CN/>\n"
+"wingpanel/indicator-nightlight/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: src/Indicator.vala:37
 msgid "Nightlight"
@@ -22,9 +22,8 @@ msgid "The Nightlight indicator"
 msgstr "夜灯指示器"
 
 #: src/Widgets/PopoverWidget.vala:32
-#, fuzzy
 msgid "Disabled until sunrise"
-msgstr "停用直至明天"
+msgstr "停用直至日出"
 
 #: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
 msgid "Disabled until tomorrow"
