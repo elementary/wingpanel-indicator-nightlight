@@ -1,7 +1,7 @@
 project(
     'nightlight',
     'vala', 'c',
-    version: '2.0.1'
+    version: '2.0.2'
 )
 
 gettext_name = meson.project_name() + '-indicator'
