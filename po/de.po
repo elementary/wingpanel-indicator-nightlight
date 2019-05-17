@@ -2,16 +2,16 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 14:35-0700\n"
-"PO-Revision-Date: 2019-01-03 00:05+0000\n"
-"Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
-"Language-Team: German <https://weblate.elementary.io/projects/wingpanel/"
+"PO-Revision-Date: 2019-05-21 13:03+0000\n"
+"Last-Translator: Julian Raschke <julian@raschke.de>\n"
+"Language-Team: German <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.6.1\n"
 
 #: src/Indicator.vala:37
 msgid "Nightlight"
@@ -23,7 +23,7 @@ msgstr "Der Nachtmodus–Indikator"
 
 #: src/Widgets/PopoverWidget.vala:32
 msgid "Disabled until sunrise"
-msgstr "Deaktiviert bis zum Morgengrauen"
+msgstr "Deaktiviert bis zum Sonnenaufgang"
 
 #: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
 msgid "Disabled until tomorrow"
@@ -31,7 +31,7 @@ msgstr "Deaktiviert bis morgen"
 
 #: src/Widgets/PopoverWidget.vala:65
 msgid "Snooze Night Light"
-msgstr "Nachtmodus in den Schlummermodus setzen"
+msgstr "Nachtmodus pausieren"
 
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
