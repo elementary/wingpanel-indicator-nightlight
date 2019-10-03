@@ -60,7 +60,7 @@ public class NightLight.Manager : Object {
             interface = Bus.get_proxy_sync (BusType.SESSION, "org.gnome.SettingsDaemon.Color", "/org/gnome/SettingsDaemon/Color", DBusProxyFlags.NONE);
 
             (interface as DBusProxy).g_properties_changed.connect ((changed, invalid) => {
-                var snooze = changed.lookup_value("DisabledUntilTomorrow", new VariantType("b"));
+                var snooze = changed.lookup_value ("DisabledUntilTomorrow", new VariantType ("b"));
 
                 if (snooze != null) {
                     snoozed = snooze.get_boolean ();
