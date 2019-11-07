@@ -40,4 +40,5 @@ shared_module(
     install_dir : wingpanel_indicatorsdir
 )
 
+subdir('data')
 subdir('po')
