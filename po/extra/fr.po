@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-07 11:18-0800\n"
 "PO-Revision-Date: 2019-11-08 23:24+0000\n"
-"Last-Translator: Corentin Noël <corentin@elementary.io>\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight-extra/fr/>\n"
 "Language: fr\n"
@@ -21,11 +21,11 @@ msgstr ""
 
 #: data/nightlight.appdata.xml.in:6
 msgid "Nightlight Indicator"
-msgstr ""
+msgstr "Indicateur du mode nuit"
 
 #: data/nightlight.appdata.xml.in:7
 msgid "Easily snooze or adjust the temperature of Nightlight"
-msgstr ""
+msgstr "Mettez facilement en pause ou modifiez la température du mode nuit"
 
 #: data/nightlight.appdata.xml.in:11
 msgid "Updated translations"
