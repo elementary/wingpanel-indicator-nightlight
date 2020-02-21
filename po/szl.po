@@ -2,36 +2,38 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:47+0200\n"
-"PO-Revision-Date: 2019-06-26 18:53+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-02-23 00:08+0000\n"
+"Last-Translator: gkkulik <g.kulik@o2.pl>\n"
+"Language-Team: Silesian <https://l10n.elementary.io/projects/wingpanel/"
+"indicator-nightlight/szl/>\n"
 "Language: szl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: src/Indicator.vala:37
 msgid "Nightlight"
-msgstr ""
+msgstr "Nocne światło"
 
 #: src/Indicator.vala:38
 msgid "The Nightlight indicator"
-msgstr ""
+msgstr "Skaźnik nocnego światła"
 
 #: src/Widgets/PopoverWidget.vala:32
 msgid "Disabled until sunrise"
-msgstr ""
+msgstr "Zastawiōne do rozwidnioka"
 
 #: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
 msgid "Disabled until tomorrow"
-msgstr ""
+msgstr "Zastawiōne do jutra"
 
 #: src/Widgets/PopoverWidget.vala:65
 msgid "Snooze Night Light"
-msgstr ""
+msgstr "Zastow nocne światło"
 
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
-msgstr ""
+msgstr "Sztelōnki nocnego światła…"
