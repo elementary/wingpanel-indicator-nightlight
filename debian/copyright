@@ -12,7 +12,7 @@ Upstream Author(s):
 
 Copyright:
 
-    Copyright (C) 2017 elementary LLC. (https://elementary.io)
+    Copyright 2017-2020 elementary, Inc. (https://elementary.io)
 
 License:
 
@@ -34,6 +34,6 @@ Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
 
 The Debian packaging is:
 
-    Copyright (C) 2017 elementary LLC. (https://elementary.io)
+    Copyright 2017-2020 elementary, Inc. (https://elementary.io)
 
 and is licensed under the GPL version 3, see above.
