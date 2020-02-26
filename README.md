@@ -1,5 +1,5 @@
 # Wingpanel Nightlight Indicator
-[![l10n](https://l10n.elementary.io/widgets/wingpanel/indicator-nightlight/svg-badge.svg)](https://l10n.elementary.io/projects/wingpanel/indicator-nightlight)
+[![Translation status](https://l10n.elementary.io/widgets/wingpanel/-/indicator-nightlight/svg-badge.svg)](https://l10n.elementary.io/engage/wingpanel/?utm_source=widget)
 
 ![Screenshot](data/screenshot.png?raw=true)
 
