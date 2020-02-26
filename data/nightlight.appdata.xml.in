@@ -6,7 +6,7 @@
   <name>Nightlight Indicator</name>
   <summary>Easily snooze or adjust the temperature of Nightlight</summary>
   <releases>
-    <release version="2.0.3" date="2020-02-25" urgency="medium">
+    <release version="2.0.3" date="2020-02-26" urgency="medium">
       <description>
         <p>Updated translations</p>
       </description>
