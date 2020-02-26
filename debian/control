@@ -1,8 +1,8 @@
 Source: wingpanel-indicator-nightlight
 Section: x11
 Priority: optional
-Maintainer: Cody Garver <cody@elementary.io>
-Build-Depends: debhelper (>= 9),
+Maintainer: elementary, Inc. <builds@elementary.io>
+Build-Depends: debhelper (>= 10.5.1),
                libgirepository1.0-dev,
                libglib2.0-dev,
                libgranite-dev,
@@ -10,7 +10,7 @@ Build-Depends: debhelper (>= 9),
                libwingpanel-2.0-dev,
                meson,
                valac (>= 0.28)
-Standards-Version: 3.9.6
+Standards-Version: 4.1.1
 Homepage: https://github.com/elementary/wingpanel-indicator-nightlight
 
 Package: wingpanel-indicator-nightlight
@@ -20,13 +20,3 @@ Enhances: wingpanel
 Description: WingPanel Nightlight Indicator
  WingPanel nightlight Indicator
 
-Package: wingpanel-indicator-nightlight-dbg
-Architecture: any
-Section: debug
-Priority: extra
-Depends: wingpanel-indicator-nightlight (= ${binary:Version}), ${misc:Depends}
-Enhances: wingpanel-indicator-nightlight
-Description: WingPanel Nightlight Indicator (debugging symbols)
- WingPanel Nightlight Indicator
- .
- This package contains debugging symbols for wingpanel-indicator-nightlight.
