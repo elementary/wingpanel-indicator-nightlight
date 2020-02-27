@@ -13,5 +13,5 @@
 	dh $@ 
 
 override_dh_strip:
-	dh_strip -p wingpanel-indicator-nightlight --dbgsym-migration='wingpanel-indicator-nightlight-dbg (<< 2.0.2)'
+	dh_strip --dbgsym-migration='wingpanel-indicator-nightlight-dbg (<< 2.0.2)'
 
