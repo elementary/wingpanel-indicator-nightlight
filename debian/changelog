@@ -1,3 +1,22 @@
+wingpanel-indicator-nightlight (2.0.3) bionic; urgency=medium
+
+  * Release 2.0.3 (#59)
+  * AppData: Add 2.0.3 release data
+  * Add AppData (#57)
+  * Add Release to Actions
+  * Add Gettext Updates to Actions
+  * Add Lint to CI (#55)
+  * ColorInterface: Fix whitespace issues
+  * run installation in CI (#56)
+  * Build with GitHub CI (#54)
+  * Delete CODE_OF_CONDUCT.md
+  * Delete FUNDING.yml
+  * build: fix install path for wingpanel indicator (#52)
+  * Add Silesian and update translation template
+  * Create FUNDING.yml
+
+ -- elementary, Inc. <builds@elementary.io>  Mon, 02 Mar 2020 18:31:57 +0000
+
 wingpanel-indicator-nightlight (2.0.2) bionic; urgency=medium
 
   * New upstream release.
