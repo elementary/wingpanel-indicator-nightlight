@@ -2,26 +2,33 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:47+0200\n"
+"PO-Revision-Date: 2020-02-27 02:09+0000\n"
+"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"Language-Team: Croatian <https://l10n.elementary.io/projects/wingpanel/"
+"indicator-nightlight/hr/>\n"
+"Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: src/Indicator.vala:37
 msgid "Nightlight"
-msgstr ""
+msgstr "Noćno svjetlo"
 
 #: src/Indicator.vala:38
 msgid "The Nightlight indicator"
-msgstr ""
+msgstr "Pokazivač noćnog svjetla"
 
 #: src/Widgets/PopoverWidget.vala:32
 msgid "Disabled until sunrise"
-msgstr ""
+msgstr "Onemogućeno do izlaska sunca"
 
 #: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
 msgid "Disabled until tomorrow"
-msgstr ""
+msgstr "Onemogućeno do sutra"
 
 #: src/Widgets/PopoverWidget.vala:65
 msgid "Snooze Night Light"
@@ -29,4 +36,4 @@ msgstr ""
 
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
-msgstr ""
+msgstr "Postavke noćnog svjetla…"
