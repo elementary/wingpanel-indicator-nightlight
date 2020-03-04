@@ -40,6 +40,9 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
 
     public override Gtk.Widget get_display_widget () {
         if (indicator_icon == null) {
+            weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
+            default_theme.add_resource_path ("/io/elementary/wingpanel/nightlight");
+
             indicator_icon = new Gtk.Spinner ();
 
             var provider = new Gtk.CssProvider ();
