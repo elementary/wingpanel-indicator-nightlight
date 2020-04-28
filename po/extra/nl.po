@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 11:18-0800\n"
+"POT-Creation-Date: 2020-04-28 21:47+0000\n"
 "PO-Revision-Date: 2020-01-03 22:07+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/wingpanel/"
@@ -20,17 +20,21 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 
 #: data/nightlight.appdata.xml.in:6
-msgid "Nightlight Indicator"
+#, fuzzy
+#| msgid "Nightlight Indicator"
+msgid "Night Light Indicator"
 msgstr "Nachtmodus indicator"
 
 #: data/nightlight.appdata.xml.in:7
-msgid "Easily snooze or adjust the temperature of Nightlight"
+#, fuzzy
+#| msgid "Easily snooze or adjust the temperature of Nightlight"
+msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
 msgstr "Tijdelijk onderbreken of de kleurtemperatuur wijzigen van Nachtmodus"
 
-#: data/nightlight.appdata.xml.in:11
+#: data/nightlight.appdata.xml.in:11 data/nightlight.appdata.xml.in:16
 msgid "Updated translations"
 msgstr "Bijgewerkte vertalingen"
 
-#: data/nightlight.appdata.xml.in:20
+#: data/nightlight.appdata.xml.in:25
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
