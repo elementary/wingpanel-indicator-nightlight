@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2019 elementary, Inc. <contact@elementary.io> -->
+<!-- Copyright 2019–2020 elementary, Inc. <contact@elementary.io> -->
 <component type="addon">
   <id>io.elementary.wingpanel.nightlight</id>
   <extends>io.elementary.wingpanel</extends>
-  <name>Nightlight Indicator</name>
-  <summary>Easily snooze or adjust the temperature of Nightlight</summary>
+  <name>Night Light Indicator</name>
+  <summary>Easily snooze or adjust the temperature of Night Light from the Panel</summary>
   <releases>
     <release version="2.0.3" date="2020-03-02" urgency="medium">
       <description>
