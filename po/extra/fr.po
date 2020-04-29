@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 21:47+0000\n"
-"PO-Revision-Date: 2019-11-08 23:24+0000\n"
+"PO-Revision-Date: 2020-05-01 13:10+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight-extra/fr/>\n"
@@ -17,19 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/nightlight.appdata.xml.in:6
-#, fuzzy
-#| msgid "Nightlight Indicator"
 msgid "Night Light Indicator"
-msgstr "Indicateur du mode nuit"
+msgstr "Paramètres de l'ndicateur du mode nuit"
 
 #: data/nightlight.appdata.xml.in:7
-#, fuzzy
-#| msgid "Easily snooze or adjust the temperature of Nightlight"
 msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
-msgstr "Mettez facilement en pause ou modifiez la température du mode nuit"
+msgstr ""
+"Mettez facilement en pause ou modifiez la température du mode nuit depuis le "
+"panneau"
 
 #: data/nightlight.appdata.xml.in:11 data/nightlight.appdata.xml.in:16
 msgid "Updated translations"
