@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 21:47+0000\n"
-"PO-Revision-Date: 2019-11-14 15:24+0000\n"
-"Last-Translator: Daniel R. <riesp@pm.me>\n"
+"PO-Revision-Date: 2020-05-01 13:10+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight-extra/es/>\n"
 "Language: es\n"
@@ -17,19 +17,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/nightlight.appdata.xml.in:6
-#, fuzzy
-#| msgid "Nightlight Indicator"
 msgid "Night Light Indicator"
 msgstr "Indicador de luz nocturna"
 
 #: data/nightlight.appdata.xml.in:7
-#, fuzzy
-#| msgid "Easily snooze or adjust the temperature of Nightlight"
 msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
-msgstr "Posponga o ajuste fácilmente la temperatura de la luz nocturna"
+msgstr ""
+"Posponga o ajuste fácilmente la temperatura de la luz nocturna desde el panel"
 
 #: data/nightlight.appdata.xml.in:11 data/nightlight.appdata.xml.in:16
 msgid "Updated translations"
