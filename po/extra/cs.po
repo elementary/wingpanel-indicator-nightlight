@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 21:47+0000\n"
-"PO-Revision-Date: 2020-05-08 20:10+0000\n"
+"PO-Revision-Date: 2020-05-29 15:11+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight-extra/cs/>\n"
@@ -21,11 +21,12 @@ msgstr ""
 
 #: data/nightlight.appdata.xml.in:6
 msgid "Night Light Indicator"
-msgstr ""
+msgstr "Indikátor nočního světla"
 
 #: data/nightlight.appdata.xml.in:7
 msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
 msgstr ""
+"Snáze usněte nebo si přizpůsobte barevnou teplotu nočního světla z panelu"
 
 #: data/nightlight.appdata.xml.in:11 data/nightlight.appdata.xml.in:16
 msgid "Updated translations"
@@ -33,4 +34,4 @@ msgstr "Aktualizovány překlady"
 
 #: data/nightlight.appdata.xml.in:25
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
