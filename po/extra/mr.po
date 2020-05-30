@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 21:47+0000\n"
-"PO-Revision-Date: 2019-11-28 18:24+0000\n"
+"PO-Revision-Date: 2020-05-31 16:11+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight-extra/mr/>\n"
@@ -17,19 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/nightlight.appdata.xml.in:6
-#, fuzzy
-#| msgid "Nightlight Indicator"
 msgid "Night Light Indicator"
-msgstr "नाईटलाइट इंडिकेटर"
+msgstr "नाईट लाइट इंडिकेटर"
 
 #: data/nightlight.appdata.xml.in:7
-#, fuzzy
-#| msgid "Easily snooze or adjust the temperature of Nightlight"
 msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
-msgstr "नाईटलाइटचे तापमान सहजपणे स्नूझ किंवा समायोजित करा"
+msgstr "पॅनेल वरून सहजपणे स्नूझ करा किंवा नाईट लाइटचे तापमान समायोजित करा"
 
 #: data/nightlight.appdata.xml.in:11 data/nightlight.appdata.xml.in:16
 msgid "Updated translations"
