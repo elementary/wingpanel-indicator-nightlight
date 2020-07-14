@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:47+0200\n"
+"POT-Creation-Date: 2020-07-14 15:50+0000\n"
 "PO-Revision-Date: 2018-03-22 00:07+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://weblate.elementary.io/projects/wingpanel/"
@@ -13,14 +13,6 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3;\n"
 "X-Generator: Weblate 2.18\n"
-
-#: src/Indicator.vala:37
-msgid "Nightlight"
-msgstr "Nočna luč"
-
-#: src/Indicator.vala:38
-msgid "The Nightlight indicator"
-msgstr "Indikator za nočno luč"
 
 #: src/Widgets/PopoverWidget.vala:32
 msgid "Disabled until sunrise"
@@ -37,3 +29,9 @@ msgstr "Začasno onemogoči nočno luč"
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
 msgstr "Nastavitve nočne luči…"
+
+#~ msgid "Nightlight"
+#~ msgstr "Nočna luč"
+
+#~ msgid "The Nightlight indicator"
+#~ msgstr "Indikator za nočno luč"

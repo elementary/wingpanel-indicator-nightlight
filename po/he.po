@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:47+0200\n"
+"POT-Creation-Date: 2020-07-14 15:50+0000\n"
 "PO-Revision-Date: 2018-02-19 09:11+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://weblate.elementary.io/projects/wingpanel/"
@@ -12,14 +12,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.18\n"
-
-#: src/Indicator.vala:37
-msgid "Nightlight"
-msgstr "תאורת לילה"
-
-#: src/Indicator.vala:38
-msgid "The Nightlight indicator"
-msgstr "מחוון תאורת הלילה"
 
 #: src/Widgets/PopoverWidget.vala:32
 msgid "Disabled until sunrise"
@@ -36,3 +28,9 @@ msgstr "השהיית תאורת לילה"
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
 msgstr "הגדרות תאורת לילה…"
+
+#~ msgid "Nightlight"
+#~ msgstr "תאורת לילה"
+
+#~ msgid "The Nightlight indicator"
+#~ msgstr "מחוון תאורת הלילה"

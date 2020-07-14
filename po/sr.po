@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:47+0200\n"
+"POT-Creation-Date: 2020-07-14 15:50+0000\n"
 "PO-Revision-Date: 2017-12-30 00:14+0000\n"
 "Last-Translator: Pavle Radosavljević <pavlepiramida@gmail.com>\n"
 "Language-Team: Serbian <https://weblate.elementary.io/projects/wingpanel/"
@@ -13,14 +13,6 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.18\n"
-
-#: src/Indicator.vala:37
-msgid "Nightlight"
-msgstr "Ноћно светло"
-
-#: src/Indicator.vala:38
-msgid "The Nightlight indicator"
-msgstr "Индикатор Ноћног светла"
 
 #: src/Widgets/PopoverWidget.vala:32
 #, fuzzy
@@ -38,3 +30,9 @@ msgstr ""
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
 msgstr "Подешавање Ноћног светла…"
+
+#~ msgid "Nightlight"
+#~ msgstr "Ноћно светло"
+
+#~ msgid "The Nightlight indicator"
+#~ msgstr "Индикатор Ноћног светла"

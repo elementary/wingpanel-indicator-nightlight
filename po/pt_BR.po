@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:47+0200\n"
+"POT-Creation-Date: 2020-07-14 15:50+0000\n"
 "PO-Revision-Date: 2018-10-18 00:11+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
@@ -12,14 +12,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 3.0.1\n"
-
-#: src/Indicator.vala:37
-msgid "Nightlight"
-msgstr "Luz Noturna"
-
-#: src/Indicator.vala:38
-msgid "The Nightlight indicator"
-msgstr "Indicador de Luz Noturna"
 
 #: src/Widgets/PopoverWidget.vala:32
 msgid "Disabled until sunrise"
@@ -36,3 +28,9 @@ msgstr "Adiar Luz Noturna"
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
 msgstr "Configurações de Luz Noturna…"
+
+#~ msgid "Nightlight"
+#~ msgstr "Luz Noturna"
+
+#~ msgid "The Nightlight indicator"
+#~ msgstr "Indicador de Luz Noturna"
