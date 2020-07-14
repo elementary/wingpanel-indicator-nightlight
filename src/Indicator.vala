@@ -32,7 +32,7 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
         }
     }
 
-    public Indicator (Wingpanel.IndicatorManager.ServerType server_type) {
+    public Indicator () {
         Object (code_name: "wingpanel-indicator-nightlight");
     }
 
@@ -104,6 +104,6 @@ public Wingpanel.Indicator? get_indicator (Module module, Wingpanel.IndicatorMan
         return null;
     }
 
-    var indicator = new Nightlight.Indicator (server_type);
+    var indicator = new Nightlight.Indicator ();
     return indicator;
 }
