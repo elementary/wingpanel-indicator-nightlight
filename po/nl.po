@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:47+0200\n"
+"POT-Creation-Date: 2020-07-14 15:50+0000\n"
 "PO-Revision-Date: 2020-01-03 22:07+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/wingpanel/"
@@ -12,14 +12,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.9.1\n"
-
-#: src/Indicator.vala:37
-msgid "Nightlight"
-msgstr "Nachtmodus"
-
-#: src/Indicator.vala:38
-msgid "The Nightlight indicator"
-msgstr "De Nachtmodus-indicator"
 
 #: src/Widgets/PopoverWidget.vala:32
 msgid "Disabled until sunrise"
@@ -36,3 +28,9 @@ msgstr "Onderbreek Nachtmodus"
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
 msgstr "Nachtmodus instellingen…"
+
+#~ msgid "Nightlight"
+#~ msgstr "Nachtmodus"
+
+#~ msgid "The Nightlight indicator"
+#~ msgstr "De Nachtmodus-indicator"

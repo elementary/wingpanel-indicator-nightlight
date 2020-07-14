@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:47+0200\n"
+"POT-Creation-Date: 2020-07-14 15:50+0000\n"
 "PO-Revision-Date: 2019-05-24 17:03+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/wingpanel/"
@@ -12,14 +12,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 3.6.1\n"
-
-#: src/Indicator.vala:37
-msgid "Nightlight"
-msgstr "낮은 색온도"
-
-#: src/Indicator.vala:38
-msgid "The Nightlight indicator"
-msgstr "낮은 색온도 알림"
 
 #: src/Widgets/PopoverWidget.vala:32
 msgid "Disabled until sunrise"
@@ -36,3 +28,9 @@ msgstr "낮은 색온도 일시 중지"
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
 msgstr "낮은 색온도 설정…"
+
+#~ msgid "Nightlight"
+#~ msgstr "낮은 색온도"
+
+#~ msgid "The Nightlight indicator"
+#~ msgstr "낮은 색온도 알림"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:47+0200\n"
+"POT-Creation-Date: 2020-07-14 15:50+0000\n"
 "PO-Revision-Date: 2018-10-23 18:09+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/wingpanel/"
@@ -12,14 +12,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.0.1\n"
-
-#: src/Indicator.vala:37
-msgid "Nightlight"
-msgstr "Nattljus"
-
-#: src/Indicator.vala:38
-msgid "The Nightlight indicator"
-msgstr "Nattljusindikatorn"
 
 #: src/Widgets/PopoverWidget.vala:32
 msgid "Disabled until sunrise"
@@ -36,3 +28,9 @@ msgstr "Snooza nattljus"
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
 msgstr "Nattljusinställningar…"
+
+#~ msgid "Nightlight"
+#~ msgstr "Nattljus"
+
+#~ msgid "The Nightlight indicator"
+#~ msgstr "Nattljusindikatorn"
