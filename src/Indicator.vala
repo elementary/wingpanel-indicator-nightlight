@@ -33,9 +33,7 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
     }
 
     public Indicator (Wingpanel.IndicatorManager.ServerType server_type) {
-        Object (code_name: "wingpanel-indicator-nightlight",
-                display_name: _("Nightlight"),
-                description: _("The Nightlight indicator"));
+        Object (code_name: "wingpanel-indicator-nightlight");
     }
 
     public override Gtk.Widget get_display_widget () {
