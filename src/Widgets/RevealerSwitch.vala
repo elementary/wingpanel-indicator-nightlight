@@ -17,7 +17,7 @@
  * Boston, MA 02110-1301 USA.
  */
 
-public class NightLight.Widgets.Switch : Wingpanel.Widgets.Container {
+public class NightLight.Widgets.Switch : Gtk.Bin {
     public new signal void switched ();
 
     private Gtk.Label button_label;
@@ -52,33 +52,30 @@ public class NightLight.Widgets.Switch : Wingpanel.Widgets.Container {
         button_label = new Gtk.Label (primary_label);
         button_label.halign = Gtk.Align.START;
         button_label.valign = Gtk.Align.END;
-        button_label.margin_start = 6;
-        button_label.margin_end = 6;
         button_label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
         small_label = new Gtk.Label ("<small>%s</small>".printf (Markup.escape_text (secondary_label)));
         small_label.use_markup = true;
         small_label.halign = Gtk.Align.START;
-        small_label.margin_start = 6;
-        small_label.margin_end = 6;
         small_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
         button_switch = new Gtk.Switch ();
         button_switch.active = active;
         button_switch.halign = Gtk.Align.END;
         button_switch.hexpand = true;
-        button_switch.margin = 3;
-        button_switch.margin_end = 6;
         button_switch.valign = Gtk.Align.CENTER;
 
         subtitle_revealer = new Gtk.Revealer ();
         subtitle_revealer.valign = Gtk.Align.CENTER;
         subtitle_revealer.add (small_label);
 
-        content_widget.attach (button_label, 0, 0, 1, 1);
-        content_widget.attach (subtitle_revealer, 0, 1, 1, 1);
-        content_widget.attach (button_switch, 1, 0, 1, 2);
-        content_widget.get_style_context ().add_class ("compact-switch-labels");
+        var grid = new Gtk.Grid () {
+            column_spacing = 12
+        };
+        grid.attach (button_label, 0, 0);
+        grid.attach (subtitle_revealer, 0, 1);
+        grid.attach (button_switch, 1, 0, 1, 2);
+        grid.get_style_context ().add_class ("compact-switch-labels");
 
         var provider = new Gtk.CssProvider ();
         try {
@@ -88,9 +85,16 @@ public class NightLight.Widgets.Switch : Wingpanel.Widgets.Container {
             critical (e.message);
         }
 
-        clicked.connect (() => {
+        var modelbutton = new Gtk.ModelButton ();
+        modelbutton.get_child ().destroy ();
+        modelbutton.add (grid);
+
+        add (modelbutton);
+
+        modelbutton.button_release_event.connect (() => {
             active = true;
             button_switch.activate ();
+            return Gdk.EVENT_STOP;
         });
 
         button_switch.bind_property ("active", this, "active", GLib.BindingFlags.DEFAULT);
