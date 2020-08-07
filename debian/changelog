@@ -1,3 +1,18 @@
+wingpanel-indicator-nightlight (2.0.4) bionic; urgency=medium
+
+  * Release 2.0.4 (#70)
+  * RevealerSwitch: Use ModelButton (#69)
+  * Indicator: Remove unused argument (#66)
+  * Update translation files
+  * Update translation template
+  * Indicator: Remove deprecated display_name and description (#67)
+  * Update translation files
+  * Update translation template
+  * AppData: Nightlight → Night Light (#64)
+  * Add night light animation icons (#61)
+
+ -- elementary, Inc. <builds@elementary.io>  Fri, 07 Aug 2020 18:15:43 +0000
+
 wingpanel-indicator-nightlight (2.0.3) bionic; urgency=medium
 
   * Release 2.0.3 (#59)
