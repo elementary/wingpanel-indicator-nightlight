@@ -2,31 +2,29 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-14 15:50+0000\n"
-"PO-Revision-Date: 2017-12-19 00:07+0000\n"
-"Last-Translator: Igor Bronovskyi <admin@brun.if.ua>\n"
-"Language-Team: Ukrainian <https://weblate.elementary.io/projects/wingpanel/"
+"PO-Revision-Date: 2020-09-12 17:14+0000\n"
+"Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
+"Language-Team: Ukrainian <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.18\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: src/Widgets/PopoverWidget.vala:32
-#, fuzzy
 msgid "Disabled until sunrise"
-msgstr "Відключити до завтра"
+msgstr "Вимкнено до світанку"
 
 #: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
 msgid "Disabled until tomorrow"
-msgstr "Відключити до завтра"
+msgstr "Вимкнено до завтра"
 
 #: src/Widgets/PopoverWidget.vala:65
-#, fuzzy
 msgid "Snooze Night Light"
-msgstr "Включити нічне світло"
+msgstr "Вимкнути нічне світло"
 
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
