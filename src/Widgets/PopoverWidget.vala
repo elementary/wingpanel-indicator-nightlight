@@ -21,7 +21,8 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
     public unowned Nightlight.Indicator indicator { get; construct set; }
     public unowned Settings settings { get; construct set; }
 
-    private NightLight.Widgets.Switch toggle_switch;
+    private NightLight.Widgets.Switch night_light_switch;
+    private NightLight.Widgets.Switch dark_style_switch;
     private Gtk.Grid scale_grid;
     private Gtk.Image image;
     private Gtk.Scale temp_scale;
@@ -29,9 +30,9 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
     public bool automatic_schedule {
         set {
             if (value) {
-                toggle_switch.secondary_label = _("Disabled until sunrise");
+                night_light_switch.secondary_label = _("Disabled until sunrise");
             } else {
-                toggle_switch.secondary_label = _("Disabled until tomorrow");
+                night_light_switch.secondary_label = _("Disabled until tomorrow");
             }
         }
     }
@@ -39,7 +40,7 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
     public bool snoozed {
         set {
             scale_grid.sensitive = !value;
-            toggle_switch.active = value;
+            night_light_switch.active = value;
 
             if (value) {
                 image.icon_name = "night-light-disabled-symbolic";
@@ -62,7 +63,8 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
     construct {
         orientation = Gtk.Orientation.VERTICAL;
 
-        toggle_switch = new NightLight.Widgets.Switch (_("Snooze Night Light"), _("Disabled until tomorrow"));
+        night_light_switch = new NightLight.Widgets.Switch (_("Snooze Night Light"), _("Disabled until tomorrow"));
+        dark_style_switch = new NightLight.Widgets.Switch (_("Snooze Dark Style"), _("Disabled until tomorrow"));
 
         image = new Gtk.Image ();
         image.pixel_size = 48;
@@ -82,19 +84,27 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         scale_grid.add (image);
         scale_grid.add (temp_scale);
 
-        var settings_button = new Gtk.ModelButton ();
-        settings_button.text = _("Night Light Settings…");
-        settings_button.clicked.connect (show_settings);
+        var night_light_settings_button = new Gtk.ModelButton ();
+        night_light_settings_button.text = _("Night Light Settings…");
+        night_light_settings_button.clicked.connect (show_night_light_settings);
 
-        add (toggle_switch);
+        var dark_style_settings_button = new Gtk.ModelButton ();
+        dark_style_settings_button.text = _("Dark Style Settings…");
+        dark_style_settings_button.clicked.connect (show_dark_style_settings);
+
+        add (night_light_switch);
         add (new Wingpanel.Widgets.Separator ());
         add (scale_grid);
         add (new Wingpanel.Widgets.Separator ());
-        add (settings_button);
+        add (night_light_settings_button);
+        add (new Wingpanel.Widgets.Separator ());
+        add (dark_style_switch);
+        add (new Wingpanel.Widgets.Separator ());
+        add (dark_style_settings_button);
 
         snoozed = NightLight.Manager.get_instance ().snoozed;
 
-        toggle_switch.get_switch ().bind_property ("active", NightLight.Manager.get_instance (), "snoozed", GLib.BindingFlags.DEFAULT);
+        night_light_switch.get_switch ().bind_property ("active", NightLight.Manager.get_instance (), "snoozed", GLib.BindingFlags.DEFAULT);
         settings.bind ("night-light-temperature", this, "temperature", GLib.SettingsBindFlags.GET);
         settings.bind ("night-light-schedule-automatic", this, "automatic_schedule", GLib.SettingsBindFlags.GET);
 
@@ -103,11 +113,21 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         });
     }
 
-    private void show_settings () {
+    private void show_night_light_settings () {
         try {
             AppInfo.launch_default_for_uri ("settings://display/night-light", null);
         } catch (Error e) {
             warning ("Failed to open display settings: %s", e.message);
+        }
+
+        indicator.close ();
+    }
+
+    private void show_dark_style_settings () {
+        try {
+            AppInfo.launch_default_for_uri ("settings://desktop/appearance", null);
+        } catch (Error e) {
+            warning ("Failed to open desktop settings: %s", e.message);
         }
 
         indicator.close ();
