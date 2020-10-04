@@ -111,6 +111,9 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         temp_scale.value_changed.connect (() => {
             settings.set_uint ("night-light-temperature", (uint) temp_scale.get_value ());
         });
+
+        var dark_style_settings = new GLib.Settings ("io.elementary.settings-daemon.prefers-color-scheme");
+        dark_style_settings.bind ("snoozed", dark_style_switch.get_switch (), "active", GLib.SettingsBindFlags.DEFAULT);
     }
 
     private void show_night_light_settings () {
