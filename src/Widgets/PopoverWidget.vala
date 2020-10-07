@@ -93,14 +93,13 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         dark_style_settings_button.clicked.connect (show_dark_style_settings);
 
         add (night_light_switch);
-        add (new Wingpanel.Widgets.Separator ());
         add (scale_grid);
-        add (new Wingpanel.Widgets.Separator ());
-        add (night_light_settings_button);
         add (new Wingpanel.Widgets.Separator ());
         add (dark_style_switch);
         add (new Wingpanel.Widgets.Separator ());
+        add (night_light_settings_button);
         add (dark_style_settings_button);
+
 
         snoozed = NightLight.Manager.get_instance ().snoozed;
 
