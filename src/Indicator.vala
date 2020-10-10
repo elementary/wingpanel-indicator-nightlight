@@ -22,6 +22,9 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
     private Gtk.StyleContext style_context;
     private Nightlight.Widgets.PopoverWidget? popover_widget = null;
 
+    private NightLight.Manager nightlight_manager;
+    private NightLight.SchemeManager scheme_manager;
+
     public bool nightlight_state {
         set {
             if (value) {
@@ -34,6 +37,9 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
 
     public Indicator () {
         Object (code_name: "wingpanel-indicator-nightlight");
+
+        nightlight_manager = NightLight.Manager.get_instance ();
+        scheme_manager = NightLight.SchemeManager.get_instance ();
     }
 
     public override Gtk.Widget get_display_widget () {
@@ -59,18 +65,18 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
                 return Gdk.EVENT_PROPAGATE;
             });
 
-            var nightlight_manager = NightLight.Manager.get_instance ();
             nightlight_manager.snooze_changed.connect ((value) => {
                 nightlight_state = !value;
                 popover_widget.nightlight_snoozed = value;
             });
 
-            nightlight_manager.active_changed.connect ((value) => {
-                visible = value;
-            });
+            nightlight_manager.active_changed.connect (update_visible);
 
             nightlight_state = !nightlight_manager.snoozed;
-            visible = nightlight_manager.active;
+
+            scheme_manager.active_changed.connect (update_visible);
+
+            update_visible ();
         }
 
         return indicator_icon;
@@ -83,6 +89,10 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
         }
 
         return popover_widget;
+    }
+
+    private void update_visible () {
+        visible = nightlight_manager.active || scheme_manager.active;
     }
 
     public override void opened () {}

@@ -56,6 +56,16 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         }
     }
 
+    public string dark_automatic_schedule {
+        set {
+            if (value == "sunset-to-sunrise") {
+                dark_style_switch.secondary_label = _("Disabled until sunrise");
+            } else if (value == "manual") {
+                dark_style_switch.secondary_label = _("Disabled until tomorrow");
+            }
+        }
+    }
+
     public PopoverWidget (Nightlight.Indicator indicator, Settings settings) {
         Object (indicator: indicator, settings: settings);
     }
@@ -113,7 +123,9 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
 
         dark_style_switch.active = NightLight.SchemeManager.get_instance ().snoozed;
 
+        var dark_style_settings = new GLib.Settings ("io.elementary.settings-daemon.prefers-color-scheme");
         dark_style_switch.get_switch ().bind_property ("active", NightLight.SchemeManager.get_instance (), "snoozed", GLib.BindingFlags.DEFAULT);
+        dark_style_settings.bind ("prefer-dark-schedule", this, "dark_automatic_schedule", GLib.SettingsBindFlags.GET);
     }
 
     private void show_night_light_settings () {
