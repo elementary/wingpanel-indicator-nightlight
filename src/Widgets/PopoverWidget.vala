@@ -37,7 +37,7 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         }
     }
 
-    public bool snoozed {
+    public bool nightlight_snoozed {
         set {
             scale_grid.sensitive = !value;
             night_light_switch.active = value;
@@ -101,7 +101,7 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         add (dark_style_settings_button);
 
 
-        snoozed = NightLight.Manager.get_instance ().snoozed;
+        nightlight_snoozed = NightLight.Manager.get_instance ().snoozed;
 
         night_light_switch.get_switch ().bind_property ("active", NightLight.Manager.get_instance (), "snoozed", GLib.BindingFlags.DEFAULT);
         settings.bind ("night-light-temperature", this, "temperature", GLib.SettingsBindFlags.GET);
@@ -111,8 +111,9 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
             settings.set_uint ("night-light-temperature", (uint) temp_scale.get_value ());
         });
 
-        var dark_style_settings = new GLib.Settings ("io.elementary.settings-daemon.prefers-color-scheme");
-        dark_style_settings.bind ("snoozed", dark_style_switch.get_switch (), "active", GLib.SettingsBindFlags.DEFAULT);
+        dark_style_switch.active = NightLight.SchemeManager.get_instance ().snoozed;
+
+        dark_style_switch.get_switch ().bind_property ("active", NightLight.SchemeManager.get_instance (), "snoozed", GLib.BindingFlags.DEFAULT);
     }
 
     private void show_night_light_settings () {

@@ -62,7 +62,7 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
             var nightlight_manager = NightLight.Manager.get_instance ();
             nightlight_manager.snooze_changed.connect ((value) => {
                 nightlight_state = !value;
-                popover_widget.snoozed = value;
+                popover_widget.nightlight_snoozed = value;
             });
 
             nightlight_manager.active_changed.connect ((value) => {
