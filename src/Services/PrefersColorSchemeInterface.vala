@@ -21,13 +21,11 @@
 
 [DBus (name="io.elementary.SettingsDaemon.PrefersColorScheme")]
 public interface NightLight.PrefersColorSchemeInterface : Object {
-    public abstract bool active { get; }
     public abstract bool snoozed { get; set; }
 }
 
 public class NightLight.SchemeManager : Object {
     public signal void snooze_changed (bool value);
-    public signal void active_changed (bool value);
 
     private NightLight.PrefersColorSchemeInterface interface;
 
@@ -37,12 +35,6 @@ public class NightLight.SchemeManager : Object {
         } set {
             interface.snoozed = value;
             snooze_changed (value);
-        }
-    }
-
-    public bool active {
-        get {
-            return interface.active;
         }
     }
 
@@ -66,12 +58,6 @@ public class NightLight.SchemeManager : Object {
 
                 if (snooze != null) {
                     snoozed = snooze.get_boolean ();
-                }
-
-                var _active = changed.lookup_value ("active", new VariantType ("b"));
-
-                if (_active != null) {
-                    active_changed (_active.get_boolean ());
                 }
             });
         } catch (Error e) {

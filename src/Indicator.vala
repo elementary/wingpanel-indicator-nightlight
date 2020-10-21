@@ -70,13 +70,12 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
                 popover_widget.nightlight_snoozed = value;
             });
 
-            nightlight_manager.active_changed.connect (update_visible);
+            nightlight_manager.active_changed.connect ((value) => {
+                visible = value;
+            });
 
             nightlight_state = !nightlight_manager.snoozed;
-
-            scheme_manager.active_changed.connect (update_visible);
-
-            update_visible ();
+            visible = nightlight_manager.active;
         }
 
         return indicator_icon;
@@ -89,10 +88,6 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
         }
 
         return popover_widget;
-    }
-
-    private void update_visible () {
-        visible = nightlight_manager.active || scheme_manager.active;
     }
 
     public override void opened () {}
