@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-14 15:50+0000\n"
-"PO-Revision-Date: 2019-05-21 13:03+0000\n"
-"Last-Translator: Julian Raschke <julian@raschke.de>\n"
+"PO-Revision-Date: 2020-10-27 10:15+0000\n"
+"Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight/de/>\n"
 "Language: de\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: src/Widgets/PopoverWidget.vala:32
 msgid "Disabled until sunrise"
@@ -27,7 +27,7 @@ msgstr "Nachtmodus pausieren"
 
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
-msgstr "Nachtmodus–Einstellungen…"
+msgstr "Nachtmodus–Einstellungen …"
 
 #~ msgid "Nightlight"
 #~ msgstr "Nachtmodus"
