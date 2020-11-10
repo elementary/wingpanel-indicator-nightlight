@@ -26,6 +26,7 @@ shared_module(
     meson.project_name(),
     'src/Indicator.vala',
     'src/Services/ColorInterface.vala',
+    'src/Services/PrefersColorSchemeInterface.vala',
     'src/Widgets/PopoverWidget.vala',
     'src/Widgets/RevealerSwitch.vala',
     asresources,
