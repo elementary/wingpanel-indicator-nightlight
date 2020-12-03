@@ -73,6 +73,7 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
             visible = nightlight_manager.active;
         }
 
+        update_tooltip ();
         return indicator_icon;
     }
 
@@ -88,6 +89,10 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
     public override void opened () {}
 
     public override void closed () {}
+
+    private void update_tooltip () {
+        indicator_icon.tooltip_markup = Granite.markup_accel_tooltip ({_("Middle-click to snooze")}, _("Night Light:  %s".printf ("On")));
+    }
 }
 
 public Wingpanel.Indicator? get_indicator (Module module, Wingpanel.IndicatorManager.ServerType server_type) {
