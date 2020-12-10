@@ -21,6 +21,7 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
     private Gtk.Spinner? indicator_icon = null;
     private Gtk.StyleContext style_context;
     private Nightlight.Widgets.PopoverWidget? popover_widget = null;
+    private bool nightlight_status;
 
     public bool nightlight_state {
         set {
@@ -34,6 +35,7 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
 
     public Indicator () {
         Object (code_name: "wingpanel-indicator-nightlight");
+        nightlight_status = false;
     }
 
     public override Gtk.Widget get_display_widget () {
@@ -63,6 +65,7 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
             nightlight_manager.snooze_changed.connect ((value) => {
                 nightlight_state = !value;
                 popover_widget.snoozed = value;
+                update_tooltip (value);
             });
 
             nightlight_manager.active_changed.connect ((value) => {
@@ -71,9 +74,9 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
 
             nightlight_state = !nightlight_manager.snoozed;
             visible = nightlight_manager.active;
+            update_tooltip (nightlight_status);
         }
 
-        update_tooltip ();
         return indicator_icon;
     }
 
@@ -90,8 +93,12 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
 
     public override void closed () {}
 
-    private void update_tooltip () {
-        indicator_icon.tooltip_markup = Granite.markup_accel_tooltip ({_("Middle-click to snooze")}, _("Night Light:  %s".printf ("On")));
+    private void update_tooltip (bool status) {
+        string accel = _("""<span weight="600" size="smaller" alpha="75%">Middle-click to snooze</span>""");   
+        if (status) {
+            accel = _("""<span weight="600" size="smaller" alpha="75%">Middle-click to enable</span>""");  
+        }     
+        indicator_icon.tooltip_markup = _("Night Light: %s\n%s".printf (status ? "Off" : "On", accel));
     }
 }
 
