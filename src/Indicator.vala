@@ -94,10 +94,10 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
     public override void closed () {}
 
     private void update_tooltip (bool status) {
-        string accel = _("""<span weight="600" size="smaller" alpha="75%">Middle-click to snooze</span>""");   
+        string accel = _("""<span weight="600" size="smaller" alpha="75%">Middle-click to snooze</span>""");
         if (status) {
-            accel = _("""<span weight="600" size="smaller" alpha="75%">Middle-click to enable</span>""");  
-        }     
+            accel = _("""<span weight="600" size="smaller" alpha="75%">Middle-click to enable</span>""");
+        }
         indicator_icon.tooltip_markup = _("Night Light: %s\n%s".printf (status ? "Off" : "On", accel));
     }
 }
