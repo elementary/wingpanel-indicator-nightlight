@@ -100,7 +100,7 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
         }
         indicator_icon.tooltip_markup = Granite.markup_contextual_tooltip (
             context,
-            _("Night Light: %s".printf (status ? "Off" : "On"))
+            _("Night Light is %s".printf (status ? "Off" : "On"))
         );
     }
 }
