@@ -94,11 +94,14 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
     public override void closed () {}
 
     private void update_tooltip (bool status) {
-        string accel = _("""<span weight="600" size="smaller" alpha="75%">Middle-click to snooze</span>""");
+        string context = _("Middle-click to snooze");
         if (status) {
-            accel = _("""<span weight="600" size="smaller" alpha="75%">Middle-click to enable</span>""");
+            context = _("Middle-click to enable");
         }
-        indicator_icon.tooltip_markup = _("Night Light: %s\n%s".printf (status ? "Off" : "On", accel));
+        indicator_icon.tooltip_markup = Granite.markup_contextual_tooltip (
+            context,
+            _("Night Light: %s".printf (status ? "Off" : "On"))
+        );
     }
 }
 
