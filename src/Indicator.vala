@@ -21,7 +21,6 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
     private Gtk.Spinner? indicator_icon = null;
     private Gtk.StyleContext style_context;
     private Nightlight.Widgets.PopoverWidget? popover_widget = null;
-    private bool snoozed;
 
     public bool nightlight_state {
         set {
@@ -35,7 +34,6 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
 
     public Indicator () {
         Object (code_name: "wingpanel-indicator-nightlight");
-        snoozed = false;
     }
 
     public override Gtk.Widget get_display_widget () {
@@ -74,7 +72,7 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
 
             nightlight_state = !nightlight_manager.snoozed;
             visible = nightlight_manager.active;
-            update_tooltip (snoozed);
+            update_tooltip (nightlight_manager.snoozed);
         }
 
         return indicator_icon;
