@@ -63,6 +63,7 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
             nightlight_manager.snooze_changed.connect ((value) => {
                 nightlight_state = !value;
                 popover_widget.snoozed = value;
+                update_tooltip (value);
             });
 
             nightlight_manager.active_changed.connect ((value) => {
@@ -71,6 +72,7 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
 
             nightlight_state = !nightlight_manager.snoozed;
             visible = nightlight_manager.active;
+            update_tooltip (nightlight_manager.snoozed);
         }
 
         return indicator_icon;
@@ -88,6 +90,21 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
     public override void opened () {}
 
     public override void closed () {}
+
+    private void update_tooltip (bool snoozed) {
+        string primary_text = _("Night Light is on");
+        string secondary_text = _("Middle-click to snooze");
+
+        if (snoozed) {
+            primary_text = _("Night Light is snoozed");
+            secondary_text = _("Middle-click to enable");
+        }
+
+        indicator_icon.tooltip_markup = "%s\n%s".printf (
+            primary_text,
+            Granite.TOOLTIP_SECONDARY_TEXT_MARKUP.printf (secondary_text)
+        );
+    }
 }
 
 public Wingpanel.Indicator? get_indicator (Module module, Wingpanel.IndicatorManager.ServerType server_type) {
