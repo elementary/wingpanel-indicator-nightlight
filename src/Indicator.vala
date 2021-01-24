@@ -33,7 +33,7 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
     }
 
     public Indicator () {
-        Object (code_name: "wingpanel-indicator-nightlight");
+        Object (code_name: Wingpanel.Indicator.NIGHT_LIGHT);
     }
 
     public override Gtk.Widget get_display_widget () {
