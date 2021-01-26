@@ -44,7 +44,7 @@ public class NightLight.Widgets.Switch : Gtk.Bin {
 
     public string secondary_label {
         set {
-            small_label.label = "<small>%s</small>".printf (Markup.escape_text (value));
+            small_label.label = value;
         }
     }
 
@@ -54,10 +54,11 @@ public class NightLight.Widgets.Switch : Gtk.Bin {
         button_label.valign = Gtk.Align.END;
         button_label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
-        small_label = new Gtk.Label ("<small>%s</small>".printf (Markup.escape_text (secondary_label)));
+        small_label = new Gtk.Label (secondary_label);
         small_label.use_markup = true;
         small_label.halign = Gtk.Align.START;
         small_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+        small_label.get_style_context ().add_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
         button_switch = new Gtk.Switch ();
         button_switch.active = active;
