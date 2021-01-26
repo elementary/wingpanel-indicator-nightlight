@@ -60,14 +60,18 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
             });
 
             var nightlight_manager = NightLight.Manager.get_instance ();
-            nightlight_manager.snooze_changed.connect ((value) => {
-                nightlight_state = !value;
-                popover_widget.snoozed = value;
-                update_tooltip (value);
+            nightlight_manager.notify["snoozed"].connect (() => {
+                var snoozed = nightlight_manager.snoozed;
+                nightlight_state = !snoozed;
+                if (popover_widget != null) {
+                    popover_widget.snoozed = snoozed;
+                }
+
+                update_tooltip (snoozed);
             });
 
-            nightlight_manager.active_changed.connect ((value) => {
-                visible = value;
+            nightlight_manager.notify["active"].connect (() => {
+                visible = nightlight_manager.active;
             });
 
             nightlight_state = !nightlight_manager.snoozed;
