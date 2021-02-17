@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 21:47+0000\n"
+"POT-Creation-Date: 2021-02-17 01:22+0000\n"
 "PO-Revision-Date: 2019-12-04 21:24+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/wingpanel/"
@@ -32,9 +32,10 @@ msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
 msgstr "Torkuta tai säädä yövalon lämpötilaa"
 
 #: data/nightlight.appdata.xml.in:11 data/nightlight.appdata.xml.in:16
+#: data/nightlight.appdata.xml.in:21
 msgid "Updated translations"
 msgstr "Päivitetyt käännökset"
 
-#: data/nightlight.appdata.xml.in:25
+#: data/nightlight.appdata.xml.in:30
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
