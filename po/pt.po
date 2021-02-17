@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-14 15:50+0000\n"
+"POT-Creation-Date: 2021-02-17 01:22+0000\n"
 "PO-Revision-Date: 2020-10-10 13:26+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/wingpanel/"
@@ -12,6 +12,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.9.1\n"
+
+#: src/Indicator.vala:99
+#, fuzzy
+#| msgid "Night Light Settings…"
+msgid "Night Light is on"
+msgstr "Definições da Luz noturna…"
+
+#: src/Indicator.vala:100
+msgid "Middle-click to snooze"
+msgstr ""
+
+#: src/Indicator.vala:103
+#, fuzzy
+#| msgid "Night Light Settings…"
+msgid "Night Light is snoozed"
+msgstr "Definições da Luz noturna…"
+
+#: src/Indicator.vala:104
+msgid "Middle-click to enable"
+msgstr ""
 
 #: src/Widgets/PopoverWidget.vala:32
 msgid "Disabled until sunrise"
