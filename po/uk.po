@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-17 01:22+0000\n"
-"PO-Revision-Date: 2020-09-12 23:11+0000\n"
+"PO-Revision-Date: 2021-02-17 14:18+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight/uk/>\n"
@@ -12,27 +12,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: src/Indicator.vala:99
-#, fuzzy
-#| msgid "Night Light Settings…"
 msgid "Night Light is on"
-msgstr "Параметри нічного світла…"
+msgstr "Нічне світло увімкнене"
 
 #: src/Indicator.vala:100
 msgid "Middle-click to snooze"
-msgstr ""
+msgstr "Клацнути середньою клавішею, щоб відкласти"
 
 #: src/Indicator.vala:103
-#, fuzzy
-#| msgid "Night Light Settings…"
 msgid "Night Light is snoozed"
-msgstr "Параметри нічного світла…"
+msgstr "Нічне світло відкладено"
 
 #: src/Indicator.vala:104
 msgid "Middle-click to enable"
-msgstr ""
+msgstr "Клацнути середньою клавішею, щоб увімкнути"
 
 #: src/Widgets/PopoverWidget.vala:32
 msgid "Disabled until sunrise"
@@ -44,7 +40,7 @@ msgstr "Вимкнено до завтра"
 
 #: src/Widgets/PopoverWidget.vala:65
 msgid "Snooze Night Light"
-msgstr "Вимкнути нічне світло"
+msgstr "Відкласти нічне світло"
 
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
