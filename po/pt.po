@@ -3,7 +3,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-17 01:22+0000\n"
 "PO-Revision-Date: 2021-02-18 01:30+0000\n"
-"Last-Translator: Diogo Oliveira <imdrom.dev@gmail.com>\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight/pt/>\n"
 "Language: pt\n"
@@ -14,24 +14,20 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 
 #: src/Indicator.vala:99
-#, fuzzy
-#| msgid "Night Light Settings…"
 msgid "Night Light is on"
-msgstr "Definições da Luz noturna…"
+msgstr "A luz noturna está ligada"
 
 #: src/Indicator.vala:100
 msgid "Middle-click to snooze"
-msgstr ""
+msgstr "Clique com o botão do meio para suspender"
 
 #: src/Indicator.vala:103
-#, fuzzy
-#| msgid "Night Light Settings…"
 msgid "Night Light is snoozed"
-msgstr "Definições da Luz noturna…"
+msgstr "A luz noturna está suspensa"
 
 #: src/Indicator.vala:104
 msgid "Middle-click to enable"
-msgstr ""
+msgstr "Clique com o botão do meio para ativar"
 
 #: src/Widgets/PopoverWidget.vala:32
 msgid "Disabled until sunrise"
