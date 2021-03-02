@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-17 01:22+0000\n"
-"PO-Revision-Date: 2021-02-17 14:18+0000\n"
-"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
+"PO-Revision-Date: 2021-03-02 04:42+0000\n"
+"Last-Translator: Edgardo Hames <ehames@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight/es/>\n"
 "Language: es\n"
@@ -31,7 +31,7 @@ msgstr "Pulse con el botón central del ratón para activar"
 
 #: src/Widgets/PopoverWidget.vala:32
 msgid "Disabled until sunrise"
-msgstr "Desactivada hasta el amanecer"
+msgstr "Desactivado hasta el amanecer"
 
 #: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
 msgid "Disabled until tomorrow"
