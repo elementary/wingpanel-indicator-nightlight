@@ -87,9 +87,9 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         settings_button.clicked.connect (show_settings);
 
         add (toggle_switch);
-        add (new Wingpanel.Widgets.Separator ());
+        add (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
         add (scale_grid);
-        add (new Wingpanel.Widgets.Separator ());
+        add (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
         add (settings_button);
 
         snoozed = NightLight.Manager.get_instance ().snoozed;
