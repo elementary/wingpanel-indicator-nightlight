@@ -27,7 +27,6 @@ shared_module(
     'src/Indicator.vala',
     'src/Services/ColorInterface.vala',
     'src/Widgets/PopoverWidget.vala',
-    'src/Widgets/RevealerSwitch.vala',
     asresources,
     dependencies: [
         dependency('glib-2.0'),
