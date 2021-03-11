@@ -64,6 +64,11 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
 
         toggle_switch = new Granite.SwitchModelButton (_("Snooze Night Light"));
 
+        var toggle_sep = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
+            margin_top = 3,
+            margin_bottom = 3
+        };
+
         image = new Gtk.Image ();
         image.pixel_size = 48;
 
@@ -82,14 +87,19 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         scale_grid.add (image);
         scale_grid.add (temp_scale);
 
+        var scale_sep = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
+            margin_top = 3,
+            margin_bottom = 3
+        };
+
         var settings_button = new Gtk.ModelButton ();
         settings_button.text = _("Night Light Settings…");
         settings_button.clicked.connect (show_settings);
 
         add (toggle_switch);
-        add (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
+        add (toggle_sep);
         add (scale_grid);
-        add (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
+        add (scale_sep);
         add (settings_button);
 
         snoozed = NightLight.Manager.get_instance ().snoozed;
