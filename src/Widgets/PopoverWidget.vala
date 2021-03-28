@@ -21,11 +21,11 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
     public unowned Nightlight.Indicator indicator { get; construct set; }
     public unowned Settings settings { get; construct set; }
 
-    private Nightlight.RateLimiter limiter;
     private Granite.SwitchModelButton toggle_switch;
     private Gtk.Grid scale_grid;
     private Gtk.Image image;
     private Gtk.Scale temp_scale;
+    private const int TEMP_CHANGE_DELAY_MS = 300;
 
     public bool automatic_schedule {
         set {
@@ -63,7 +63,6 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
     construct {
         orientation = Gtk.Orientation.VERTICAL;
 
-        limiter = new Nightlight.RateLimiter ();
         toggle_switch = new Granite.SwitchModelButton (_("Snooze Night Light"));
 
         var toggle_sep = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
@@ -111,11 +110,22 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         settings.bind ("night-light-schedule-automatic", this, "automatic_schedule", GLib.SettingsBindFlags.GET);
 
         temp_scale.value_changed.connect (() => {
-            var event = new Nightlight.RateLimiter.QueuedEvent (settings, temp_scale.get_value ());
-            limiter.add (event);
+            schedule_temp_change ();
         });
     }
 
+    private uint temp_change_timeout_id = 0;
+    private void schedule_temp_change () {
+        if (temp_change_timeout_id != 0) {
+            return;
+        }
+
+        temp_change_timeout_id = Timeout.add (TEMP_CHANGE_DELAY_MS, () => {
+            settings.set_uint ("night-light-temperature", (uint)temp_scale.get_value ());
+            temp_change_timeout_id = 0;
+            return false;
+        });
+    }
 
     private void show_settings () {
         try {
