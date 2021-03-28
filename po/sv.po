@@ -1,31 +1,56 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 14:35-0700\n"
+"POT-Creation-Date: 2021-02-17 01:22+0000\n"
+"PO-Revision-Date: 2018-10-23 18:09+0000\n"
+"Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
+"Language-Team: Swedish <https://weblate.elementary.io/projects/wingpanel/"
+"indicator-nightlight/sv/>\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.0.1\n"
 
-#: src/Indicator.vala:37
-msgid "Nightlight"
+#: src/Indicator.vala:99
+#, fuzzy
+#| msgid "Night Light Settings…"
+msgid "Night Light is on"
+msgstr "Nattljusinställningar…"
+
+#: src/Indicator.vala:100
+msgid "Middle-click to snooze"
 msgstr ""
 
-#: src/Indicator.vala:38
-msgid "The Nightlight indicator"
+#: src/Indicator.vala:103
+#, fuzzy
+#| msgid "Night Light Settings…"
+msgid "Night Light is snoozed"
+msgstr "Nattljusinställningar…"
+
+#: src/Indicator.vala:104
+msgid "Middle-click to enable"
 msgstr ""
 
 #: src/Widgets/PopoverWidget.vala:32
 msgid "Disabled until sunrise"
-msgstr ""
+msgstr "Inaktiverat fram till soluppgång"
 
 #: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
 msgid "Disabled until tomorrow"
-msgstr ""
+msgstr "Inaktiverat fram till i morgon"
 
 #: src/Widgets/PopoverWidget.vala:65
 msgid "Snooze Night Light"
-msgstr ""
+msgstr "Snooza nattljus"
 
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
-msgstr ""
+msgstr "Nattljusinställningar…"
+
+#~ msgid "Nightlight"
+#~ msgstr "Nattljus"
+
+#~ msgid "The Nightlight indicator"
+#~ msgstr "Nattljusindikatorn"

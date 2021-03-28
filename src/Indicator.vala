@@ -32,14 +32,15 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
         }
     }
 
-    public Indicator (Wingpanel.IndicatorManager.ServerType server_type) {
-        Object (code_name: "wingpanel-indicator-nightlight",
-                display_name: _("Nightlight"),
-                description: _("The Nightlight indicator"));
+    public Indicator () {
+        Object (code_name: Wingpanel.Indicator.NIGHT_LIGHT);
     }
 
     public override Gtk.Widget get_display_widget () {
         if (indicator_icon == null) {
+            weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
+            default_theme.add_resource_path ("/io/elementary/wingpanel/nightlight");
+
             indicator_icon = new Gtk.Spinner ();
 
             var provider = new Gtk.CssProvider ();
@@ -59,17 +60,23 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
             });
 
             var nightlight_manager = NightLight.Manager.get_instance ();
-            nightlight_manager.snooze_changed.connect ((value) => {
-                nightlight_state = !value;
-                popover_widget.snoozed = value;
+            nightlight_manager.notify["snoozed"].connect (() => {
+                var snoozed = nightlight_manager.snoozed;
+                nightlight_state = !snoozed;
+                if (popover_widget != null) {
+                    popover_widget.snoozed = snoozed;
+                }
+
+                update_tooltip (snoozed);
             });
 
-            nightlight_manager.active_changed.connect ((value) => {
-                visible = value;
+            nightlight_manager.notify["active"].connect (() => {
+                visible = nightlight_manager.active;
             });
 
             nightlight_state = !nightlight_manager.snoozed;
             visible = nightlight_manager.active;
+            update_tooltip (nightlight_manager.snoozed);
         }
 
         return indicator_icon;
@@ -87,6 +94,21 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
     public override void opened () {}
 
     public override void closed () {}
+
+    private void update_tooltip (bool snoozed) {
+        string primary_text = _("Night Light is on");
+        string secondary_text = _("Middle-click to snooze");
+
+        if (snoozed) {
+            primary_text = _("Night Light is snoozed");
+            secondary_text = _("Middle-click to enable");
+        }
+
+        indicator_icon.tooltip_markup = "%s\n%s".printf (
+            primary_text,
+            Granite.TOOLTIP_SECONDARY_TEXT_MARKUP.printf (secondary_text)
+        );
+    }
 }
 
 public Wingpanel.Indicator? get_indicator (Module module, Wingpanel.IndicatorManager.ServerType server_type) {
@@ -103,6 +125,6 @@ public Wingpanel.Indicator? get_indicator (Module module, Wingpanel.IndicatorMan
         return null;
     }
 
-    var indicator = new Nightlight.Indicator (server_type);
+    var indicator = new Nightlight.Indicator ();
     return indicator;
 }

@@ -1,30 +1,37 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 14:35-0700\n"
-"PO-Revision-Date: 2018-01-05 00:44+0000\n"
+"POT-Creation-Date: 2021-02-17 01:22+0000\n"
+"PO-Revision-Date: 2021-02-20 08:09+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
-"Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
-"wingpanel/indicator-nightlight/zh_CN/>\n"
+"Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
+"wingpanel/indicator-nightlight/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 4.4.2\n"
 
-#: src/Indicator.vala:37
-msgid "Nightlight"
-msgstr "夜灯模式"
+#: src/Indicator.vala:99
+msgid "Night Light is on"
+msgstr "夜灯已启用"
 
-#: src/Indicator.vala:38
-msgid "The Nightlight indicator"
-msgstr "夜灯指示器"
+#: src/Indicator.vala:100
+msgid "Middle-click to snooze"
+msgstr "单击鼠标中键暂停"
+
+#: src/Indicator.vala:103
+msgid "Night Light is snoozed"
+msgstr "夜灯已暂停"
+
+#: src/Indicator.vala:104
+msgid "Middle-click to enable"
+msgstr "单击鼠标中键恢复"
 
 #: src/Widgets/PopoverWidget.vala:32
-#, fuzzy
 msgid "Disabled until sunrise"
-msgstr "停用直至明天"
+msgstr "停用直至日出"
 
 #: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
 msgid "Disabled until tomorrow"
@@ -37,3 +44,9 @@ msgstr "暂停夜灯"
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
 msgstr "夜灯设置…"
+
+#~ msgid "Nightlight"
+#~ msgstr "夜灯模式"
+
+#~ msgid "The Nightlight indicator"
+#~ msgstr "夜灯指示器"

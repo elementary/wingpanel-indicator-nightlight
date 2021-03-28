@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 14:35-0700\n"
+"POT-Creation-Date: 2021-02-17 01:22+0000\n"
 "PO-Revision-Date: 2018-05-31 08:05+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/wingpanel/"
@@ -13,13 +13,25 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.18\n"
 
-#: src/Indicator.vala:37
-msgid "Nightlight"
-msgstr "Lumină de noapte"
+#: src/Indicator.vala:99
+#, fuzzy
+#| msgid "Night Light Settings…"
+msgid "Night Light is on"
+msgstr "Setări pentru luminile de noapte …"
 
-#: src/Indicator.vala:38
-msgid "The Nightlight indicator"
-msgstr "Indicatorul luminii de noapte"
+#: src/Indicator.vala:100
+msgid "Middle-click to snooze"
+msgstr ""
+
+#: src/Indicator.vala:103
+#, fuzzy
+#| msgid "Night Light Settings…"
+msgid "Night Light is snoozed"
+msgstr "Setări pentru luminile de noapte …"
+
+#: src/Indicator.vala:104
+msgid "Middle-click to enable"
+msgstr ""
 
 #: src/Widgets/PopoverWidget.vala:32
 msgid "Disabled until sunrise"
@@ -36,3 +48,9 @@ msgstr "SnoozeNight Light"
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
 msgstr "Setări pentru luminile de noapte …"
+
+#~ msgid "Nightlight"
+#~ msgstr "Lumină de noapte"
+
+#~ msgid "The Nightlight indicator"
+#~ msgstr "Indicatorul luminii de noapte"

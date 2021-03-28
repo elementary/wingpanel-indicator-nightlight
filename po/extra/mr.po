@@ -1,0 +1,37 @@
+# Marathi translations for extra package.
+# Copyright (C) 2019 THE extra'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# Automatically generated, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-17 01:22+0000\n"
+"PO-Revision-Date: 2020-05-31 16:11+0000\n"
+"Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
+"Language-Team: Marathi <https://l10n.elementary.io/projects/wingpanel/"
+"indicator-nightlight-extra/mr/>\n"
+"Language: mr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.9.1\n"
+
+#: data/nightlight.appdata.xml.in:6
+msgid "Night Light Indicator"
+msgstr "नाईट लाइट इंडिकेटर"
+
+#: data/nightlight.appdata.xml.in:7
+msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
+msgstr "पॅनेल वरून सहजपणे स्नूझ करा किंवा नाईट लाइटचे तापमान समायोजित करा"
+
+#: data/nightlight.appdata.xml.in:11 data/nightlight.appdata.xml.in:16
+#: data/nightlight.appdata.xml.in:21
+msgid "Updated translations"
+msgstr "अद्ययावत भाषांतर"
+
+#: data/nightlight.appdata.xml.in:30
+msgid "elementary, Inc."
+msgstr "एलिमेंटरी, Inc."

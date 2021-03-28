@@ -1,25 +1,33 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 14:35-0700\n"
-"PO-Revision-Date: 2018-02-24 07:49+0000\n"
+"POT-Creation-Date: 2021-02-17 01:22+0000\n"
+"PO-Revision-Date: 2021-03-03 11:01+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
-"Language-Team: Finnish <https://weblate.elementary.io/projects/wingpanel/"
+"Language-Team: Finnish <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 4.4.2\n"
 
-#: src/Indicator.vala:37
-msgid "Nightlight"
-msgstr "Yövalo"
+#: src/Indicator.vala:99
+msgid "Night Light is on"
+msgstr "Yövalo on päällä"
 
-#: src/Indicator.vala:38
-msgid "The Nightlight indicator"
-msgstr "Yövaloilmaisin"
+#: src/Indicator.vala:100
+msgid "Middle-click to snooze"
+msgstr "Torkuta napsauttamalla hiiren keskimmäistä painiketta"
+
+#: src/Indicator.vala:103
+msgid "Night Light is snoozed"
+msgstr "Yövalo on torkutettu"
+
+#: src/Indicator.vala:104
+msgid "Middle-click to enable"
+msgstr "Ota käyttöön napsauttamalla hiiren keskimmäistä painiketta"
 
 #: src/Widgets/PopoverWidget.vala:32
 msgid "Disabled until sunrise"
@@ -36,3 +44,9 @@ msgstr "Torkuta yövalo"
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
 msgstr "Yövalon asetukset…"
+
+#~ msgid "Nightlight"
+#~ msgstr "Yövalo"
+
+#~ msgid "The Nightlight indicator"
+#~ msgstr "Yövaloilmaisin"

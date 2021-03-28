@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 14:35-0700\n"
+"POT-Creation-Date: 2021-02-17 01:22+0000\n"
 "PO-Revision-Date: 2018-02-11 00:11+0000\n"
 "Last-Translator: Rokar <mail@rokar.de>\n"
 "Language-Team: Kurdish <https://weblate.elementary.io/projects/wingpanel/"
@@ -13,12 +13,22 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.18\n"
 
-#: src/Indicator.vala:37
-msgid "Nightlight"
+#: src/Indicator.vala:99
+#, fuzzy
+#| msgid "Nightlight"
+msgid "Night Light is on"
 msgstr "nightlight"
 
-#: src/Indicator.vala:38
-msgid "The Nightlight indicator"
+#: src/Indicator.vala:100
+msgid "Middle-click to snooze"
+msgstr ""
+
+#: src/Indicator.vala:103
+msgid "Night Light is snoozed"
+msgstr ""
+
+#: src/Indicator.vala:104
+msgid "Middle-click to enable"
 msgstr ""
 
 #: src/Widgets/PopoverWidget.vala:32

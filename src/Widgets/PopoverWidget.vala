@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2017 elementary LLC. (https://elementary.io)
+ * Copyright (c) 2017-2021 elementary LLC. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -22,7 +22,7 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
     public unowned Settings settings { get; construct set; }
 
     private Nightlight.RateLimiter limiter;
-    private NightLight.Widgets.Switch toggle_switch;
+    private Granite.SwitchModelButton toggle_switch;
     private Gtk.Grid scale_grid;
     private Gtk.Image image;
     private Gtk.Scale temp_scale;
@@ -30,9 +30,9 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
     public bool automatic_schedule {
         set {
             if (value) {
-                toggle_switch.secondary_label = _("Disabled until sunrise");
+                toggle_switch.description = _("Disabled until sunrise");
             } else {
-                toggle_switch.secondary_label = _("Disabled until tomorrow");
+                toggle_switch.description = _("Disabled until tomorrow");
             }
         }
     }
@@ -64,8 +64,12 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         orientation = Gtk.Orientation.VERTICAL;
 
         limiter = new Nightlight.RateLimiter ();
+        toggle_switch = new Granite.SwitchModelButton (_("Snooze Night Light"));
 
-        toggle_switch = new NightLight.Widgets.Switch (_("Snooze Night Light"), _("Disabled until tomorrow"));
+        var toggle_sep = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
+            margin_top = 3,
+            margin_bottom = 3
+        };
 
         image = new Gtk.Image ();
         image.pixel_size = 48;
@@ -85,19 +89,24 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         scale_grid.add (image);
         scale_grid.add (temp_scale);
 
+        var scale_sep = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
+            margin_top = 3,
+            margin_bottom = 3
+        };
+
         var settings_button = new Gtk.ModelButton ();
         settings_button.text = _("Night Light Settings…");
         settings_button.clicked.connect (show_settings);
 
         add (toggle_switch);
-        add (new Wingpanel.Widgets.Separator ());
+        add (toggle_sep);
         add (scale_grid);
-        add (new Wingpanel.Widgets.Separator ());
+        add (scale_sep);
         add (settings_button);
 
         snoozed = NightLight.Manager.get_instance ().snoozed;
 
-        toggle_switch.get_switch ().bind_property ("active", NightLight.Manager.get_instance (), "snoozed", GLib.BindingFlags.DEFAULT);
+        toggle_switch.bind_property ("active", NightLight.Manager.get_instance (), "snoozed", GLib.BindingFlags.DEFAULT);
         settings.bind ("night-light-temperature", this, "temperature", GLib.SettingsBindFlags.GET);
         settings.bind ("night-light-schedule-automatic", this, "automatic_schedule", GLib.SettingsBindFlags.GET);
 

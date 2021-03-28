@@ -1,38 +1,52 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 14:35-0700\n"
-"PO-Revision-Date: 2018-02-28 10:51+0000\n"
-"Last-Translator: Luís Lima <geral@liqensoft.com>\n"
-"Language-Team: Portuguese <https://weblate.elementary.io/projects/wingpanel/"
+"POT-Creation-Date: 2021-02-17 01:22+0000\n"
+"PO-Revision-Date: 2021-02-18 01:30+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
+"Language-Team: Portuguese <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 4.4.2\n"
 
-#: src/Indicator.vala:37
-msgid "Nightlight"
-msgstr "Modo Noite"
+#: src/Indicator.vala:99
+msgid "Night Light is on"
+msgstr "A luz noturna está ligada"
 
-#: src/Indicator.vala:38
-msgid "The Nightlight indicator"
-msgstr "Indicador do Modo Noite"
+#: src/Indicator.vala:100
+msgid "Middle-click to snooze"
+msgstr "Clique com o botão do meio para suspender"
+
+#: src/Indicator.vala:103
+msgid "Night Light is snoozed"
+msgstr "A luz noturna está suspensa"
+
+#: src/Indicator.vala:104
+msgid "Middle-click to enable"
+msgstr "Clique com o botão do meio para ativar"
 
 #: src/Widgets/PopoverWidget.vala:32
 msgid "Disabled until sunrise"
-msgstr "Desativado até ao nascer do sol"
+msgstr "Desativada até ao nascer do sol"
 
 #: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
 msgid "Disabled until tomorrow"
-msgstr "Desativado até amanhã"
+msgstr "Desativada até amanhã"
 
 #: src/Widgets/PopoverWidget.vala:65
 msgid "Snooze Night Light"
-msgstr "Suspender Modo Noite"
+msgstr "Suspender luz noturna"
 
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
-msgstr "Definições do Modo Noite…"
+msgstr "Definições da luz noturna…"
+
+#~ msgid "Nightlight"
+#~ msgstr "Luz noturna"
+
+#~ msgid "The Nightlight indicator"
+#~ msgstr "O Indicador de luz noturna"

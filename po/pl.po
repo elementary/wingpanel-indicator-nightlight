@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 14:35-0700\n"
+"POT-Creation-Date: 2021-02-17 01:22+0000\n"
 "PO-Revision-Date: 2018-02-25 09:30+0000\n"
 "Last-Translator: Piotr Strebski <strebski@o2.pl>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/wingpanel/"
@@ -14,13 +14,25 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.18\n"
 
-#: src/Indicator.vala:37
-msgid "Nightlight"
-msgstr "Światło nocne"
+#: src/Indicator.vala:99
+#, fuzzy
+#| msgid "Night Light Settings…"
+msgid "Night Light is on"
+msgstr "Ustawienia światła nocnego…"
 
-#: src/Indicator.vala:38
-msgid "The Nightlight indicator"
-msgstr "Wskaźnik światła nocnego"
+#: src/Indicator.vala:100
+msgid "Middle-click to snooze"
+msgstr ""
+
+#: src/Indicator.vala:103
+#, fuzzy
+#| msgid "Night Light Settings…"
+msgid "Night Light is snoozed"
+msgstr "Ustawienia światła nocnego…"
+
+#: src/Indicator.vala:104
+msgid "Middle-click to enable"
+msgstr ""
 
 #: src/Widgets/PopoverWidget.vala:32
 msgid "Disabled until sunrise"
@@ -37,3 +49,9 @@ msgstr "Uśpij światło nocne"
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
 msgstr "Ustawienia światła nocnego…"
+
+#~ msgid "Nightlight"
+#~ msgstr "Światło nocne"
+
+#~ msgid "The Nightlight indicator"
+#~ msgstr "Wskaźnik światła nocnego"

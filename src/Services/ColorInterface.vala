@@ -18,28 +18,36 @@
  */
 
 [DBus (name="org.gnome.SettingsDaemon.Color")]
-public interface NightLight.ColorInterface : Object {
+public interface NightLight.ColorInterface : GLib.DBusProxy {
     public abstract bool disabled_until_tomorrow { get; set; }
     public abstract bool night_light_active { get; }
 }
 
 public class NightLight.Manager : Object {
-    public signal void snooze_changed (bool value);
-    public signal void active_changed (bool value);
-
     private NightLight.ColorInterface interface;
 
+    private bool _snoozed = false;
     public bool snoozed {
         get {
-            return interface.disabled_until_tomorrow;
+            return _snoozed;
         } set {
-            interface.disabled_until_tomorrow = value;
-            snooze_changed (value);
+            if (interface == null) {
+                return;
+            }
+
+            if (value != _snoozed) {
+                _snoozed = value;
+                interface.disabled_until_tomorrow = value;
+            }
         }
     }
 
     public bool active {
         get {
+            if (interface == null) {
+                return false;
+            }
+
             return interface.night_light_active;
         }
     }
@@ -56,20 +64,28 @@ public class NightLight.Manager : Object {
     private Manager () {}
 
     construct {
+        init_interface.begin ();
+    }
+
+    private async void init_interface () {
         try {
-            interface = Bus.get_proxy_sync (BusType.SESSION, "org.gnome.SettingsDaemon.Color", "/org/gnome/SettingsDaemon/Color", DBusProxyFlags.NONE);
+            interface = yield Bus.get_proxy (BusType.SESSION, "org.gnome.SettingsDaemon.Color", "/org/gnome/SettingsDaemon/Color", DBusProxyFlags.NONE);
+            _snoozed = interface.disabled_until_tomorrow;
+            notify_property ("active");
+            notify_property ("snoozed");
 
-            (interface as DBusProxy).g_properties_changed.connect ((changed, invalid) => {
-                var snooze = changed.lookup_value("DisabledUntilTomorrow", new VariantType("b"));
+            interface.g_properties_changed.connect ((changed, invalid) => {
+                var snooze = changed.lookup_value ("DisabledUntilTomorrow", new VariantType ("b"));
 
-                if (snooze != null) {
-                    snoozed = snooze.get_boolean ();
+                if (snooze != null && snooze.get_boolean () != _snoozed) {
+                    _snoozed = snooze.get_boolean ();
+                    notify_property ("snoozed");
                 }
 
                 var _active = changed.lookup_value ("NightLightActive", new VariantType ("b"));
 
                 if (_active != null) {
-                    active_changed (_active.get_boolean ());
+                    notify_property ("active");
                 }
             });
         } catch (Error e) {

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 14:35-0700\n"
+"POT-Creation-Date: 2021-02-17 01:22+0000\n"
 "PO-Revision-Date: 2017-12-25 13:15+0000\n"
 "Last-Translator: Subhadeep Jasu <subhajasu@gmail.com>\n"
 "Language-Team: Bengali <https://weblate.elementary.io/projects/wingpanel/"
@@ -13,13 +13,25 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.18\n"
 
-#: src/Indicator.vala:37
-msgid "Nightlight"
-msgstr "নাইটলাইট"
+#: src/Indicator.vala:99
+#, fuzzy
+#| msgid "Night Light Settings…"
+msgid "Night Light is on"
+msgstr "নাইটলাইট সেটিংস…"
 
-#: src/Indicator.vala:38
-msgid "The Nightlight indicator"
-msgstr "নাইটলাইট ইনডিকেটর"
+#: src/Indicator.vala:100
+msgid "Middle-click to snooze"
+msgstr ""
+
+#: src/Indicator.vala:103
+#, fuzzy
+#| msgid "Night Light Settings…"
+msgid "Night Light is snoozed"
+msgstr "নাইটলাইট সেটিংস…"
+
+#: src/Indicator.vala:104
+msgid "Middle-click to enable"
+msgstr ""
 
 #: src/Widgets/PopoverWidget.vala:32
 #, fuzzy
@@ -37,3 +49,9 @@ msgstr "নাইটলাইট সাময়িক নিদ্রিত কর
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
 msgstr "নাইটলাইট সেটিংস…"
+
+#~ msgid "Nightlight"
+#~ msgstr "নাইটলাইট"
+
+#~ msgid "The Nightlight indicator"
+#~ msgstr "নাইটলাইট ইনডিকেটর"
