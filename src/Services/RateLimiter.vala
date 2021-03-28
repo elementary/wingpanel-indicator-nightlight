@@ -30,8 +30,8 @@ public class Nightlight.RateLimiter : Object {
     private Mutex mutex = Mutex ();
 
     construct {
-        event_queue = new Queue<QueuedEvent>();
-        event_set = new HashTable<string, QueuedEvent>(str_hash, str_equal);
+        event_queue = new Queue<QueuedEvent> ();
+        event_set = new HashTable<string, QueuedEvent> (str_hash, str_equal);
     }
 
     public void add (QueuedEvent event) {
