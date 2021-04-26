@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-17 01:22+0000\n"
-"PO-Revision-Date: 2018-12-06 06:00+0000\n"
-"Last-Translator: Mohelm97 <mohelm97@gmail.com>\n"
-"Language-Team: Arabic <https://weblate.elementary.io/projects/wingpanel/"
+"PO-Revision-Date: 2021-04-26 17:52+0000\n"
+"Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
+"Language-Team: Arabic <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
@@ -12,13 +12,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: src/Indicator.vala:99
-#, fuzzy
-#| msgid "Night Light Settings…"
 msgid "Night Light is on"
-msgstr "إعدادات الضوء الليلي…"
+msgstr "الضوء الليلي مفعل"
 
 #: src/Indicator.vala:100
 msgid "Middle-click to snooze"
