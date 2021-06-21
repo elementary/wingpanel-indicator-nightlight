@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-17 01:22+0000\n"
-"PO-Revision-Date: 2021-03-11 08:34+0000\n"
+"PO-Revision-Date: 2021-04-05 00:38+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight-extra/ru/>\n"
@@ -31,7 +31,7 @@ msgstr "Легко отложите или отрегулируйте темпе
 #: data/nightlight.appdata.xml.in:11 data/nightlight.appdata.xml.in:16
 #: data/nightlight.appdata.xml.in:21
 msgid "Updated translations"
-msgstr "Обновленны переводы"
+msgstr "Обновлены переводы"
 
 #: data/nightlight.appdata.xml.in:30
 msgid "elementary, Inc."
