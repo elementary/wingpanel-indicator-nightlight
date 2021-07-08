@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-17 01:22+0000\n"
-"PO-Revision-Date: 2021-03-21 13:45+0000\n"
+"PO-Revision-Date: 2021-07-03 19:21+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight/uk/>\n"
@@ -44,7 +44,7 @@ msgstr "Відкласти нічне світло"
 
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Night Light Settings…"
-msgstr "Параметри нічного світла…"
+msgstr "Налаштування нічного світла…"
 
 #~ msgid "Nightlight"
 #~ msgstr "Нічний"
