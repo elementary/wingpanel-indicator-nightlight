@@ -1,3 +1,20 @@
+wingpanel-indicator-nightlight (2.1.0) bionic; urgency=medium
+
+  * Release 2.1.0 (#88)
+  * Implement a rate limiter to the dbus calls (#30)
+  * Define log domain (#87)
+  * Use Granite.SwitchModelButton and Gtk.Separator (#83)
+  * Update for libwingpanel transition (#81)
+  * Update translation files
+  * Update translation template
+  * Bump dep to wingpanel-3 and use proper codename (#77)
+  * Use async version of Bus.get_proxy (#76)
+  * RevealerSwitch: Use Granite.STYLE_CLASS_SMALL_LABEL (#78)
+  * LINGUAS: Sort
+  * add tooltip to indicator (#75)
+
+ -- elementary, Inc. <builds@elementary.io>  Wed, 14 Jul 2021 20:11:29 +0000
+
 wingpanel-indicator-nightlight (2.0.4) bionic; urgency=medium
 
   * Release 2.0.4 (#70)
