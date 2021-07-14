@@ -6,6 +6,13 @@
   <name>Night Light Indicator</name>
   <summary>Easily snooze or adjust the temperature of Night Light from the Panel</summary>
   <releases>
+    <release version="2.1.0" date="2021-07-14" urgency="medium">
+      <description>
+        <p>Show tooltip on hover</p>
+        <p>Performance improvements</p>
+        <p>Updated translations</p>
+      </description>
+    </release>
     <release version="2.0.4" date="2020-08-07" urgency="medium">
       <description>
         <p>Updated translations</p>
