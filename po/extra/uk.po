@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 16:27+0000\n"
-"PO-Revision-Date: 2021-02-17 14:18+0000\n"
+"PO-Revision-Date: 2021-07-15 21:31+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight-extra/uk/>\n"
@@ -30,11 +30,11 @@ msgstr "Легко відкладіть або відрегулюйте темп
 
 #: data/nightlight.appdata.xml.in:11
 msgid "Show tooltip on hover"
-msgstr ""
+msgstr "Додано підказку під час наведення"
 
 #: data/nightlight.appdata.xml.in:12
 msgid "Performance improvements"
-msgstr ""
+msgstr "Поліпшено швидкодію"
 
 #: data/nightlight.appdata.xml.in:13 data/nightlight.appdata.xml.in:18
 #: data/nightlight.appdata.xml.in:23 data/nightlight.appdata.xml.in:28
