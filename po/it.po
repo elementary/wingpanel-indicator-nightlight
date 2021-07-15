@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-17 01:22+0000\n"
+"POT-Creation-Date: 2021-07-15 16:27+0000\n"
 "PO-Revision-Date: 2018-03-09 10:31+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/wingpanel/"
@@ -33,19 +33,19 @@ msgstr "Impostazioni Luce Notturna…"
 msgid "Middle-click to enable"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:32
+#: src/Widgets/PopoverWidget.vala:33
 msgid "Disabled until sunrise"
 msgstr "Disabilitato fino all'alba"
 
-#: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
+#: src/Widgets/PopoverWidget.vala:35
 msgid "Disabled until tomorrow"
 msgstr "Disabilitato fino a domani"
 
-#: src/Widgets/PopoverWidget.vala:65
+#: src/Widgets/PopoverWidget.vala:66
 msgid "Snooze Night Light"
 msgstr "Sospendi Luce Notturna"
 
-#: src/Widgets/PopoverWidget.vala:86
+#: src/Widgets/PopoverWidget.vala:97
 msgid "Night Light Settings…"
 msgstr "Impostazioni Luce Notturna…"
 

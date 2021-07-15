@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-17 01:22+0000\n"
+"POT-Creation-Date: 2021-07-15 16:27+0000\n"
 "PO-Revision-Date: 2021-02-19 01:23+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/wingpanel/"
@@ -29,19 +29,19 @@ msgstr "Gece Işığı ertelendi"
 msgid "Middle-click to enable"
 msgstr "Orta tıklatma ile etkinleştir"
 
-#: src/Widgets/PopoverWidget.vala:32
+#: src/Widgets/PopoverWidget.vala:33
 msgid "Disabled until sunrise"
 msgstr "Gün doğumuna kadar devre dışı bırakıldı"
 
-#: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
+#: src/Widgets/PopoverWidget.vala:35
 msgid "Disabled until tomorrow"
 msgstr "Yarına kadar devre dışı bırakıldı"
 
-#: src/Widgets/PopoverWidget.vala:65
+#: src/Widgets/PopoverWidget.vala:66
 msgid "Snooze Night Light"
 msgstr "Gece Işığını Ertele"
 
-#: src/Widgets/PopoverWidget.vala:86
+#: src/Widgets/PopoverWidget.vala:97
 msgid "Night Light Settings…"
 msgstr "Gece Işığı Ayarları…"
 

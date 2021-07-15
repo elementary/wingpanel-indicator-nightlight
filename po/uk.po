@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-17 01:22+0000\n"
+"POT-Creation-Date: 2021-07-15 16:27+0000\n"
 "PO-Revision-Date: 2021-07-03 19:21+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/wingpanel/"
@@ -30,19 +30,19 @@ msgstr "Нічне світло відкладено"
 msgid "Middle-click to enable"
 msgstr "Клацніть середньою клавішею, щоб увімкнути"
 
-#: src/Widgets/PopoverWidget.vala:32
+#: src/Widgets/PopoverWidget.vala:33
 msgid "Disabled until sunrise"
 msgstr "Вимкнено до світанку"
 
-#: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
+#: src/Widgets/PopoverWidget.vala:35
 msgid "Disabled until tomorrow"
 msgstr "Вимкнено до завтра"
 
-#: src/Widgets/PopoverWidget.vala:65
+#: src/Widgets/PopoverWidget.vala:66
 msgid "Snooze Night Light"
 msgstr "Відкласти нічне світло"
 
-#: src/Widgets/PopoverWidget.vala:86
+#: src/Widgets/PopoverWidget.vala:97
 msgid "Night Light Settings…"
 msgstr "Налаштування нічного світла…"
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-17 01:22+0000\n"
+"POT-Creation-Date: 2021-07-15 16:27+0000\n"
 "PO-Revision-Date: 2021-02-17 14:18+0000\n"
 "Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
@@ -29,19 +29,19 @@ msgstr "Night Light is snoozed"
 msgid "Middle-click to enable"
 msgstr "Middle-click to enable"
 
-#: src/Widgets/PopoverWidget.vala:32
+#: src/Widgets/PopoverWidget.vala:33
 msgid "Disabled until sunrise"
 msgstr "Disabled until sunrise"
 
-#: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
+#: src/Widgets/PopoverWidget.vala:35
 msgid "Disabled until tomorrow"
 msgstr "Disabled until tomorrow"
 
-#: src/Widgets/PopoverWidget.vala:65
+#: src/Widgets/PopoverWidget.vala:66
 msgid "Snooze Night Light"
 msgstr "Snooze Night Light"
 
-#: src/Widgets/PopoverWidget.vala:86
+#: src/Widgets/PopoverWidget.vala:97
 msgid "Night Light Settings…"
 msgstr "Night Light Settings…"
 

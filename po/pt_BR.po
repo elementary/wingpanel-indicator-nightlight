@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-17 01:22+0000\n"
+"POT-Creation-Date: 2021-07-15 16:27+0000\n"
 "PO-Revision-Date: 2021-03-12 20:18+0000\n"
 "Last-Translator: Leonardo <leonardo@elementary.io>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
@@ -29,19 +29,19 @@ msgstr "A Luz Noturna está adiada"
 msgid "Middle-click to enable"
 msgstr "Clicar com o botão direito para ativar"
 
-#: src/Widgets/PopoverWidget.vala:32
+#: src/Widgets/PopoverWidget.vala:33
 msgid "Disabled until sunrise"
 msgstr "Desativado até o nascer do sol"
 
-#: src/Widgets/PopoverWidget.vala:34 src/Widgets/PopoverWidget.vala:65
+#: src/Widgets/PopoverWidget.vala:35
 msgid "Disabled until tomorrow"
 msgstr "Desativado até amanhã"
 
-#: src/Widgets/PopoverWidget.vala:65
+#: src/Widgets/PopoverWidget.vala:66
 msgid "Snooze Night Light"
 msgstr "Adiar Luz Noturna"
 
-#: src/Widgets/PopoverWidget.vala:86
+#: src/Widgets/PopoverWidget.vala:97
 msgid "Night Light Settings…"
 msgstr "Configurações de Luz Noturna…"
 
