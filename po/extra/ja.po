@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 16:27+0000\n"
-"PO-Revision-Date: 2020-05-01 13:10+0000\n"
+"PO-Revision-Date: 2021-07-18 04:52+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight-extra/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/nightlight.appdata.xml.in:6
 msgid "Night Light Indicator"
@@ -29,11 +29,11 @@ msgstr "パネルから簡単に夜間モードを一時停止したり色温度
 
 #: data/nightlight.appdata.xml.in:11
 msgid "Show tooltip on hover"
-msgstr ""
+msgstr "ホバー時にツールチップを表示するように変更"
 
 #: data/nightlight.appdata.xml.in:12
 msgid "Performance improvements"
-msgstr ""
+msgstr "パフォーマンスの改善"
 
 #: data/nightlight.appdata.xml.in:13 data/nightlight.appdata.xml.in:18
 #: data/nightlight.appdata.xml.in:23 data/nightlight.appdata.xml.in:28
