@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 16:27+0000\n"
-"PO-Revision-Date: 2019-12-04 21:24+0000\n"
+"PO-Revision-Date: 2021-07-24 19:23+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight-extra/fi/>\n"
@@ -17,19 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/nightlight.appdata.xml.in:6
-#, fuzzy
-#| msgid "Nightlight Indicator"
 msgid "Night Light Indicator"
 msgstr "Yövalon ilmaisin"
 
 #: data/nightlight.appdata.xml.in:7
-#, fuzzy
-#| msgid "Easily snooze or adjust the temperature of Nightlight"
 msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
-msgstr "Torkuta tai säädä yövalon lämpötilaa"
+msgstr "Torkuta tai säädä yövalon lämpötilaa paneelista"
 
 #: data/nightlight.appdata.xml.in:11
 msgid "Show tooltip on hover"
