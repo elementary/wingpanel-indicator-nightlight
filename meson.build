@@ -23,12 +23,22 @@ asresources = gnome.compile_resources(
 wingpanel_dep = dependency('wingpanel')
 wingpanel_indicatorsdir = wingpanel_dep.get_pkgconfig_variable('indicatorsdir', define_variable: ['libdir', libdir])
 
+config_data = configuration_data()
+config_data.set_quoted('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
+config_data.set_quoted('GETTEXT_PACKAGE', meson.project_name() + '-indicator')
+config_file = configure_file(
+    input: 'src/Config.vala.in',
+    output: '@BASENAME@',
+    configuration: config_data
+)
+
 shared_module(
     meson.project_name(),
     'src/Indicator.vala',
     'src/Services/ColorInterface.vala',
     'src/Widgets/PopoverWidget.vala',
     asresources,
+    config_file,
     dependencies: [
         dependency('glib-2.0'),
         dependency('gobject-2.0'),
