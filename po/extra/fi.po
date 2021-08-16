@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 16:27+0000\n"
-"PO-Revision-Date: 2021-07-24 19:23+0000\n"
+"PO-Revision-Date: 2021-08-16 07:29+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight-extra/fi/>\n"
@@ -29,11 +29,11 @@ msgstr "Torkuta tai säädä yövalon lämpötilaa paneelista"
 
 #: data/nightlight.appdata.xml.in:11
 msgid "Show tooltip on hover"
-msgstr ""
+msgstr "Näytä työkaluvihje osoittaessa"
 
 #: data/nightlight.appdata.xml.in:12
 msgid "Performance improvements"
-msgstr ""
+msgstr "Parannuksia suorituskykyyn"
 
 #: data/nightlight.appdata.xml.in:13 data/nightlight.appdata.xml.in:18
 #: data/nightlight.appdata.xml.in:23 data/nightlight.appdata.xml.in:28
