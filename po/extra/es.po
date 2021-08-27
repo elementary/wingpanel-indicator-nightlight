@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 16:27+0000\n"
-"PO-Revision-Date: 2020-05-01 13:10+0000\n"
+"PO-Revision-Date: 2021-08-27 11:29+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight-extra/es/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/nightlight.appdata.xml.in:6
 msgid "Night Light Indicator"
@@ -30,7 +30,7 @@ msgstr ""
 
 #: data/nightlight.appdata.xml.in:11
 msgid "Show tooltip on hover"
-msgstr ""
+msgstr "Se muestra una descripción emergente al posar el puntero del ratón"
 
 #: data/nightlight.appdata.xml.in:12
 msgid "Performance improvements"
