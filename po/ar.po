@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 16:27+0000\n"
-"PO-Revision-Date: 2021-04-26 17:52+0000\n"
-"Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
+"PO-Revision-Date: 2021-08-27 11:29+0000\n"
+"Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight/ar/>\n"
 "Language: ar\n"
@@ -20,21 +20,19 @@ msgstr "الضوء الليلي مفعل"
 
 #: src/Indicator.vala:100
 msgid "Middle-click to snooze"
-msgstr ""
+msgstr "اضغط الزر الأوسط للتأخير"
 
 #: src/Indicator.vala:103
-#, fuzzy
-#| msgid "Night Light Settings…"
 msgid "Night Light is snoozed"
-msgstr "إعدادات الضوء الليلي…"
+msgstr "تم تأخير تفعيل الضوء الليلي"
 
 #: src/Indicator.vala:104
 msgid "Middle-click to enable"
-msgstr ""
+msgstr "اضغط الزر الأوسط للتفعيل"
 
 #: src/Widgets/PopoverWidget.vala:33
 msgid "Disabled until sunrise"
-msgstr "معطل حتى الشروق"
+msgstr "معطل حتى شروق الشمس"
 
 #: src/Widgets/PopoverWidget.vala:35
 msgid "Disabled until tomorrow"
@@ -42,7 +40,7 @@ msgstr "معطل حتى الغد"
 
 #: src/Widgets/PopoverWidget.vala:66
 msgid "Snooze Night Light"
-msgstr "تعطيل الضوء الليلي مؤقتًا"
+msgstr "قم بتأخير تفعيل الضوء الليلي"
 
 #: src/Widgets/PopoverWidget.vala:97
 msgid "Night Light Settings…"
