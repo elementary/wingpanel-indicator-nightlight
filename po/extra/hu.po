@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 16:27+0000\n"
-"PO-Revision-Date: 2021-08-28 16:53+0000\n"
+"PO-Revision-Date: 2021-08-28 22:49+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight-extra/hu/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: data/nightlight.appdata.xml.in:6
 msgid "Night Light Indicator"
-msgstr ""
+msgstr "Éjszakaifény-kijelzés"
 
 #: data/nightlight.appdata.xml.in:7
 msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
@@ -33,13 +33,13 @@ msgstr ""
 
 #: data/nightlight.appdata.xml.in:12
 msgid "Performance improvements"
-msgstr ""
+msgstr "Teljesítménybeli javítások"
 
 #: data/nightlight.appdata.xml.in:13 data/nightlight.appdata.xml.in:18
 #: data/nightlight.appdata.xml.in:23 data/nightlight.appdata.xml.in:28
 msgid "Updated translations"
-msgstr "Frissített fordítások"
+msgstr "Fordítási frissítések"
 
 #: data/nightlight.appdata.xml.in:37
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
