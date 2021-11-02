@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 16:27+0000\n"
-"PO-Revision-Date: 2018-02-25 09:30+0000\n"
-"Last-Translator: Piotr Strebski <strebski@o2.pl>\n"
-"Language-Team: Polish <https://weblate.elementary.io/projects/wingpanel/"
+"PO-Revision-Date: 2021-11-02 09:17+0000\n"
+"Last-Translator: DarkKnightComes <darkknightcomes@gmail.com>\n"
+"Language-Team: Polish <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -12,27 +12,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: src/Indicator.vala:99
-#, fuzzy
-#| msgid "Night Light Settings…"
 msgid "Night Light is on"
-msgstr "Ustawienia światła nocnego…"
+msgstr "Światło nocne jest włączone"
 
 #: src/Indicator.vala:100
 msgid "Middle-click to snooze"
-msgstr ""
+msgstr "Kliknij środkowy przycisk myszy, aby uśpić"
 
 #: src/Indicator.vala:103
-#, fuzzy
-#| msgid "Night Light Settings…"
 msgid "Night Light is snoozed"
-msgstr "Ustawienia światła nocnego…"
+msgstr "Światło nocne jest uśpione"
 
 #: src/Indicator.vala:104
 msgid "Middle-click to enable"
-msgstr ""
+msgstr "Kliknij środkowy przycisk myszy, aby włączyć"
 
 #: src/Widgets/PopoverWidget.vala:33
 msgid "Disabled until sunrise"
