@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 16:27+0000\n"
-"PO-Revision-Date: 2022-01-10 17:06+0000\n"
-"Last-Translator: Michal Grňo <m93a.cz@gmail.com>\n"
+"PO-Revision-Date: 2022-01-12 19:06+0000\n"
+"Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight/cs/>\n"
 "Language: cs\n"
@@ -19,7 +19,7 @@ msgstr "Noční světlo je zapnuté"
 
 #: src/Indicator.vala:100
 msgid "Middle-click to snooze"
-msgstr "Klikněte kolečkem pro odložení"
+msgstr "Odložíte kliknutím kolečkem myši"
 
 #: src/Indicator.vala:103
 msgid "Night Light is snoozed"
@@ -27,7 +27,7 @@ msgstr "Noční světlo je odložené"
 
 #: src/Indicator.vala:104
 msgid "Middle-click to enable"
-msgstr "Klikněte kolečkem pro zapnutí"
+msgstr "Zapnete kliknutím kolečkem myši"
 
 #: src/Widgets/PopoverWidget.vala:33
 msgid "Disabled until sunrise"
