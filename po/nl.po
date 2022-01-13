@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 16:27+0000\n"
-"PO-Revision-Date: 2020-01-03 22:07+0000\n"
-"Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
+"PO-Revision-Date: 2022-01-13 20:35+0000\n"
+"Last-Translator: Niels Van Laerhoven <niels1995@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight/nl/>\n"
 "Language: nl\n"
@@ -11,23 +11,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: src/Indicator.vala:99
-#, fuzzy
-#| msgid "Night Light Settings…"
 msgid "Night Light is on"
-msgstr "Nachtmodus instellingen…"
+msgstr "Nachtlicht staat aan"
 
 #: src/Indicator.vala:100
 msgid "Middle-click to snooze"
 msgstr ""
 
 #: src/Indicator.vala:103
-#, fuzzy
-#| msgid "Night Light Settings…"
 msgid "Night Light is snoozed"
-msgstr "Nachtmodus instellingen…"
+msgstr "Nachtlicht is onderbroken"
 
 #: src/Indicator.vala:104
 msgid "Middle-click to enable"
