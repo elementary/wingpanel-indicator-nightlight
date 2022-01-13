@@ -3,7 +3,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 16:27+0000\n"
 "PO-Revision-Date: 2022-01-13 20:35+0000\n"
-"Last-Translator: Niels Van Laerhoven <niels1995@gmail.com>\n"
+"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight/nl/>\n"
 "Language: nl\n"
@@ -19,7 +19,7 @@ msgstr "Nachtlicht staat aan"
 
 #: src/Indicator.vala:100
 msgid "Middle-click to snooze"
-msgstr ""
+msgstr "Middelklik om te snoozen"
 
 #: src/Indicator.vala:103
 msgid "Night Light is snoozed"
