@@ -41,7 +41,7 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
 
     public override Gtk.Widget get_display_widget () {
         if (indicator_icon == null) {
-            weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
+            weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_for_display (Gdk.Display.get_default ());
             default_theme.add_resource_path ("/io/elementary/wingpanel/nightlight");
 
             indicator_icon = new Gtk.Spinner ();
@@ -52,15 +52,6 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
             style_context = indicator_icon.get_style_context ();
             style_context.add_class ("night-light-icon");
             style_context.add_provider (provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
-
-            indicator_icon.button_press_event.connect ((e) => {
-                if (e.button == Gdk.BUTTON_MIDDLE) {
-                    NightLight.Manager.get_instance ().toggle_snooze ();
-                    return Gdk.EVENT_STOP;
-                }
-
-                return Gdk.EVENT_PROPAGATE;
-            });
 
             var nightlight_manager = NightLight.Manager.get_instance ();
             nightlight_manager.notify["snoozed"].connect (() => {
@@ -97,6 +88,10 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
     public override void opened () {}
 
     public override void closed () {}
+
+    public override void middle_clicked () {
+        NightLight.Manager.get_instance ().toggle_snooze ();
+    }
 
     private void update_tooltip (bool snoozed) {
         string primary_text = _("Night Light is on");
