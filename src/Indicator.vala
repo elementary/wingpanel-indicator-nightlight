@@ -46,6 +46,16 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
 
             indicator_icon = new Gtk.Spinner ();
 
+            var click_gesture = new Gtk.GestureClick () {
+                button = Gdk.BUTTON_MIDDLE,
+            };
+
+            click_gesture.released.connect ((n, x, y) => {
+                NightLight.Manager.get_instance ().toggle_snooze ();
+            });
+
+            indicator_icon.add_controller (click_gesture);
+
             var provider = new Gtk.CssProvider ();
             provider.load_from_resource ("io/elementary/wingpanel/nightlight/indicator.css");
 
@@ -88,10 +98,6 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
     public override void opened () {}
 
     public override void closed () {}
-
-    public override void middle_clicked () {
-        NightLight.Manager.get_instance ().toggle_snooze ();
-    }
 
     private void update_tooltip (bool snoozed) {
         string primary_text = _("Night Light is on");
