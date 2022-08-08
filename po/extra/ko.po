@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 16:27+0000\n"
-"PO-Revision-Date: 2022-08-05 09:01+0000\n"
+"PO-Revision-Date: 2022-08-08 11:31+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight-extra/ko/>\n"
@@ -21,24 +21,24 @@ msgstr ""
 
 #: data/nightlight.appdata.xml.in:6
 msgid "Night Light Indicator"
-msgstr ""
+msgstr "낮은 색온도 표시기"
 
 #: data/nightlight.appdata.xml.in:7
 msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
-msgstr ""
+msgstr "패널에서 야간 조명의 온도와 스누즈 기능을 쉽게 조정합니다"
 
 #: data/nightlight.appdata.xml.in:11
 msgid "Show tooltip on hover"
-msgstr ""
+msgstr "호버 시 툴팁 보이기"
 
 #: data/nightlight.appdata.xml.in:12
 msgid "Performance improvements"
-msgstr ""
+msgstr "성능 개선"
 
 #: data/nightlight.appdata.xml.in:13 data/nightlight.appdata.xml.in:18
 #: data/nightlight.appdata.xml.in:23 data/nightlight.appdata.xml.in:28
 msgid "Updated translations"
-msgstr ""
+msgstr "최신 번역"
 
 #: data/nightlight.appdata.xml.in:37
 msgid "elementary, Inc."
