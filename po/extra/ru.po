@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 16:27+0000\n"
-"PO-Revision-Date: 2021-07-22 13:59+0000\n"
-"Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
+"PO-Revision-Date: 2022-09-30 10:13+0000\n"
+"Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight-extra/ru/>\n"
 "Language: ru\n"
@@ -30,7 +30,7 @@ msgstr "Легко отложите или отрегулируйте темпе
 
 #: data/nightlight.appdata.xml.in:11
 msgid "Show tooltip on hover"
-msgstr "Появление всплывающих подсказкок при наведении"
+msgstr "Появление всплывающих подсказок при наведении"
 
 #: data/nightlight.appdata.xml.in:12
 msgid "Performance improvements"
