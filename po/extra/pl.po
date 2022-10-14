@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-15 16:27+0000\n"
+"POT-Creation-Date: 2022-10-14 18:42+0000\n"
 "PO-Revision-Date: 2021-11-10 16:21+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/wingpanel/"
@@ -28,19 +28,20 @@ msgstr "Wskaźnik światła nocnego"
 msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
 msgstr "Łatwo uśpij lub dopasuj temperaturę światła nocnego z panelu"
 
-#: data/nightlight.appdata.xml.in:11
-msgid "Show tooltip on hover"
-msgstr "Przy najechaniu pokazywany jest tooltip"
-
-#: data/nightlight.appdata.xml.in:12
-msgid "Performance improvements"
-msgstr "Ulepszenie wydajności"
-
-#: data/nightlight.appdata.xml.in:13 data/nightlight.appdata.xml.in:18
-#: data/nightlight.appdata.xml.in:23 data/nightlight.appdata.xml.in:28
+#: data/nightlight.appdata.xml.in:11 data/nightlight.appdata.xml.in:19
+#: data/nightlight.appdata.xml.in:24 data/nightlight.appdata.xml.in:29
+#: data/nightlight.appdata.xml.in:34
 msgid "Updated translations"
 msgstr "Zaktualizowano tłumaczenia"
 
-#: data/nightlight.appdata.xml.in:37
+#: data/nightlight.appdata.xml.in:17
+msgid "Show tooltip on hover"
+msgstr "Przy najechaniu pokazywany jest tooltip"
+
+#: data/nightlight.appdata.xml.in:18
+msgid "Performance improvements"
+msgstr "Ulepszenie wydajności"
+
+#: data/nightlight.appdata.xml.in:43
 msgid "elementary, Inc."
 msgstr "elementary, Inc."

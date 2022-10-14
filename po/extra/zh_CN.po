@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-15 16:27+0000\n"
+"POT-Creation-Date: 2022-10-14 18:42+0000\n"
 "PO-Revision-Date: 2021-11-21 02:09+0000\n"
 "Last-Translator: Yuchen Deng <loaden@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -27,19 +27,20 @@ msgstr "夜灯指示器"
 msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
 msgstr "从面板轻松暂停或调整夜灯的温度"
 
-#: data/nightlight.appdata.xml.in:11
-msgid "Show tooltip on hover"
-msgstr "悬停时显示工具提示"
-
-#: data/nightlight.appdata.xml.in:12
-msgid "Performance improvements"
-msgstr "性能改进"
-
-#: data/nightlight.appdata.xml.in:13 data/nightlight.appdata.xml.in:18
-#: data/nightlight.appdata.xml.in:23 data/nightlight.appdata.xml.in:28
+#: data/nightlight.appdata.xml.in:11 data/nightlight.appdata.xml.in:19
+#: data/nightlight.appdata.xml.in:24 data/nightlight.appdata.xml.in:29
+#: data/nightlight.appdata.xml.in:34
 msgid "Updated translations"
 msgstr "更新翻译"
 
-#: data/nightlight.appdata.xml.in:37
+#: data/nightlight.appdata.xml.in:17
+msgid "Show tooltip on hover"
+msgstr "悬停时显示工具提示"
+
+#: data/nightlight.appdata.xml.in:18
+msgid "Performance improvements"
+msgstr "性能改进"
+
+#: data/nightlight.appdata.xml.in:43
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
