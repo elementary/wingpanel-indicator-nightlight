@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-15 16:27+0000\n"
+"POT-Creation-Date: 2022-10-14 18:42+0000\n"
 "PO-Revision-Date: 2021-10-08 17:10+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/wingpanel/"
@@ -27,19 +27,20 @@ msgstr "Yövalon ilmaisin"
 msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
 msgstr "Torkuta tai säädä yövalon lämpötilaa paneelista"
 
-#: data/nightlight.appdata.xml.in:11
-msgid "Show tooltip on hover"
-msgstr "Näytä työkaluvihje osoittaessa"
-
-#: data/nightlight.appdata.xml.in:12
-msgid "Performance improvements"
-msgstr "Parannuksia suorituskykyyn"
-
-#: data/nightlight.appdata.xml.in:13 data/nightlight.appdata.xml.in:18
-#: data/nightlight.appdata.xml.in:23 data/nightlight.appdata.xml.in:28
+#: data/nightlight.appdata.xml.in:11 data/nightlight.appdata.xml.in:19
+#: data/nightlight.appdata.xml.in:24 data/nightlight.appdata.xml.in:29
+#: data/nightlight.appdata.xml.in:34
 msgid "Updated translations"
 msgstr "Päivitetyt kielikäännökset"
 
-#: data/nightlight.appdata.xml.in:37
+#: data/nightlight.appdata.xml.in:17
+msgid "Show tooltip on hover"
+msgstr "Näytä työkaluvihje osoittaessa"
+
+#: data/nightlight.appdata.xml.in:18
+msgid "Performance improvements"
+msgstr "Parannuksia suorituskykyyn"
+
+#: data/nightlight.appdata.xml.in:43
 msgid "elementary, Inc."
 msgstr "elementary, Inc."

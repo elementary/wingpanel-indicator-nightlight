@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-15 16:27+0000\n"
+"POT-Creation-Date: 2022-10-14 18:42+0000\n"
 "PO-Revision-Date: 2021-02-19 01:23+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/wingpanel/"
@@ -13,19 +13,19 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: src/Indicator.vala:99
+#: src/Indicator.vala:102
 msgid "Night Light is on"
 msgstr "Nachtmodus ist eingeschaltet"
 
-#: src/Indicator.vala:100
+#: src/Indicator.vala:103
 msgid "Middle-click to snooze"
 msgstr "Hinauszögern mit Mittelklick"
 
-#: src/Indicator.vala:103
+#: src/Indicator.vala:106
 msgid "Night Light is snoozed"
 msgstr "Nachtmodus ist hinausgezögert"
 
-#: src/Indicator.vala:104
+#: src/Indicator.vala:107
 msgid "Middle-click to enable"
 msgstr "Einschalten mit Mittelklick"
 
