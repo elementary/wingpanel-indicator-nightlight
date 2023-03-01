@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-14 18:42+0000\n"
-"PO-Revision-Date: 2021-08-21 15:34+0000\n"
+"PO-Revision-Date: 2023-03-02 10:25+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "wingpanel/indicator-nightlight-extra/nb/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: data/nightlight.appdata.xml.in:6
 msgid "Night Light Indicator"
@@ -31,7 +31,7 @@ msgstr ""
 #: data/nightlight.appdata.xml.in:24 data/nightlight.appdata.xml.in:29
 #: data/nightlight.appdata.xml.in:34
 msgid "Updated translations"
-msgstr "Nye oversettelser"
+msgstr "Oppdaterte oversettelser"
 
 #: data/nightlight.appdata.xml.in:17
 msgid "Show tooltip on hover"
