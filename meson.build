@@ -20,7 +20,7 @@ asresources = gnome.compile_resources(
     c_name: 'as'
 )
 
-wingpanel_dep = dependency('wingpanel')
+wingpanel_dep = dependency('wingpanel', version: '>=4.0.0')
 wingpanel_indicatorsdir = wingpanel_dep.get_pkgconfig_variable('indicatorsdir', define_variable: ['libdir', libdir])
 
 config_data = configuration_data()
@@ -42,8 +42,8 @@ shared_module(
     dependencies: [
         dependency('glib-2.0'),
         dependency('gobject-2.0'),
-        dependency('granite', version: '>=6.0.0'),
-        dependency('gtk+-3.0'),
+        dependency('granite-7'),
+        dependency('gtk4'),
         wingpanel_dep
     ],
     install: true,

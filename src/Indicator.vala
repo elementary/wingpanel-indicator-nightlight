@@ -41,10 +41,20 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
 
     public override Gtk.Widget get_display_widget () {
         if (indicator_icon == null) {
-            weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
+            weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_for_display (Gdk.Display.get_default ());
             default_theme.add_resource_path ("/io/elementary/wingpanel/nightlight");
 
             indicator_icon = new Gtk.Spinner ();
+
+            var click_gesture = new Gtk.GestureClick () {
+                button = Gdk.BUTTON_MIDDLE,
+            };
+
+            click_gesture.released.connect ((n, x, y) => {
+                NightLight.Manager.get_instance ().toggle_snooze ();
+            });
+
+            indicator_icon.add_controller (click_gesture);
 
             var provider = new Gtk.CssProvider ();
             provider.load_from_resource ("io/elementary/wingpanel/nightlight/indicator.css");
@@ -52,15 +62,6 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
             style_context = indicator_icon.get_style_context ();
             style_context.add_class ("night-light-icon");
             style_context.add_provider (provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
-
-            indicator_icon.button_press_event.connect ((e) => {
-                if (e.button == Gdk.BUTTON_MIDDLE) {
-                    NightLight.Manager.get_instance ().toggle_snooze ();
-                    return Gdk.EVENT_STOP;
-                }
-
-                return Gdk.EVENT_PROPAGATE;
-            });
 
             var nightlight_manager = NightLight.Manager.get_instance ();
             nightlight_manager.notify["snoozed"].connect (() => {

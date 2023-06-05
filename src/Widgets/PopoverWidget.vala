@@ -17,12 +17,12 @@
  * Boston, MA 02110-1301 USA
  */
 
-public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
+public class Nightlight.Widgets.PopoverWidget : Gtk.Box {
     public unowned Nightlight.Indicator indicator { get; construct set; }
     public unowned Settings settings { get; construct set; }
 
     private Granite.SwitchModelButton toggle_switch;
-    private Gtk.Grid scale_grid;
+    private Gtk.Box scale_box;
     private Gtk.Image image;
     private Gtk.Scale temp_scale;
     private const int TEMP_CHANGE_DELAY_MS = 300;
@@ -39,7 +39,7 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
 
     public bool snoozed {
         set {
-            scale_grid.sensitive = !value;
+            scale_box.sensitive = !value;
             toggle_switch.active = value;
 
             if (value) {
@@ -81,27 +81,25 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
         temp_scale.width_request = 200;
         temp_scale.get_style_context ().add_class ("warmth");
 
-        scale_grid = new Gtk.Grid ();
-        scale_grid.column_spacing = 6;
-        scale_grid.margin_start = 6;
-        scale_grid.margin_end = 12;
-        scale_grid.add (image);
-        scale_grid.add (temp_scale);
+        scale_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
+        scale_box.margin_start = 6;
+        scale_box.margin_end = 12;
+        scale_box.append (image);
+        scale_box.append (temp_scale);
 
         var scale_sep = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
             margin_top = 3,
             margin_bottom = 3
         };
 
-        var settings_button = new Gtk.ModelButton ();
-        settings_button.text = _("Night Light Settings…");
+        var settings_button = new Gtk.Button.with_label (_("Night Light Settings…"));
         settings_button.clicked.connect (show_settings);
 
-        add (toggle_switch);
-        add (toggle_sep);
-        add (scale_grid);
-        add (scale_sep);
-        add (settings_button);
+        append (toggle_switch);
+        append (toggle_sep);
+        append (scale_box);
+        append (scale_sep);
+        append (settings_button);
 
         snoozed = NightLight.Manager.get_instance ().snoozed;
 
