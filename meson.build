@@ -14,10 +14,10 @@ libdir = join_paths(prefix, get_option('libdir'))
 add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format(gettext_name), language:'c')
 add_project_arguments('-DG_LOG_DOMAIN="io.elementary.wingpanel.nightlight"', language:'c')
 
-asresources = gnome.compile_resources(
-    'as-resources', 'data/io.elementary.wingpanel.nightlight.gresource.xml',
-    source_dir: 'data',
-    c_name: 'as'
+gresource = gnome.compile_resources(
+    'gresource',
+    'data' / 'gresource.xml',
+    source_dir: 'data'
 )
 
 wingpanel_dep = dependency('wingpanel')
@@ -37,7 +37,7 @@ shared_module(
     'src/Indicator.vala',
     'src/Services/ColorInterface.vala',
     'src/Widgets/PopoverWidget.vala',
-    asresources,
+    gresource,
     config_file,
     dependencies: [
         dependency('glib-2.0'),

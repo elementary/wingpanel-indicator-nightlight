@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/io/elementary/wingpanel/nightlight">
+    <file alias="indicator.css" compressed="true">indicator.css</file>
+  </gresource>
+  <gresource prefix="/org/elementary/wingpanel/icons">
+    <file alias="24x24@2/status/night-light-disabled-10-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/disabled-10.svg</file>
+    <file alias="24x24@2/status/night-light-disabled-20-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/disabled-20.svg</file>
+    <file alias="24x24@2/status/night-light-disabled-30-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/disabled-30.svg</file>
+    <file alias="24x24@2/status/night-light-disabled-40-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/disabled-40.svg</file>
+    <file alias="24x24@2/status/night-light-disabled-50-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/disabled-50.svg</file>
+    <file alias="24x24@2/status/night-light-disabled-60-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/disabled-60.svg</file>
+    <file alias="24x24@2/status/night-light-disabled-70-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/disabled-70.svg</file>
+    <file alias="24x24@2/status/night-light-disabled-80-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/disabled-80.svg</file>
+    <file alias="24x24@2/status/night-light-disabled-90-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/disabled-90.svg</file>
+    <file alias="24x24@2/status/night-light-disabled-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/disabled.svg</file>
+    <file alias="24x24@2/status/night-light-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/night-light.svg</file>
+
+    <file alias="24x24/status/night-light-disabled-10-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/disabled-10.svg</file>
+    <file alias="24x24/status/night-light-disabled-20-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/disabled-20.svg</file>
+    <file alias="24x24/status/night-light-disabled-30-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/disabled-30.svg</file>
+    <file alias="24x24/status/night-light-disabled-40-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/disabled-40.svg</file>
+    <file alias="24x24/status/night-light-disabled-50-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/disabled-50.svg</file>
+    <file alias="24x24/status/night-light-disabled-60-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/disabled-60.svg</file>
+    <file alias="24x24/status/night-light-disabled-70-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/disabled-70.svg</file>
+    <file alias="24x24/status/night-light-disabled-80-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/disabled-80.svg</file>
+    <file alias="24x24/status/night-light-disabled-90-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/disabled-90.svg</file>
+    <file alias="24x24/status/night-light-disabled-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/disabled.svg</file>
+    <file alias="24x24/status/night-light-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/night-light.svg</file>
+
+    <file alias="48x48@2/status/night-light-disabled-symbolic.svg" compressed="true" preprocess="xml-stripblanks">48/disabled.svg</file>
+    <file alias="48x48@2/status/night-light-symbolic.svg" compressed="true" preprocess="xml-stripblanks">48/night-light.svg</file>
+
+    <file alias="48x48/status/night-light-disabled-symbolic.svg" compressed="true" preprocess="xml-stripblanks">48/disabled.svg</file>
+    <file alias="48x48/status/night-light-symbolic.svg" compressed="true" preprocess="xml-stripblanks">48/night-light.svg</file>
+  </gresource>
+</gresources>

@@ -32,14 +32,14 @@
 
 @keyframes night-light-disabled {
     0% { -gtk-icon-source: -gtk-icontheme("night-light-symbolic"); }
-    10% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-10-symbolic"); opacity: 0.94; }
-    20% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-20-symbolic"); opacity: 0.78; }
-    30% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-30-symbolic"); opacity: 0.82; }
-    40% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-40-symbolic"); opacity: 0.76; }
-    50% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-50-symbolic"); opacity: 0.70; }
-    60% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-60-symbolic"); opacity: 0.64; }
-    70% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-70-symbolic"); opacity: 0.58; }
-    80% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-80-symbolic"); opacity: 0.52; }
-    90% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-90-symbolic"); opacity: 0.46; }
+    10% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-10-symbolic"); }
+    20% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-20-symbolic"); }
+    30% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-30-symbolic"); }
+    40% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-40-symbolic"); }
+    50% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-50-symbolic"); }
+    60% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-60-symbolic"); }
+    70% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-70-symbolic"); }
+    80% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-80-symbolic"); }
+    90% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-90-symbolic"); }
     100% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-symbolic"); }
 }
