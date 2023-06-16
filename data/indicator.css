@@ -22,24 +22,24 @@
     min-width: 24px;
     opacity: 1;
     transition: none;
-    -gtk-icon-source: -gtk-icontheme("night-light-symbolic");
+    -gtk-icon-source: -gtk-icontheme("indicator-night-light-symbolic");
 }
 
 .night-light-icon.disabled {
     animation: night-light-disabled 160ms cubic-bezier(0.4, 0.0, 0.2, 1);
-    -gtk-icon-source: -gtk-icontheme("night-light-disabled-symbolic");
+    -gtk-icon-source: -gtk-icontheme("indicator-night-light-disabled-symbolic");
 }
 
 @keyframes night-light-disabled {
-    0% { -gtk-icon-source: -gtk-icontheme("night-light-symbolic"); }
-    10% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-10-symbolic"); }
-    20% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-20-symbolic"); }
-    30% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-30-symbolic"); }
-    40% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-40-symbolic"); }
-    50% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-50-symbolic"); }
-    60% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-60-symbolic"); }
-    70% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-70-symbolic"); }
-    80% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-80-symbolic"); }
-    90% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-90-symbolic"); }
-    100% { -gtk-icon-source: -gtk-icontheme("night-light-disabled-symbolic"); }
+    0% { -gtk-icon-source: -gtk-icontheme("indicator-night-light-symbolic"); }
+    10% { -gtk-icon-source: -gtk-icontheme("indicator-night-light-disabled-10-symbolic"); }
+    20% { -gtk-icon-source: -gtk-icontheme("indicator-night-light-disabled-20-symbolic"); }
+    30% { -gtk-icon-source: -gtk-icontheme("indicator-night-light-disabled-30-symbolic"); }
+    40% { -gtk-icon-source: -gtk-icontheme("indicator-night-light-disabled-40-symbolic"); }
+    50% { -gtk-icon-source: -gtk-icontheme("indicator-night-light-disabled-50-symbolic"); }
+    60% { -gtk-icon-source: -gtk-icontheme("indicator-night-light-disabled-60-symbolic"); }
+    70% { -gtk-icon-source: -gtk-icontheme("indicator-night-light-disabled-70-symbolic"); }
+    80% { -gtk-icon-source: -gtk-icontheme("indicator-night-light-disabled-80-symbolic"); }
+    90% { -gtk-icon-source: -gtk-icontheme("indicator-night-light-disabled-90-symbolic"); }
+    100% { -gtk-icon-source: -gtk-icontheme("indicator-night-light-disabled-symbolic"); }
 }
