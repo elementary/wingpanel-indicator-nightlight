@@ -43,9 +43,9 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
             toggle_switch.active = value;
 
             if (value) {
-                image.icon_name = "night-light-disabled-symbolic";
+                image.icon_name = "indicator-night-light-disabled-symbolic";
             } else {
-                image.icon_name = "night-light-symbolic";
+                image.icon_name = "indicator-night-light-symbolic";
             }
          }
     }
