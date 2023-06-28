@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-14 18:42+0000\n"
+"POT-Creation-Date: 2023-06-28 16:01+0000\n"
 "PO-Revision-Date: 2019-11-07 11:18-0800\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,32 +17,32 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: data/nightlight.appdata.xml.in:6
+#: data/nightlight.metainfo.xml.in:12
 #, fuzzy
 #| msgid "Nightlight Indicator"
 msgid "Night Light Indicator"
 msgstr "Nightlight Indicator"
 
-#: data/nightlight.appdata.xml.in:7
+#: data/nightlight.metainfo.xml.in:13
 #, fuzzy
 #| msgid "Easily snooze or adjust the temperature of Nightlight"
 msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
 msgstr "Easily snooze or adjust the temperature of Nightlight"
 
-#: data/nightlight.appdata.xml.in:11 data/nightlight.appdata.xml.in:19
-#: data/nightlight.appdata.xml.in:24 data/nightlight.appdata.xml.in:29
-#: data/nightlight.appdata.xml.in:34
+#: data/nightlight.metainfo.xml.in:27
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/nightlight.metainfo.xml.in:34 data/nightlight.metainfo.xml.in:42
+#: data/nightlight.metainfo.xml.in:48 data/nightlight.metainfo.xml.in:54
+#: data/nightlight.metainfo.xml.in:60
 msgid "Updated translations"
 msgstr "Updated translations"
 
-#: data/nightlight.appdata.xml.in:17
+#: data/nightlight.metainfo.xml.in:40
 msgid "Show tooltip on hover"
 msgstr ""
 
-#: data/nightlight.appdata.xml.in:18
+#: data/nightlight.metainfo.xml.in:41
 msgid "Performance improvements"
 msgstr ""
-
-#: data/nightlight.appdata.xml.in:43
-msgid "elementary, Inc."
-msgstr "elementary, Inc."

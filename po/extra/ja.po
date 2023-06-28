@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-14 18:42+0000\n"
+"POT-Creation-Date: 2023-06-28 16:01+0000\n"
 "PO-Revision-Date: 2021-07-18 04:52+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/wingpanel/"
@@ -19,28 +19,28 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: data/nightlight.appdata.xml.in:6
+#: data/nightlight.metainfo.xml.in:12
 msgid "Night Light Indicator"
 msgstr "夜間モードインジケーター"
 
-#: data/nightlight.appdata.xml.in:7
+#: data/nightlight.metainfo.xml.in:13
 msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
 msgstr "パネルから簡単に夜間モードを一時停止したり色温度を調整したりします"
 
-#: data/nightlight.appdata.xml.in:11 data/nightlight.appdata.xml.in:19
-#: data/nightlight.appdata.xml.in:24 data/nightlight.appdata.xml.in:29
-#: data/nightlight.appdata.xml.in:34
+#: data/nightlight.metainfo.xml.in:27
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/nightlight.metainfo.xml.in:34 data/nightlight.metainfo.xml.in:42
+#: data/nightlight.metainfo.xml.in:48 data/nightlight.metainfo.xml.in:54
+#: data/nightlight.metainfo.xml.in:60
 msgid "Updated translations"
 msgstr "翻訳の更新"
 
-#: data/nightlight.appdata.xml.in:17
+#: data/nightlight.metainfo.xml.in:40
 msgid "Show tooltip on hover"
 msgstr "ホバー時にツールチップを表示するように変更"
 
-#: data/nightlight.appdata.xml.in:18
+#: data/nightlight.metainfo.xml.in:41
 msgid "Performance improvements"
 msgstr "パフォーマンスの改善"
-
-#: data/nightlight.appdata.xml.in:43
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
