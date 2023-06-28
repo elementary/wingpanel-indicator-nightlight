@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-14 18:42+0000\n"
+"POT-Creation-Date: 2023-06-28 16:01+0000\n"
 "PO-Revision-Date: 2022-08-06 10:54+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/wingpanel/"
@@ -13,19 +13,19 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: src/Indicator.vala:102
+#: src/Indicator.vala:99
 msgid "Night Light is on"
 msgstr "낮은 색온도 설정"
 
-#: src/Indicator.vala:103
+#: src/Indicator.vala:100
 msgid "Middle-click to snooze"
 msgstr "마우스 가운데 버튼 클릭으로 일시 중지"
 
-#: src/Indicator.vala:106
+#: src/Indicator.vala:103
 msgid "Night Light is snoozed"
 msgstr "낮은 색온도를 잠시 껐습니다"
 
-#: src/Indicator.vala:107
+#: src/Indicator.vala:104
 msgid "Middle-click to enable"
 msgstr "마우스 가운데 버튼 클릭으로 활성화"
 

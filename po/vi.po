@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-14 18:42+0000\n"
+"POT-Creation-Date: 2023-06-28 16:01+0000\n"
 "PO-Revision-Date: 2017-12-28 00:01+0000\n"
 "Last-Translator: Hải Hồ <hochihai1997@gmail.com>\n"
 "Language-Team: Vietnamese <https://weblate.elementary.io/projects/wingpanel/"
@@ -13,23 +13,23 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.18\n"
 
-#: src/Indicator.vala:102
+#: src/Indicator.vala:99
 #, fuzzy
 #| msgid "Night Light Settings…"
 msgid "Night Light is on"
 msgstr "Cài đặt ánh sáng ban đêm…"
 
-#: src/Indicator.vala:103
+#: src/Indicator.vala:100
 msgid "Middle-click to snooze"
 msgstr ""
 
-#: src/Indicator.vala:106
+#: src/Indicator.vala:103
 #, fuzzy
 #| msgid "Night Light Settings…"
 msgid "Night Light is snoozed"
 msgstr "Cài đặt ánh sáng ban đêm…"
 
-#: src/Indicator.vala:107
+#: src/Indicator.vala:104
 msgid "Middle-click to enable"
 msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-14 18:42+0000\n"
+"POT-Creation-Date: 2023-06-28 16:01+0000\n"
 "PO-Revision-Date: 2021-07-03 19:21+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/wingpanel/"
@@ -14,19 +14,19 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: src/Indicator.vala:102
+#: src/Indicator.vala:99
 msgid "Night Light is on"
 msgstr "Нічне світло увімкнене"
 
-#: src/Indicator.vala:103
+#: src/Indicator.vala:100
 msgid "Middle-click to snooze"
 msgstr "Клацніть середньою клавішею, щоб відкласти"
 
-#: src/Indicator.vala:106
+#: src/Indicator.vala:103
 msgid "Night Light is snoozed"
 msgstr "Нічне світло відкладено"
 
-#: src/Indicator.vala:107
+#: src/Indicator.vala:104
 msgid "Middle-click to enable"
 msgstr "Клацніть середньою клавішею, щоб увімкнути"
 
