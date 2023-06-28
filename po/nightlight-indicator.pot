@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nightlight-indicator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-14 18:42+0000\n"
+"POT-Creation-Date: 2023-06-28 16:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,19 +17,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/Indicator.vala:102
+#: src/Indicator.vala:99
 msgid "Night Light is on"
 msgstr ""
 
-#: src/Indicator.vala:103
+#: src/Indicator.vala:100
 msgid "Middle-click to snooze"
 msgstr ""
 
-#: src/Indicator.vala:106
+#: src/Indicator.vala:103
 msgid "Night Light is snoozed"
 msgstr ""
 
-#: src/Indicator.vala:107
+#: src/Indicator.vala:104
 msgid "Middle-click to enable"
 msgstr ""
 
