@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-14 18:42+0000\n"
+"POT-Creation-Date: 2023-06-28 16:01+0000\n"
 "PO-Revision-Date: 2021-08-20 01:13+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/wingpanel/"
@@ -19,30 +19,30 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: data/nightlight.appdata.xml.in:6
+#: data/nightlight.metainfo.xml.in:12
 msgid "Night Light Indicator"
 msgstr "Indikátor nočného svetla"
 
-#: data/nightlight.appdata.xml.in:7
+#: data/nightlight.metainfo.xml.in:13
 msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
 msgstr ""
 "Jednoducho odložte alebo si prispôsobte teplotu farieb nočného svetla z "
 "panelu"
 
-#: data/nightlight.appdata.xml.in:11 data/nightlight.appdata.xml.in:19
-#: data/nightlight.appdata.xml.in:24 data/nightlight.appdata.xml.in:29
-#: data/nightlight.appdata.xml.in:34
+#: data/nightlight.metainfo.xml.in:27
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/nightlight.metainfo.xml.in:34 data/nightlight.metainfo.xml.in:42
+#: data/nightlight.metainfo.xml.in:48 data/nightlight.metainfo.xml.in:54
+#: data/nightlight.metainfo.xml.in:60
 msgid "Updated translations"
 msgstr "Aktualizované preklady"
 
-#: data/nightlight.appdata.xml.in:17
+#: data/nightlight.metainfo.xml.in:40
 msgid "Show tooltip on hover"
 msgstr "Zobrazovať popis po umiestnení kurzora"
 
-#: data/nightlight.appdata.xml.in:18
+#: data/nightlight.metainfo.xml.in:41
 msgid "Performance improvements"
 msgstr "Vylepšenia výkonu"
-
-#: data/nightlight.appdata.xml.in:43
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
