@@ -1,28 +1,14 @@
 /*
- * Copyright (c) 2017-2021 elementary LLC. (https://elementary.io)
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public
- * License as published by the Free Software Foundation; either
- * version 2 of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * General Public License for more details.
- *
- * You should have received a copy of the GNU General Public
- * License along with this program; if not, write to the
- * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
- * Boston, MA 02110-1301 USA
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: 2017-2023 elementary, Inc. (https://elementary.io)
  */
 
-public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
+public class Nightlight.Widgets.PopoverWidget : Gtk.Box {
     public unowned Nightlight.Indicator indicator { get; construct set; }
     public unowned Settings settings { get; construct set; }
 
     private Granite.SwitchModelButton toggle_switch;
-    private Gtk.Grid scale_grid;
+    private Gtk.Box scale_box;
     private Gtk.Image image;
     private Gtk.Scale temp_scale;
     private const int TEMP_CHANGE_DELAY_MS = 300;
@@ -39,7 +25,7 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
 
     public bool snoozed {
         set {
-            scale_grid.sensitive = !value;
+            scale_box.sensitive = !value;
             toggle_switch.active = value;
 
             if (value) {
@@ -61,8 +47,6 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
     }
 
     construct {
-        orientation = Gtk.Orientation.VERTICAL;
-
         toggle_switch = new Granite.SwitchModelButton (_("Snooze Night Light"));
 
         var toggle_sep = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
@@ -70,36 +54,40 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
             margin_bottom = 3
         };
 
-        image = new Gtk.Image ();
-        image.pixel_size = 48;
+        image = new Gtk.Image () {
+            pixel_size = 48
+        };
 
-        temp_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 3500, 6000, 10);
-        temp_scale.draw_value = false;
-        temp_scale.has_origin = false;
-        temp_scale.hexpand = true;
-        temp_scale.inverted = true;
-        temp_scale.width_request = 200;
+        temp_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 1500, 6000, 10) {
+            draw_value = false,
+            has_origin = false,
+            hexpand = true,
+            inverted = true,
+            width_request = 200
+        };
         temp_scale.get_style_context ().add_class ("warmth");
 
-        scale_grid = new Gtk.Grid ();
-        scale_grid.column_spacing = 6;
-        scale_grid.margin_start = 6;
-        scale_grid.margin_end = 12;
-        scale_grid.add (image);
-        scale_grid.add (temp_scale);
+        scale_box = new Gtk.Box (HORIZONTAL, 6) {
+            margin_start = 6,
+            margin_end = 12
+        };
+        scale_box.add (image);
+        scale_box.add (temp_scale);
 
         var scale_sep = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
             margin_top = 3,
             margin_bottom = 3
         };
 
-        var settings_button = new Gtk.ModelButton ();
-        settings_button.text = _("Night Light Settings…");
+        var settings_button = new Gtk.ModelButton () {
+            text = _("Night Light Settings…")
+        };
         settings_button.clicked.connect (show_settings);
 
+        orientation = Gtk.Orientation.VERTICAL;
         add (toggle_switch);
         add (toggle_sep);
-        add (scale_grid);
+        add (scale_box);
         add (scale_sep);
         add (settings_button);
 
@@ -129,7 +117,11 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Grid {
 
     private void show_settings () {
         try {
-            AppInfo.launch_default_for_uri ("settings://display/night-light", null);
+            Gtk.show_uri_on_window (
+                (Gtk.Window) get_toplevel (),
+                "settings://display/night-light",
+                Gtk.get_current_event_time ()
+            );
         } catch (Error e) {
             warning ("Failed to open display settings: %s", e.message);
         }
