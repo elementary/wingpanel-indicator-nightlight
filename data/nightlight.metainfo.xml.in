@@ -31,6 +31,7 @@
   <releases>
     <release version="2.1.2" date="2023-06-28" urgency="medium">
       <description>
+        <p>Increase the maximum possible display warmth</p>
         <p>Updated translations</p>
       </description>
       <issues>
