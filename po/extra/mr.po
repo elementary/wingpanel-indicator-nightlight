@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-28 16:01+0000\n"
+"POT-Creation-Date: 2023-07-02 15:35+0000\n"
 "PO-Revision-Date: 2020-05-31 16:11+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/wingpanel/"
@@ -31,16 +31,20 @@ msgstr "पॅनेल वरून सहजपणे स्नूझ कर�
 msgid "elementary, Inc."
 msgstr "एलिमेंटरी, Inc."
 
-#: data/nightlight.metainfo.xml.in:34 data/nightlight.metainfo.xml.in:42
-#: data/nightlight.metainfo.xml.in:48 data/nightlight.metainfo.xml.in:54
-#: data/nightlight.metainfo.xml.in:60
+#: data/nightlight.metainfo.xml.in:34
+msgid "Increase the maximum possible display warmth"
+msgstr ""
+
+#: data/nightlight.metainfo.xml.in:35 data/nightlight.metainfo.xml.in:44
+#: data/nightlight.metainfo.xml.in:52 data/nightlight.metainfo.xml.in:58
+#: data/nightlight.metainfo.xml.in:64
 msgid "Updated translations"
 msgstr "अद्ययावत भाषांतर"
 
-#: data/nightlight.metainfo.xml.in:40
+#: data/nightlight.metainfo.xml.in:50
 msgid "Show tooltip on hover"
 msgstr ""
 
-#: data/nightlight.metainfo.xml.in:41
+#: data/nightlight.metainfo.xml.in:51
 msgid "Performance improvements"
 msgstr ""
