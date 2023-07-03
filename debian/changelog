@@ -1,3 +1,9 @@
+wingpanel-indicator-nightlight (2.1.2) jammy; urgency=medium
+
+  * Release 2.1.2
+
+ -- Danielle Foré <dani@Mini.lan>  Mon, 03 Jul 2023 15:59:46 -0700
+
 wingpanel-indicator-nightlight (2.1.1) bionic; urgency=medium
 
   * Release 2.1.1 (#93)
