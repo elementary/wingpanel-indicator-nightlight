@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-28 16:01+0000\n"
+"POT-Creation-Date: 2023-07-02 15:35+0000\n"
 "PO-Revision-Date: 2021-02-19 01:23+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/wingpanel/"
@@ -13,35 +13,35 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: src/Indicator.vala:99
+#: src/Indicator.vala:103
 msgid "Night Light is on"
 msgstr "Mode nuit activé"
 
-#: src/Indicator.vala:100
+#: src/Indicator.vala:104
 msgid "Middle-click to snooze"
 msgstr "Clic central pour mettre en pause"
 
-#: src/Indicator.vala:103
+#: src/Indicator.vala:107
 msgid "Night Light is snoozed"
 msgstr "Mode nuit mis en pause"
 
-#: src/Indicator.vala:104
+#: src/Indicator.vala:108
 msgid "Middle-click to enable"
 msgstr "Clic central pour activer"
 
-#: src/Widgets/PopoverWidget.vala:33
+#: src/Widgets/PopoverWidget.vala:19
 msgid "Disabled until sunrise"
 msgstr "Désactivé jusqu'au lever du soleil"
 
-#: src/Widgets/PopoverWidget.vala:35
+#: src/Widgets/PopoverWidget.vala:21
 msgid "Disabled until tomorrow"
 msgstr "Désactivé jusqu'à demain"
 
-#: src/Widgets/PopoverWidget.vala:66
+#: src/Widgets/PopoverWidget.vala:50
 msgid "Snooze Night Light"
 msgstr "Mettre en pause le mode nuit"
 
-#: src/Widgets/PopoverWidget.vala:97
+#: src/Widgets/PopoverWidget.vala:83
 msgid "Night Light Settings…"
 msgstr "Paramètres du mode nuit…"
 

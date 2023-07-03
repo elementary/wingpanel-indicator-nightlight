@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-28 16:01+0000\n"
+"POT-Creation-Date: 2023-07-02 15:35+0000\n"
 "PO-Revision-Date: 2018-03-18 20:33+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <https://weblate.elementary.io/projects/wingpanel/"
@@ -13,39 +13,39 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.18\n"
 
-#: src/Indicator.vala:99
+#: src/Indicator.vala:103
 #, fuzzy
 #| msgid "Night Light Settings…"
 msgid "Night Light is on"
 msgstr "Öövalguse seaded…"
 
-#: src/Indicator.vala:100
+#: src/Indicator.vala:104
 msgid "Middle-click to snooze"
 msgstr ""
 
-#: src/Indicator.vala:103
+#: src/Indicator.vala:107
 #, fuzzy
 #| msgid "Night Light Settings…"
 msgid "Night Light is snoozed"
 msgstr "Öövalguse seaded…"
 
-#: src/Indicator.vala:104
+#: src/Indicator.vala:108
 msgid "Middle-click to enable"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:33
+#: src/Widgets/PopoverWidget.vala:19
 msgid "Disabled until sunrise"
 msgstr "Keelatud päikesetõusuni"
 
-#: src/Widgets/PopoverWidget.vala:35
+#: src/Widgets/PopoverWidget.vala:21
 msgid "Disabled until tomorrow"
 msgstr "Keelatud homseni"
 
-#: src/Widgets/PopoverWidget.vala:66
+#: src/Widgets/PopoverWidget.vala:50
 msgid "Snooze Night Light"
 msgstr "Öövalguse edasilükkamine"
 
-#: src/Widgets/PopoverWidget.vala:97
+#: src/Widgets/PopoverWidget.vala:83
 msgid "Night Light Settings…"
 msgstr "Öövalguse seaded…"
 
