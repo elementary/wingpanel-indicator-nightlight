@@ -14,7 +14,7 @@
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/wingpanel-indicator-nightlight/master/data/screenshot.png</image>
+      <image>https://raw.githubusercontent.com/elementary/wingpanel-indicator-nightlight/2.1.2/data/screenshot.png</image>
     </screenshot>
   </screenshots>
 
@@ -29,7 +29,7 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
-    <release version="2.1.2" date="2023-06-27" urgency="medium">
+    <release version="2.1.2" date="2023-06-28" urgency="medium">
       <description>
         <p>Increase the maximum possible display warmth</p>
         <p>Updated translations</p>
