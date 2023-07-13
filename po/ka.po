@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-02 15:35+0000\n"
-"PO-Revision-Date: 2023-04-15 00:59+0000\n"
+"PO-Revision-Date: 2023-07-14 06:07+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight/ka/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16.4\n"
+"X-Generator: Weblate 4.17\n"
 
 #: src/Indicator.vala:103
 msgid "Night Light is on"
@@ -39,7 +39,7 @@ msgstr "გათიშულია ხვალამდე"
 
 #: src/Widgets/PopoverWidget.vala:50
 msgid "Snooze Night Light"
-msgstr ""
+msgstr "ღამის სინათლის დროებით გამორთვა"
 
 #: src/Widgets/PopoverWidget.vala:83
 msgid "Night Light Settings…"
