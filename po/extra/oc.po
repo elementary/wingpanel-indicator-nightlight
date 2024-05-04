@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-02 15:35+0000\n"
+"POT-Creation-Date: 2024-05-04 04:50+0000\n"
 "PO-Revision-Date: 2020-11-09 10:15+0000\n"
 "Last-Translator: Mejans <farga@mejans.fr>\n"
 "Language-Team: Occitan <https://l10n.elementary.io/projects/wingpanel/"
@@ -27,24 +27,23 @@ msgstr ""
 msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
 msgstr ""
 
-#: data/nightlight.metainfo.xml.in:27
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
-
-#: data/nightlight.metainfo.xml.in:34
+#: data/nightlight.metainfo.xml.in:36
 msgid "Increase the maximum possible display warmth"
 msgstr ""
 
-#: data/nightlight.metainfo.xml.in:35 data/nightlight.metainfo.xml.in:44
-#: data/nightlight.metainfo.xml.in:52 data/nightlight.metainfo.xml.in:58
-#: data/nightlight.metainfo.xml.in:64
+#: data/nightlight.metainfo.xml.in:37 data/nightlight.metainfo.xml.in:46
+#: data/nightlight.metainfo.xml.in:54 data/nightlight.metainfo.xml.in:60
+#: data/nightlight.metainfo.xml.in:66
 msgid "Updated translations"
 msgstr "Mesas a jorn de las traduccions"
 
-#: data/nightlight.metainfo.xml.in:50
+#: data/nightlight.metainfo.xml.in:52
 msgid "Show tooltip on hover"
 msgstr ""
 
-#: data/nightlight.metainfo.xml.in:51
+#: data/nightlight.metainfo.xml.in:53
 msgid "Performance improvements"
 msgstr ""
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
