@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-04 04:50+0000\n"
-"PO-Revision-Date: 2024-05-28 15:21+0000\n"
+"PO-Revision-Date: 2024-05-29 20:13+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight-extra/es/>\n"
@@ -40,7 +40,7 @@ msgstr "Traducciones actualizadas"
 
 #: data/nightlight.metainfo.xml.in:52
 msgid "Show tooltip on hover"
-msgstr "Mostrar información al posicionar el cursor"
+msgstr "Se muestra información en pantalla al pasar el cursor"
 
 #: data/nightlight.metainfo.xml.in:53
 msgid "Performance improvements"
