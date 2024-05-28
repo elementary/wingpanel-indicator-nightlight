@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-04 04:50+0000\n"
 "PO-Revision-Date: 2024-05-28 15:21+0000\n"
-"Last-Translator: Reinaldo <reinaldoplacetas@tutanota.com>\n"
+"Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight-extra/es/>\n"
 "Language: es\n"
@@ -30,7 +30,7 @@ msgstr ""
 
 #: data/nightlight.metainfo.xml.in:36
 msgid "Increase the maximum possible display warmth"
-msgstr "Incremente la temperatura de pantalla máxima"
+msgstr "Se incrementa la temperatura máxima posible de la pantalla"
 
 #: data/nightlight.metainfo.xml.in:37 data/nightlight.metainfo.xml.in:46
 #: data/nightlight.metainfo.xml.in:54 data/nightlight.metainfo.xml.in:60
