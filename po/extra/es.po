@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-04 04:50+0000\n"
-"PO-Revision-Date: 2024-05-29 20:13+0000\n"
+"PO-Revision-Date: 2024-06-30 14:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight-extra/es/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5\n"
+"X-Generator: Weblate 5.5.5\n"
 
 #: data/nightlight.metainfo.xml.in:12
 msgid "Night Light Indicator"
@@ -40,7 +40,7 @@ msgstr "Traducciones actualizadas"
 
 #: data/nightlight.metainfo.xml.in:52
 msgid "Show tooltip on hover"
-msgstr "Se muestra información en pantalla al pasar el cursor"
+msgstr "Se muestra una descripción emergente al pasar el puntero del ratón"
 
 #: data/nightlight.metainfo.xml.in:53
 msgid "Performance improvements"
