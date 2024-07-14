@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-04 04:50+0000\n"
-"PO-Revision-Date: 2023-07-05 14:07+0000\n"
+"PO-Revision-Date: 2024-07-15 07:16+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight-extra/he/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/nightlight.metainfo.xml.in:12
 msgid "Night Light Indicator"
@@ -35,7 +35,7 @@ msgstr "חמימות התצוגה המרבית נמתחה"
 #: data/nightlight.metainfo.xml.in:54 data/nightlight.metainfo.xml.in:60
 #: data/nightlight.metainfo.xml.in:66
 msgid "Updated translations"
-msgstr "עודכנו התרגומים"
+msgstr "תרגומים עודכנו"
 
 #: data/nightlight.metainfo.xml.in:52
 msgid "Show tooltip on hover"
