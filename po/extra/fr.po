@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 04:50+0000\n"
+"POT-Creation-Date: 2024-07-17 17:59+0000\n"
 "PO-Revision-Date: 2023-07-08 02:07+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/wingpanel/"
@@ -29,21 +29,21 @@ msgstr ""
 "Mettez facilement en pause ou modifiez la température du mode nuit depuis le "
 "panneau"
 
-#: data/nightlight.metainfo.xml.in:36
-msgid "Increase the maximum possible display warmth"
-msgstr "Augmentation de la température maximale de l'affichage"
-
-#: data/nightlight.metainfo.xml.in:37 data/nightlight.metainfo.xml.in:46
-#: data/nightlight.metainfo.xml.in:54 data/nightlight.metainfo.xml.in:60
+#: data/nightlight.metainfo.xml.in:36 data/nightlight.metainfo.xml.in:43
+#: data/nightlight.metainfo.xml.in:52 data/nightlight.metainfo.xml.in:60
 #: data/nightlight.metainfo.xml.in:66
 msgid "Updated translations"
 msgstr "Mise à jour des traductions"
 
-#: data/nightlight.metainfo.xml.in:52
+#: data/nightlight.metainfo.xml.in:42
+msgid "Increase the maximum possible display warmth"
+msgstr "Augmentation de la température maximale de l'affichage"
+
+#: data/nightlight.metainfo.xml.in:58
 msgid "Show tooltip on hover"
 msgstr "Affichage d'une infobulle au survol"
 
-#: data/nightlight.metainfo.xml.in:53
+#: data/nightlight.metainfo.xml.in:59
 msgid "Performance improvements"
 msgstr "Améliorations des performances"
 
