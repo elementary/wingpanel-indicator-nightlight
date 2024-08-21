@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-17 17:59+0000\n"
-"PO-Revision-Date: 2023-07-11 07:07+0000\n"
+"PO-Revision-Date: 2024-08-22 15:16+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight-extra/hu/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/nightlight.metainfo.xml.in:12
 msgid "Night Light Indicator"
@@ -25,7 +25,7 @@ msgstr "Éjszakaifény-kijelzés"
 
 #: data/nightlight.metainfo.xml.in:13
 msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
-msgstr "Az éjszakai fény egyszerű elhalasztása vagy állítása a panelről"
+msgstr "Az éjszakai fény egyszerű elhalasztása vagy állítása az állapotsorról"
 
 #: data/nightlight.metainfo.xml.in:36 data/nightlight.metainfo.xml.in:43
 #: data/nightlight.metainfo.xml.in:52 data/nightlight.metainfo.xml.in:60
