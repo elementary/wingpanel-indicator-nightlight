@@ -4,13 +4,11 @@
  */
 
 public class Nightlight.Widgets.PopoverWidget : Gtk.Box {
-    public unowned Nightlight.Indicator indicator { get; construct set; }
-    public unowned Settings settings { get; construct set; }
-
     private Granite.SwitchModelButton toggle_switch;
     private Gtk.Box scale_box;
     private Gtk.Image image;
     private Gtk.Scale temp_scale;
+    private Settings settings;
     private const int TEMP_CHANGE_DELAY_MS = 300;
 
     public bool automatic_schedule {
@@ -40,10 +38,6 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Box {
         set {
             temp_scale.set_value (value);
         }
-    }
-
-    public PopoverWidget (Nightlight.Indicator indicator, Settings settings) {
-        Object (indicator: indicator, settings: settings);
     }
 
     construct {
@@ -94,6 +88,8 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Box {
         snoozed = NightLight.Manager.get_instance ().snoozed;
 
         toggle_switch.bind_property ("active", NightLight.Manager.get_instance (), "snoozed", GLib.BindingFlags.DEFAULT);
+
+        settings = new GLib.Settings ("org.gnome.settings-daemon.plugins.color");
         settings.bind ("night-light-temperature", this, "temperature", GLib.SettingsBindFlags.GET);
         settings.bind ("night-light-schedule-automatic", this, "automatic_schedule", GLib.SettingsBindFlags.GET);
 
@@ -125,7 +121,5 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Box {
         } catch (Error e) {
             warning ("Failed to open display settings: %s", e.message);
         }
-
-        indicator.close ();
     }
 }
