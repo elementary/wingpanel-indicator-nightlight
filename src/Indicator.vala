@@ -88,8 +88,7 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
 
     public override Gtk.Widget? get_widget () {
         if (popover_widget == null) {
-            var settings = new GLib.Settings ("org.gnome.settings-daemon.plugins.color");
-            popover_widget = new Nightlight.Widgets.PopoverWidget (this, settings);
+            popover_widget = new Nightlight.Widgets.PopoverWidget ();
         }
 
         return popover_widget;
