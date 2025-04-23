@@ -19,7 +19,6 @@
 
 public class Nightlight.Indicator : Wingpanel.Indicator {
     private Gtk.Spinner? indicator_icon = null;
-    private Gtk.StyleContext style_context;
     private Nightlight.Widgets.PopoverWidget? popover_widget = null;
 
     private Gtk.GestureMultiPress click_gesture;
@@ -27,9 +26,9 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
     public bool nightlight_state {
         set {
             if (value) {
-                style_context.remove_class ("disabled");
+                indicator_icon.get_style_context ().remove_class ("disabled");
             } else {
-                style_context.add_class ("disabled");
+                indicator_icon.get_style_context ().add_class ("disabled");
             }
         }
     }
@@ -52,9 +51,13 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
             var provider = new Gtk.CssProvider ();
             provider.load_from_resource ("io/elementary/wingpanel/nightlight/indicator.css");
 
-            style_context = indicator_icon.get_style_context ();
-            style_context.add_class ("night-light-icon");
-            style_context.add_provider (provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+            Gtk.StyleContext.add_provider_for_screen (
+                Gdk.Screen.get_default (),
+                provider,
+                Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+            );
+
+            indicator_icon.get_style_context ().add_class ("night-light-icon");
 
             click_gesture = new Gtk.GestureMultiPress (indicator_icon) {
                 button = Gdk.BUTTON_MIDDLE
