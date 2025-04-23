@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-15 16:27+0000\n"
-"PO-Revision-Date: 2021-08-27 11:29+0000\n"
-"Last-Translator: Reinaldo <reinaldoplacetas@tutanota.com>\n"
+"POT-Creation-Date: 2024-07-17 17:59+0000\n"
+"PO-Revision-Date: 2024-06-30 14:16+0000\n"
+"Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight-extra/es/>\n"
 "Language: es\n"
@@ -17,30 +17,34 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.5.5\n"
 
-#: data/nightlight.appdata.xml.in:6
+#: data/nightlight.metainfo.xml.in:12
 msgid "Night Light Indicator"
 msgstr "Indicador de luz nocturna"
 
-#: data/nightlight.appdata.xml.in:7
+#: data/nightlight.metainfo.xml.in:13
 msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
 msgstr ""
-"Posponga o ajuste fácilmente la temperatura de la luz nocturna desde el panel"
+"Posponga o ajuste fácilmente la temperatura de la luz nocturna desde el Panel"
 
-#: data/nightlight.appdata.xml.in:11
-msgid "Show tooltip on hover"
-msgstr "Se muestra una descripción emergente al posar el puntero del ratón"
-
-#: data/nightlight.appdata.xml.in:12
-msgid "Performance improvements"
-msgstr "Mejoras de rendimiento"
-
-#: data/nightlight.appdata.xml.in:13 data/nightlight.appdata.xml.in:18
-#: data/nightlight.appdata.xml.in:23 data/nightlight.appdata.xml.in:28
+#: data/nightlight.metainfo.xml.in:36 data/nightlight.metainfo.xml.in:43
+#: data/nightlight.metainfo.xml.in:52 data/nightlight.metainfo.xml.in:60
+#: data/nightlight.metainfo.xml.in:66
 msgid "Updated translations"
 msgstr "Traducciones actualizadas"
 
-#: data/nightlight.appdata.xml.in:37
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
+#: data/nightlight.metainfo.xml.in:42
+msgid "Increase the maximum possible display warmth"
+msgstr "Se incrementa la temperatura máxima posible de la pantalla"
+
+#: data/nightlight.metainfo.xml.in:58
+msgid "Show tooltip on hover"
+msgstr "Se muestra una descripción emergente al pasar el puntero del ratón"
+
+#: data/nightlight.metainfo.xml.in:59
+msgid "Performance improvements"
+msgstr "Mejoras de rendimiento"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."

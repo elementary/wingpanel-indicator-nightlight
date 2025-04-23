@@ -1,20 +1,6 @@
 /*
- * Copyright (c) 2017-2021 elementary LLC. (https://elementary.io)
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public
- * License as published by the Free Software Foundation; either
- * version 2 of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * General Public License for more details.
- *
- * You should have received a copy of the GNU General Public
- * License along with this program; if not, write to the
- * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
- * Boston, MA 02110-1301 USA
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: 2017-2023 elementary, Inc. (https://elementary.io)
  */
 
 public class Nightlight.Widgets.PopoverWidget : Gtk.Box {
@@ -43,9 +29,9 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Box {
             toggle_switch.active = value;
 
             if (value) {
-                image.icon_name = "night-light-disabled-symbolic";
+                image.icon_name = "indicator-night-light-disabled-symbolic";
             } else {
-                image.icon_name = "night-light-symbolic";
+                image.icon_name = "indicator-night-light-symbolic";
             }
          }
     }
@@ -61,8 +47,6 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Box {
     }
 
     construct {
-        orientation = Gtk.Orientation.VERTICAL;
-
         toggle_switch = new Granite.SwitchModelButton (_("Snooze Night Light"));
 
         var toggle_sep = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
@@ -70,20 +54,23 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Box {
             margin_bottom = 3
         };
 
-        image = new Gtk.Image ();
-        image.pixel_size = 48;
+        image = new Gtk.Image () {
+            pixel_size = 48
+        };
 
-        temp_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 3500, 6000, 10);
-        temp_scale.draw_value = false;
-        temp_scale.has_origin = false;
-        temp_scale.hexpand = true;
-        temp_scale.inverted = true;
-        temp_scale.width_request = 200;
-        temp_scale.get_style_context ().add_class ("warmth");
+        temp_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 1500, 6000, 10) {
+            draw_value = false,
+            has_origin = false,
+            hexpand = true,
+            inverted = true,
+            width_request = 200
+        };
+        temp_scale.add_css_class ("warmth");
 
-        scale_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
-        scale_box.margin_start = 6;
-        scale_box.margin_end = 12;
+        scale_box = new Gtk.Box (HORIZONTAL, 6) {
+            margin_start = 6,
+            margin_end = 12
+        };
         scale_box.append (image);
         scale_box.append (temp_scale);
 
@@ -92,9 +79,12 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Box {
             margin_bottom = 3
         };
 
-        var settings_button = new Gtk.Button.with_label (_("Night Light Settings…"));
+        var settings_button = new PopoverMenuitem () {
+            text = _("Night Light Settings…")
+        };
         settings_button.clicked.connect (show_settings);
 
+        orientation = VERTICAL;
         append (toggle_switch);
         append (toggle_sep);
         append (scale_box);
@@ -127,11 +117,42 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Box {
 
     private void show_settings () {
         try {
-            AppInfo.launch_default_for_uri ("settings://display/night-light", null);
+            Gtk.show_uri_on_window (
+                (Gtk.Window) get_toplevel (),
+                "settings://display/night-light",
+                Gtk.get_current_event_time ()
+            );
         } catch (Error e) {
             warning ("Failed to open display settings: %s", e.message);
         }
 
         indicator.close ();
+    }
+
+    private class PopoverMenuitem : Gtk.Button {
+        public string text {
+            set {
+                child = new Granite.AccelLabel (value) {
+                    action_name = this.action_name
+                };
+
+                update_property (Gtk.AccessibleProperty.LABEL, value, -1);
+            }
+        }
+
+        class construct {
+            set_css_name ("modelbutton");
+        }
+
+        construct {
+            accessible_role = MENU_ITEM;
+
+            clicked.connect (() => {
+                var popover = (Gtk.Popover) get_ancestor (typeof (Gtk.Popover));
+                if (popover != null) {
+                    popover.popdown ();
+                }
+            });
+        }
     }
 }

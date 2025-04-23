@@ -41,8 +41,10 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
 
     public override Gtk.Widget get_display_widget () {
         if (indicator_icon == null) {
+            // Prevent a race that skips automatic resource loading
+            // https://github.com/elementary/wingpanel-indicator-bluetooth/issues/203
             weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_for_display (Gdk.Display.get_default ());
-            default_theme.add_resource_path ("/io/elementary/wingpanel/nightlight");
+            default_theme.add_resource_path ("/org/elementary/wingpanel/icons");
 
             indicator_icon = new Gtk.Spinner ();
 
@@ -59,9 +61,9 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
             var provider = new Gtk.CssProvider ();
             provider.load_from_resource ("io/elementary/wingpanel/nightlight/indicator.css");
 
-            style_context = indicator_icon.get_style_context ();
-            style_context.add_class ("night-light-icon");
-            style_context.add_provider (provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+            indicator_icon.get_style_context ().add_provider (provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+
+            indicator_icon.add_css_class ("night-light-icon");
 
             var nightlight_manager = NightLight.Manager.get_instance ();
             nightlight_manager.notify["snoozed"].connect (() => {

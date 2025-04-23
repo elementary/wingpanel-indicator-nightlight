@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2019–2023 elementary, Inc. <contact@elementary.io> -->
+<component type="addon">
+  <id>io.elementary.wingpanel.nightlight</id>
+  <translation type="gettext">nightlight-indicator</translation>
+  <extends>io.elementary.wingpanel</extends>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <compulsory_for_desktop>Pantheon</compulsory_for_desktop>
+
+  <icon type="stock">night-light</icon>
+  <name>Night Light Indicator</name>
+  <summary>Easily snooze or adjust the temperature of Night Light from the Panel</summary>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/elementary/wingpanel-indicator-nightlight/2.1.3/data/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+
+  <url type="bugtracker">https://github.com/elementary/wingpanel-indicator-nightlight/issues</url>
+  <url type="donation">https://elementary.io/get-involved#funding</url>
+  <url type="help">https://github.com/elementary/wingpanel-indicator-nightlight/discussions/categories/q-a</url>
+  <url type="homepage">https://elementary.io/</url>
+  <url type="translate">https://l10n.elementary.io/projects/wingpanel/wingpanel-indicator-nightlight/</url>
+
+  <developer id="org.elementaryos">
+    <name>elementary, Inc.</name>
+  </developer>
+  <project_group>elementary</project_group>
+  <update_contact>contact_at_elementary.io</update_contact>
+
+  <releases>
+    <release version="2.1.3" date="2024-08-21" urgency="medium">
+      <description>
+        <p>Updated translations</p>
+      </description>
+    </release>
+
+    <release version="2.1.2" date="2023-06-28" urgency="medium">
+      <description>
+        <p>Increase the maximum possible display warmth</p>
+        <p>Updated translations</p>
+      </description>
+      <issues>
+        <issue url="https://github.com/elementary/wingpanel-indicator-nightlight/issues/97">Update indicator icon</issue>
+      </issues>
+    </release>
+
+    <release version="2.1.1" date="2022-10-15" urgency="medium">
+      <description>
+        <p>Updated translations</p>
+      </description>
+    </release>
+
+    <release version="2.1.0" date="2021-07-14" urgency="medium">
+      <description>
+        <p>Show tooltip on hover</p>
+        <p>Performance improvements</p>
+        <p>Updated translations</p>
+      </description>
+    </release>
+
+    <release version="2.0.4" date="2020-08-07" urgency="medium">
+      <description>
+        <p>Updated translations</p>
+      </description>
+    </release>
+
+    <release version="2.0.3" date="2020-03-02" urgency="medium" />
+    <release version="2.0.1" date="2019-10-30" urgency="medium" />
+  </releases>
+</component>

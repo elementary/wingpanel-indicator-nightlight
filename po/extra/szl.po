@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-15 16:27+0000\n"
-"PO-Revision-Date: 2020-06-12 22:11+0000\n"
-"Last-Translator: Grzegorz Kulik <g.kulik@o2.pl>\n"
+"POT-Creation-Date: 2024-07-17 17:59+0000\n"
+"PO-Revision-Date: 2024-08-07 18:17+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Silesian <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-nightlight-extra/szl/>\n"
 "Language: szl\n"
@@ -18,29 +18,33 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 5.6.2\n"
 
-#: data/nightlight.appdata.xml.in:6
+#: data/nightlight.metainfo.xml.in:12
 msgid "Night Light Indicator"
 msgstr "Skaźnik nocnego światła"
 
-#: data/nightlight.appdata.xml.in:7
+#: data/nightlight.metainfo.xml.in:13
 msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
 msgstr "Prosto zastow abo nasztaluj tymperatura nocnego światła z panelu"
 
-#: data/nightlight.appdata.xml.in:11
-msgid "Show tooltip on hover"
-msgstr ""
-
-#: data/nightlight.appdata.xml.in:12
-msgid "Performance improvements"
-msgstr ""
-
-#: data/nightlight.appdata.xml.in:13 data/nightlight.appdata.xml.in:18
-#: data/nightlight.appdata.xml.in:23 data/nightlight.appdata.xml.in:28
+#: data/nightlight.metainfo.xml.in:36 data/nightlight.metainfo.xml.in:43
+#: data/nightlight.metainfo.xml.in:52 data/nightlight.metainfo.xml.in:60
+#: data/nightlight.metainfo.xml.in:66
 msgid "Updated translations"
 msgstr "Zaktualizowane przekłady"
 
-#: data/nightlight.appdata.xml.in:37
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
+#: data/nightlight.metainfo.xml.in:42
+msgid "Increase the maximum possible display warmth"
+msgstr ""
+
+#: data/nightlight.metainfo.xml.in:58
+msgid "Show tooltip on hover"
+msgstr ""
+
+#: data/nightlight.metainfo.xml.in:59
+msgid "Performance improvements"
+msgstr "Ulepszōno wartkość"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."

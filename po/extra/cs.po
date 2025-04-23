@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-15 16:27+0000\n"
+"POT-Creation-Date: 2024-07-17 17:59+0000\n"
 "PO-Revision-Date: 2022-01-10 17:06+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/wingpanel/"
@@ -19,28 +19,32 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: data/nightlight.appdata.xml.in:6
+#: data/nightlight.metainfo.xml.in:12
 msgid "Night Light Indicator"
 msgstr "Indikátor nočního světla"
 
-#: data/nightlight.appdata.xml.in:7
+#: data/nightlight.metainfo.xml.in:13
 msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
 msgstr ""
 "Snáze usněte nebo si přizpůsobte barevnou teplotu nočního světla z panelu"
 
-#: data/nightlight.appdata.xml.in:11
-msgid "Show tooltip on hover"
-msgstr "Při najetí ukazatelem zobrazit bublinovou nápovědu"
-
-#: data/nightlight.appdata.xml.in:12
-msgid "Performance improvements"
-msgstr "Vylepšení výkonu"
-
-#: data/nightlight.appdata.xml.in:13 data/nightlight.appdata.xml.in:18
-#: data/nightlight.appdata.xml.in:23 data/nightlight.appdata.xml.in:28
+#: data/nightlight.metainfo.xml.in:36 data/nightlight.metainfo.xml.in:43
+#: data/nightlight.metainfo.xml.in:52 data/nightlight.metainfo.xml.in:60
+#: data/nightlight.metainfo.xml.in:66
 msgid "Updated translations"
 msgstr "Aktualizovány překlady"
 
-#: data/nightlight.appdata.xml.in:37
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
+#: data/nightlight.metainfo.xml.in:42
+msgid "Increase the maximum possible display warmth"
+msgstr ""
+
+#: data/nightlight.metainfo.xml.in:58
+msgid "Show tooltip on hover"
+msgstr "Při najetí ukazatelem zobrazit bublinovou nápovědu"
+
+#: data/nightlight.metainfo.xml.in:59
+msgid "Performance improvements"
+msgstr "Vylepšení výkonu"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
