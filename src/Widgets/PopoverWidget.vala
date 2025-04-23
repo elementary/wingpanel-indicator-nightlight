@@ -116,17 +116,14 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Box {
     }
 
     private void show_settings () {
-        try {
-            Gtk.show_uri_on_window (
-                (Gtk.Window) get_toplevel (),
-                "settings://display/night-light",
-                Gtk.get_current_event_time ()
-            );
-        } catch (Error e) {
-            warning ("Failed to open display settings: %s", e.message);
-        }
-
-        indicator.close ();
+        var uri_launcher = new Gtk.UriLauncher ("settings://display/night-light");
+        uri_launcher.launch.begin ((Gtk.Window) get_root (), null, (obj, res) => {
+            try {
+                uri_launcher.launch.end (res);
+            } catch (Error e) {
+                warning ("Failed to open display settings: %s", e.message);
+            }
+        });
     }
 
     private class PopoverMenuitem : Gtk.Button {
