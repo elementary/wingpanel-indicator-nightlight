@@ -40,12 +40,12 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
 
     public override Gtk.Widget get_display_widget () {
         if (indicator_icon == null) {
+            indicator_icon = new Gtk.Spinner ();
+
             // Prevent a race that skips automatic resource loading
             // https://github.com/elementary/wingpanel-indicator-bluetooth/issues/203
             unowned var default_theme = Gtk.IconTheme.get_for_display (Gdk.Display.get_default ());
             default_theme.add_resource_path ("/org/elementary/wingpanel/icons");
-
-            indicator_icon = new Gtk.Spinner ();
 
             var provider = new Gtk.CssProvider ();
             provider.load_from_resource ("io/elementary/wingpanel/nightlight/indicator.css");
