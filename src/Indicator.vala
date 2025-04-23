@@ -19,15 +19,14 @@
 
 public class Nightlight.Indicator : Wingpanel.Indicator {
     private Gtk.Spinner? indicator_icon = null;
-    private Gtk.StyleContext style_context;
     private Nightlight.Widgets.PopoverWidget? popover_widget = null;
 
     public bool nightlight_state {
         set {
             if (value) {
-                style_context.remove_class ("disabled");
+                indicator_icon.remove_css_class ("disabled");
             } else {
-                style_context.add_class ("disabled");
+                indicator_icon.add_css_class ("disabled");
             }
         }
     }
@@ -48,22 +47,25 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
 
             indicator_icon = new Gtk.Spinner ();
 
-            var click_gesture = new Gtk.GestureClick () {
-                button = Gdk.BUTTON_MIDDLE,
-            };
+            var provider = new Gtk.CssProvider ();
+            provider.load_from_resource ("io/elementary/wingpanel/nightlight/indicator.css");
 
-            click_gesture.released.connect ((n, x, y) => {
+            Gtk.StyleContext.add_provider_for_display (
+                Gdk.Display.get_default (),
+                provider,
+                Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+            );
+
+            indicator_icon.add_css_class ("night-light-icon");
+
+            var click_gesture = new Gtk.GestureClick () {
+                button = Gdk.BUTTON_MIDDLE
+            };
+            click_gesture.pressed.connect (() => {
                 NightLight.Manager.get_instance ().toggle_snooze ();
             });
 
             indicator_icon.add_controller (click_gesture);
-
-            var provider = new Gtk.CssProvider ();
-            provider.load_from_resource ("io/elementary/wingpanel/nightlight/indicator.css");
-
-            indicator_icon.get_style_context ().add_provider (provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
-
-            indicator_icon.add_css_class ("night-light-icon");
 
             var nightlight_manager = NightLight.Manager.get_instance ();
             nightlight_manager.notify["snoozed"].connect (() => {
