@@ -73,7 +73,7 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Box {
             margin_bottom = 3
         };
 
-        var settings_button = new PopoverMenuitem () {
+        var settings_button = new Wingpanel.PopoverMenuItem () {
             text = _("Night Light Settings…")
         };
         settings_button.clicked.connect (show_settings);
@@ -120,32 +120,5 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Box {
                 warning ("Failed to open display settings: %s", e.message);
             }
         });
-    }
-
-    private class PopoverMenuitem : Gtk.Button {
-        public string text {
-            set {
-                child = new Granite.AccelLabel (value) {
-                    action_name = this.action_name
-                };
-
-                update_property (Gtk.AccessibleProperty.LABEL, value, -1);
-            }
-        }
-
-        class construct {
-            set_css_name ("modelbutton");
-        }
-
-        construct {
-            accessible_role = MENU_ITEM;
-
-            clicked.connect (() => {
-                var popover = (Gtk.Popover) get_ancestor (typeof (Gtk.Popover));
-                if (popover != null) {
-                    popover.popdown ();
-                }
-            });
-        }
     }
 }
