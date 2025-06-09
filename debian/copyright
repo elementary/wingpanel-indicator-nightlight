@@ -1,10 +1,10 @@
 This work was packaged for Debian by:
 
-    Cody Garver <cody@elementary.io>
+    elementary, Inc. <builds@elementary.io>
 
 It was downloaded from:
 
-    https://github.com/elementary/wingpanel-indicator-nightlight
+    https://github.com/elementary/panel-nightlight
 
 Upstream Author(s):
 
@@ -34,6 +34,6 @@ Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
 
 The Debian packaging is:
 
-    Copyright 2017-2020 elementary, Inc. (https://elementary.io)
+    Copyright 2017-2025 elementary, Inc. (https://elementary.io)
 
 and is licensed under the GPL version 3, see above.
