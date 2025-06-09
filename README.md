@@ -8,9 +8,9 @@
 You'll need the following dependencies:
 
     libglib2.0-dev
-    libgranite-dev
-    libgtk-3-dev
-    libwingpanel-dev
+    libgranite-7-dev
+    libgtk-4-dev
+    libwingpanel-8-dev
     meson >= 0.58.0
     valac
 
