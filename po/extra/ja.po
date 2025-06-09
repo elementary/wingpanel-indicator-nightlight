@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 17:59+0000\n"
+"POT-Creation-Date: 2025-06-09 19:07+0000\n"
 "PO-Revision-Date: 2023-07-05 14:07+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/wingpanel/"
@@ -27,6 +27,10 @@ msgstr "夜間モードインジケーター"
 msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
 msgstr "パネルから簡単に夜間モードを一時停止したり色温度を調整したりします"
 
+#: data/nightlight.metainfo.xml.in:28
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
 #: data/nightlight.metainfo.xml.in:36 data/nightlight.metainfo.xml.in:43
 #: data/nightlight.metainfo.xml.in:52 data/nightlight.metainfo.xml.in:60
 #: data/nightlight.metainfo.xml.in:66
@@ -44,6 +48,3 @@ msgstr "ホバー時にツールチップを表示するように変更"
 #: data/nightlight.metainfo.xml.in:59
 msgid "Performance improvements"
 msgstr "パフォーマンスの改善"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."

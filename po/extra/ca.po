@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 17:59+0000\n"
+"POT-Creation-Date: 2025-06-09 19:07+0000\n"
 "PO-Revision-Date: 2023-07-05 14:07+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/wingpanel/"
@@ -29,6 +29,10 @@ msgstr ""
 "Endormisqueu-vos fàcilment o ajusteu la temperatura de la llum nocturna des "
 "del plafó."
 
+#: data/nightlight.metainfo.xml.in:28
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
 #: data/nightlight.metainfo.xml.in:36 data/nightlight.metainfo.xml.in:43
 #: data/nightlight.metainfo.xml.in:52 data/nightlight.metainfo.xml.in:60
 #: data/nightlight.metainfo.xml.in:66
@@ -46,6 +50,3 @@ msgstr "Mostra la descripció emergent en passar-hi"
 #: data/nightlight.metainfo.xml.in:59
 msgid "Performance improvements"
 msgstr "Millores de rendiment"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."

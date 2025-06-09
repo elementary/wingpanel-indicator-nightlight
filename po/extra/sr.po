@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 17:59+0000\n"
+"POT-Creation-Date: 2025-06-09 19:07+0000\n"
 "PO-Revision-Date: 2024-08-07 18:17+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/wingpanel/"
@@ -28,6 +28,10 @@ msgstr "Указивач ноћног светла"
 msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
 msgstr "Лагано ублажите или дотерајте температуру ноћног светла са панела"
 
+#: data/nightlight.metainfo.xml.in:28
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
 #: data/nightlight.metainfo.xml.in:36 data/nightlight.metainfo.xml.in:43
 #: data/nightlight.metainfo.xml.in:52 data/nightlight.metainfo.xml.in:60
 #: data/nightlight.metainfo.xml.in:66
@@ -45,6 +49,3 @@ msgstr ""
 #: data/nightlight.metainfo.xml.in:59
 msgid "Performance improvements"
 msgstr "Побољшања учинковитости"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."

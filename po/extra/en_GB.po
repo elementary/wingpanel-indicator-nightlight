@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 17:59+0000\n"
+"POT-Creation-Date: 2025-06-09 19:07+0000\n"
 "PO-Revision-Date: 2023-07-11 07:07+0000\n"
 "Last-Translator: Andi Chandler <andi@gowling.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
@@ -27,6 +27,10 @@ msgstr "Night Light Indicator"
 msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
 msgstr "Easily snooze or adjust the temperature of Night Light from the Panel"
 
+#: data/nightlight.metainfo.xml.in:28
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
 #: data/nightlight.metainfo.xml.in:36 data/nightlight.metainfo.xml.in:43
 #: data/nightlight.metainfo.xml.in:52 data/nightlight.metainfo.xml.in:60
 #: data/nightlight.metainfo.xml.in:66
@@ -44,6 +48,3 @@ msgstr "Show tooltip on hover"
 #: data/nightlight.metainfo.xml.in:59
 msgid "Performance improvements"
 msgstr "Performance improvements"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."

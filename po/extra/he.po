@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 17:59+0000\n"
+"POT-Creation-Date: 2025-06-09 19:07+0000\n"
 "PO-Revision-Date: 2024-07-15 07:16+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/wingpanel/"
@@ -27,6 +27,10 @@ msgstr "מחוון תאורת לילה"
 msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
 msgstr "להשהות או להתאים את טמפרטות תאורת הלילה דרך החלונית בקלות"
 
+#: data/nightlight.metainfo.xml.in:28
+msgid "elementary, Inc."
+msgstr "elementary בע״מ"
+
 #: data/nightlight.metainfo.xml.in:36 data/nightlight.metainfo.xml.in:43
 #: data/nightlight.metainfo.xml.in:52 data/nightlight.metainfo.xml.in:60
 #: data/nightlight.metainfo.xml.in:66
@@ -44,6 +48,3 @@ msgstr "נוספה חלונית עצה בעת מעבר עם העכבר"
 #: data/nightlight.metainfo.xml.in:59
 msgid "Performance improvements"
 msgstr "שיפורי ביצועים"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary בע״מ"

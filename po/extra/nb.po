@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 17:59+0000\n"
+"POT-Creation-Date: 2025-06-09 19:07+0000\n"
 "PO-Revision-Date: 2023-07-26 20:07+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -27,6 +27,10 @@ msgstr "Nattlysindikator"
 msgid "Easily snooze or adjust the temperature of Night Light from the Panel"
 msgstr "Slumre eller juster fargetemperaturen for nattlys fra panelet"
 
+#: data/nightlight.metainfo.xml.in:28
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
 #: data/nightlight.metainfo.xml.in:36 data/nightlight.metainfo.xml.in:43
 #: data/nightlight.metainfo.xml.in:52 data/nightlight.metainfo.xml.in:60
 #: data/nightlight.metainfo.xml.in:66
@@ -44,6 +48,3 @@ msgstr "Vis verktøytips ved pekersveving"
 #: data/nightlight.metainfo.xml.in:59
 msgid "Performance improvements"
 msgstr "Ytelsesforbedringer"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
