@@ -5,7 +5,7 @@ project(
     meson_version: '>= 0.58.0'
 )
 
-gettext_name = meson.project_name() + '-indicator'
+gettext_name = 'io.elementary.panel.' + meson.project_name()
 gnome = import('gnome')
 i18n = import('i18n')
 
@@ -13,7 +13,7 @@ prefix = get_option('prefix')
 libdir = prefix / get_option('libdir')
 
 add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format(gettext_name), language:'c')
-add_project_arguments('-DG_LOG_DOMAIN="io.elementary.wingpanel.nightlight"', language:'c')
+add_project_arguments('-DG_LOG_DOMAIN="io.elementary.panel.nightlight"', language:'c')
 
 gresource = gnome.compile_resources(
     'gresource',
@@ -21,7 +21,7 @@ gresource = gnome.compile_resources(
     source_dir: 'data'
 )
 
-wingpanel_dep = dependency('wingpanel')
+wingpanel_dep = dependency('wingpanel-8')
 wingpanel_indicatorsdir = wingpanel_dep.get_variable('indicatorsdir', pkgconfig_define: ['libdir', libdir])
 
 config_data = configuration_data()
@@ -43,8 +43,8 @@ shared_module(
     dependencies: [
         dependency('glib-2.0'),
         dependency('gobject-2.0'),
-        dependency('granite', version: '>=6.0.0'),
-        dependency('gtk+-3.0'),
+        dependency('granite-7'),
+        dependency('gtk4'),
         wingpanel_dep
     ],
     install: true,

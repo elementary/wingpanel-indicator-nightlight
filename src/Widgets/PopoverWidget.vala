@@ -59,31 +59,31 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Box {
             inverted = true,
             width_request = 200
         };
-        temp_scale.get_style_context ().add_class ("warmth");
+        temp_scale.add_css_class ("warmth");
 
         scale_box = new Gtk.Box (HORIZONTAL, 6) {
             margin_start = 6,
             margin_end = 12
         };
-        scale_box.add (image);
-        scale_box.add (temp_scale);
+        scale_box.append (image);
+        scale_box.append (temp_scale);
 
         var scale_sep = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
             margin_top = 3,
             margin_bottom = 3
         };
 
-        var settings_button = new Gtk.ModelButton () {
+        var settings_button = new Wingpanel.PopoverMenuItem () {
             text = _("Night Light Settings…")
         };
         settings_button.clicked.connect (show_settings);
 
-        orientation = Gtk.Orientation.VERTICAL;
-        add (toggle_switch);
-        add (toggle_sep);
-        add (scale_box);
-        add (scale_sep);
-        add (settings_button);
+        orientation = VERTICAL;
+        append (toggle_switch);
+        append (toggle_sep);
+        append (scale_box);
+        append (scale_sep);
+        append (settings_button);
 
         snoozed = NightLight.Manager.get_instance ().snoozed;
 
@@ -112,14 +112,13 @@ public class Nightlight.Widgets.PopoverWidget : Gtk.Box {
     }
 
     private void show_settings () {
-        try {
-            Gtk.show_uri_on_window (
-                (Gtk.Window) get_toplevel (),
-                "settings://display/night-light",
-                Gtk.get_current_event_time ()
-            );
-        } catch (Error e) {
-            warning ("Failed to open display settings: %s", e.message);
-        }
+        var uri_launcher = new Gtk.UriLauncher ("settings://display/night-light");
+        uri_launcher.launch.begin ((Gtk.Window) get_root (), null, (obj, res) => {
+            try {
+                uri_launcher.launch.end (res);
+            } catch (Error e) {
+                warning ("Failed to open display settings: %s", e.message);
+            }
+        });
     }
 }
