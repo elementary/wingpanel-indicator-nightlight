@@ -10,8 +10,5 @@
 #export DH_VERBOSE=1
 
 %:
-	dh $@ 
-
-override_dh_strip:
-	dh_strip --dbgsym-migration='wingpanel-indicator-nightlight-dbg (<< 2.0.2)'
+	dh $@
 
