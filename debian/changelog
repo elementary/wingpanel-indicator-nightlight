@@ -1,16 +1,16 @@
-wingpanel-indicator-nightlight (2.1.3) jammy; urgency=medium
+io.elementary.panel.nightlight (2.1.3) jammy; urgency=medium
 
   * Release 2.1.3 (#106)
 
  -- elementary, Inc. <builds@elementary.io>  Wed, 21 Aug 2024 18:28:24 +0000
 
-wingpanel-indicator-nightlight (2.1.2) jammy; urgency=medium
+io.elementary.panel.nightlight (2.1.2) jammy; urgency=medium
 
   * Release 2.1.2
 
  -- Danielle Foré <dani@Mini.lan>  Mon, 03 Jul 2023 15:59:46 -0700
 
-wingpanel-indicator-nightlight (2.1.1) bionic; urgency=medium
+io.elementary.panel.nightlight (2.1.1) bionic; urgency=medium
 
   * Release 2.1.1 (#93)
   * Update translation files
@@ -21,7 +21,7 @@ wingpanel-indicator-nightlight (2.1.1) bionic; urgency=medium
 
  -- elementary, Inc. <builds@elementary.io>  Wed, 19 Oct 2022 02:49:14 +0000
 
-wingpanel-indicator-nightlight (2.1.0) bionic; urgency=medium
+io.elementary.panel.nightlight (2.1.0) bionic; urgency=medium
 
   * Release 2.1.0 (#88)
   * Implement a rate limiter to the dbus calls (#30)
@@ -38,7 +38,7 @@ wingpanel-indicator-nightlight (2.1.0) bionic; urgency=medium
 
  -- elementary, Inc. <builds@elementary.io>  Wed, 14 Jul 2021 20:11:29 +0000
 
-wingpanel-indicator-nightlight (2.0.4) bionic; urgency=medium
+io.elementary.panel.nightlight (2.0.4) bionic; urgency=medium
 
   * Release 2.0.4 (#70)
   * RevealerSwitch: Use ModelButton (#69)
@@ -53,7 +53,7 @@ wingpanel-indicator-nightlight (2.0.4) bionic; urgency=medium
 
  -- elementary, Inc. <builds@elementary.io>  Fri, 07 Aug 2020 18:15:43 +0000
 
-wingpanel-indicator-nightlight (2.0.3) bionic; urgency=medium
+io.elementary.panel.nightlight (2.0.3) bionic; urgency=medium
 
   * Release 2.0.3 (#59)
   * AppData: Add 2.0.3 release data
@@ -72,19 +72,19 @@ wingpanel-indicator-nightlight (2.0.3) bionic; urgency=medium
 
  -- elementary, Inc. <builds@elementary.io>  Mon, 02 Mar 2020 18:31:57 +0000
 
-wingpanel-indicator-nightlight (2.0.2) bionic; urgency=medium
+io.elementary.panel.nightlight (2.0.2) bionic; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <codygarver@gmail.com>  Tue, 19 Feb 2019 09:11:12 -0600
 
-wingpanel-indicator-nightlight (2.0.1) bionic; urgency=medium
+io.elementary.panel.nightlight (2.0.1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Tue, 02 Oct 2018 11:26:13 -0500
 
-wingpanel-indicator-nightlight (2.0) bionic; urgency=medium
+io.elementary.panel.nightlight (2.0) bionic; urgency=medium
 
   * Initial Release.
 
